@@ -61,5 +61,15 @@
   policy_risk: medium
   notes:
     - Short-form distribution surface for public-safe creator lore, educational explainers, and brand-building clips.
-  sources: []
-  last_checked: null
+    - YouTube requires creators to disclose meaningfully altered or synthetically generated content when it seems realistic, including realistic depictions of people, places, events, or speech that did not occur.
+    - Official YouTube Data API upload support exists through videos.insert, with OAuth scopes, a 100-unit quota cost per upload call, and writable metadata including status.containsSyntheticMedia.
+    - YouTube Data API projects receive a default daily quota allocation, while additional quota requires a compliance audit; high-volume AI creator upload workflows should plan for quota and policy review.
+    - Shorts monetization is available to monetizing partners that accept the Shorts Monetization Module, but eligible views and payout depend on broader YouTube monetization and advertiser-friendly policies.
+    - Monetization risk is elevated for templated, repetitive, mass-produced, or reused AI videos that lack original/authentic substance, even if use of AI itself is not automatically disqualifying.
+  sources:
+    - https://support.google.com/youtube/answer/14328491?hl=en
+    - https://developers.google.com/youtube/v3/docs/videos/insert
+    - https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits
+    - https://support.google.com/youtube/answer/12504220?hl=en
+    - https://support.google.com/youtube/answer/1311392?hl=en
+  last_checked: '2026-05-17'
