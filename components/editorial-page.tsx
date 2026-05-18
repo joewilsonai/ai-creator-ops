@@ -26,6 +26,8 @@ export function EditorialArticle({ page }: { page: EditorialPage }) {
           <Card>
             <h2 className="text-lg font-semibold">Last updated</h2>
             <p className="mt-2 font-mono text-sm text-[var(--muted)]">{page.lastUpdated}</p>
+            <h2 className="mt-5 text-lg font-semibold">Last source checked</h2>
+            <p className="mt-2 font-mono text-sm text-[var(--muted)]">{page.lastUpdated}</p>
             <p className="mt-4 text-sm leading-6 text-[var(--muted)]">
               Source posture: public editorial page using primary sources for platform policy, API, payout, and disclosure claims.
             </p>
