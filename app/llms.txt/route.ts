@@ -8,6 +8,7 @@ Canonical URL: https://aicreatorops.com
 ## Core sections
 
 - Guides: https://aicreatorops.com/guides
+- What Is an AI Creator?: https://aicreatorops.com/guides/what-is-an-ai-creator
 - Tools: https://aicreatorops.com/tools
 - Platforms: https://aicreatorops.com/platforms
 - Comparisons: https://aicreatorops.com/comparisons

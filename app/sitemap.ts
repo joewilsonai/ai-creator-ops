@@ -4,7 +4,7 @@ import { getAllPlatforms, getAllTools } from '@/lib/data';
 const baseUrl = 'https://aicreatorops.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticRoutes = ['', '/guides', '/tools', '/platforms', '/comparisons', '/reports', '/reports/ai-creator-platform-index-2026', '/glossary', '/methodology'].map((route) => ({
+  const staticRoutes = ['', '/guides', '/guides/what-is-an-ai-creator', '/tools', '/platforms', '/comparisons', '/reports', '/reports/ai-creator-platform-index-2026', '/glossary', '/methodology'].map((route) => ({
     url: `${baseUrl}${route}`,
     lastModified: new Date(),
     changeFrequency: 'weekly' as const,
