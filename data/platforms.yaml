@@ -7,9 +7,17 @@
   discovery_score: null
   policy_risk: medium
   notes:
-    - Public-safe editorial and funnel content surface; direct publishing automation depends on account type, Meta app scopes, and token handling.
-  sources: []
-  last_checked: null
+    - Public-safe editorial and funnel content surface; direct publishing automation depends on professional account status, Meta app permissions, public media hosting, and token handling.
+    - Instagram Platform Content Publishing supports publishing images, videos, Reels, Stories, and carousel posts to Instagram professional accounts through media container and media_publish endpoints, with a 100 API-published-posts-per-24-hour moving limit.
+    - Meta requires AI disclosure for organic content with photorealistic video or realistic-sounding audio that was digitally created or altered, and may apply penalties when creators fail to disclose required AI-generated or altered media.
+    - Meta's AI content labeling uses a mix of user self-disclosure and industry-shared technical signals; AI-generated content still remains subject to Community Standards and other policies.
+    - Instagram branded content must be reviewed separately because Meta's Content Publishing API limitations state that branded content tags are not supported through that publishing flow.
+  sources:
+    - https://developers.facebook.com/docs/instagram-platform/content-publishing/
+    - https://transparency.meta.com/policies/community-standards/misinformation
+    - https://transparency.meta.com/governance/tracking-impact/labeling-ai-content/
+    - https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/
+  last_checked: '2026-05-18'
 - id: tiktok
   name: TikTok
   type: social_platform

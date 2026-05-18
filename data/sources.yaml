@@ -1,1 +1,30 @@
 # Source database starts here.
+
+- id: meta-instagram-content-publishing
+  url: https://developers.facebook.com/docs/instagram-platform/content-publishing/
+  title: Publish Content - Instagram Platform
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Instagram Platform Content Publishing documentation covering supported media types, permissions, public media hosting, API endpoints, limitations, and publishing rate limits.
+- id: meta-community-standards-misinformation-ai-disclosure
+  url: https://transparency.meta.com/policies/community-standards/misinformation
+  title: Meta Community Standards - Misinformation
+  publisher: Meta Transparency Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Policy source stating Meta requires AI-disclosure tool use for organic photorealistic video or realistic-sounding audio that was digitally created or altered.
+- id: meta-labeling-ai-content-impact
+  url: https://transparency.meta.com/governance/tracking-impact/labeling-ai-content/
+  title: Labeling AI Content
+  publisher: Meta Transparency Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Meta transparency update on AI Info labels across Facebook, Instagram, and Threads, including user self-disclosure and industry-standard indicator labeling.
+- id: meta-labeling-ai-generated-content-manipulated-media
+  url: https://about.fb.com/news/2024/04/metas-approach-to-labeling-ai-generated-content-and-manipulated-media/
+  title: Our Approach to Labeling AI-Generated Content and Manipulated Media
+  publisher: Meta Newsroom
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Meta newsroom source explaining AI Info label approach, user self-disclosure, industry-shared technical signals, and shift from removal-only approach to labels/context.
