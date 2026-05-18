@@ -1,12 +1,11 @@
-# Source database starts here.
-
 - id: meta-instagram-content-publishing
   url: https://developers.facebook.com/docs/instagram-platform/content-publishing/
   title: Publish Content - Instagram Platform
   publisher: Meta for Developers
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Instagram Platform Content Publishing documentation covering supported media types, permissions, public media hosting, API endpoints, limitations, and publishing rate limits.
+  notes: Official Instagram Platform Content Publishing documentation covering supported media types, permissions, public media hosting, API endpoints, limitations,
+    and publishing rate limits.
 - id: meta-community-standards-misinformation-ai-disclosure
   url: https://transparency.meta.com/policies/community-standards/misinformation
   title: Meta Community Standards - Misinformation
@@ -27,49 +26,56 @@
   publisher: Meta Newsroom
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Meta newsroom source explaining AI Info label approach, user self-disclosure, industry-shared technical signals, and shift from removal-only approach to labels/context.
+  notes: Meta newsroom source explaining AI Info label approach, user self-disclosure, industry-shared technical signals, and shift from removal-only approach to
+    labels/context.
 - id: fanvue-ai-content-allowed
   url: https://help.fanvue.com/en/articles/9538738-is-ai-content-allowed-on-fanvue
   title: Is AI content allowed on Fanvue?
   publisher: Fanvue Help Centre
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Fanvue help article stating that Fanvue welcomes AI creators, allows fully AI-generated content, requires clear disclosure, and sets rules for deepfakes, face-swaps, age appearance, copyright, and moderation.
+  notes: Official Fanvue help article stating that Fanvue welcomes AI creators, allows fully AI-generated content, requires clear disclosure, and sets rules for deepfakes,
+    face-swaps, age appearance, copyright, and moderation.
 - id: fanvue-ai-generated-content
   url: https://help.fanvue.com/en/articles/8442803-ai-generated-content
   title: AI Generated Content
   publisher: Fanvue Help Centre
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Fanvue help article summarizing AI-generated media rules, including no harmful or misleading content, moderation under Fanvue's Reasonable Person's Test, age-appearance restrictions, copyright compliance, and enforcement consequences.
+  notes: Official Fanvue help article summarizing AI-generated media rules, including no harmful or misleading content, moderation under Fanvue's Reasonable Person's
+    Test, age-appearance restrictions, copyright compliance, and enforcement consequences.
 - id: fanvue-ai-generated-model-definition
   url: https://help.fanvue.com/en/articles/9538752-what-is-an-ai-generated-model
   title: What is an AI-Generated model?
   publisher: Fanvue Help Centre
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Fanvue help article defining AI-generated models as virtual characters or avatars and distinguishing them from deepfakes or face-swaps involving a real person's body, which require verification.
+  notes: Official Fanvue help article defining AI-generated models as virtual characters or avatars and distinguishing them from deepfakes or face-swaps involving
+    a real person's body, which require verification.
 - id: fanvue-creator-earnings-payouts
   url: https://legal.fanvue.com/creator-earnings-payouts
   title: Creator Earnings & Payouts
   publisher: Fanvue Policies
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Fanvue policy covering creator earnings, the standard 80% creator earning rate/20% platform fee, settlement periods, payout requests, refunds, chargebacks, and related payout conditions.
+  notes: Official Fanvue policy covering creator earnings, the standard 80% creator earning rate/20% platform fee, settlement periods, payout requests, refunds, chargebacks,
+    and related payout conditions.
 - id: fanvue-receive-payout-help
   url: https://help.fanvue.com/en/articles/9515801-how-to-receive-a-payout-on-fanvue
   title: How to receive a payout on Fanvue
   publisher: Fanvue Help Centre
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official Fanvue help article describing the creator payout workflow, minimum available balance requirements, five-upload requirement, co-creator verification, regional threshold variation, and estimated payout timing.
+  notes: Official Fanvue help article describing the creator payout workflow, minimum available balance requirements, five-upload requirement, co-creator verification,
+    regional threshold variation, and estimated payout timing.
 - id: tiktok-content-posting-api-get-started
   url: https://developers.tiktok.com/doc/content-posting-api-get-started
   title: Content Posting API - Get Started
   publisher: TikTok for Developers
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official TikTok developer documentation for direct video/photo posting, required posting scope, creator info query, post initialization, and the private-viewing restriction for unaudited clients.
+  notes: Official TikTok developer documentation for direct video/photo posting, required posting scope, creator info query, post initialization, and the private-viewing
+    restriction for unaudited clients.
 - id: tiktok-content-posting-api-product
   url: https://developers.tiktok.com/products/content-posting-api/
   title: Content Posting API
@@ -83,14 +89,16 @@
   publisher: TikTok Support
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official TikTok support article defining AI-generated content, creator and auto labels, required labeling for realistic AI-generated images/audio/video, C2PA Content Credentials, and prohibited misleading or harmful AIGC categories.
+  notes: Official TikTok support article defining AI-generated content, creator and auto labels, required labeling for realistic AI-generated images/audio/video,
+    C2PA Content Credentials, and prohibited misleading or harmful AIGC categories.
 - id: youtube-help-altered-synthetic-content
   url: https://support.google.com/youtube/answer/14328491?hl=en
   title: Disclosing use of altered or synthetic content
   publisher: YouTube Help
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official YouTube disclosure policy for realistic meaningfully altered or synthetically generated content, including synthetic depictions of people, places, events, or speech.
+  notes: Official YouTube disclosure policy for realistic meaningfully altered or synthetically generated content, including synthetic depictions of people, places,
+    events, or speech.
 - id: youtube-data-api-videos-insert
   url: https://developers.google.com/youtube/v3/docs/videos/insert
   title: Videos - insert
@@ -104,18 +112,160 @@
   publisher: Google for Developers
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official YouTube Data API quota and audit guide documenting the default daily quota allocation, quota usage checks, compliance audits, quota extension requests, periodic audits, and change-of-control forms.
+  notes: Official YouTube Data API quota and audit guide documenting the default daily quota allocation, quota usage checks, compliance audits, quota extension requests,
+    periodic audits, and change-of-control forms.
 - id: youtube-shorts-monetization-policies
   url: https://support.google.com/youtube/answer/12504220?hl=en
   title: YouTube Shorts monetization policies
   publisher: YouTube Help
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official YouTube Help policy for Shorts ad revenue sharing, Shorts Monetization Module acceptance, eligible engaged views, Creator Pool allocation, and related monetization policy dependencies.
+  notes: Official YouTube Help policy for Shorts ad revenue sharing, Shorts Monetization Module acceptance, eligible engaged views, Creator Pool allocation, and related
+    monetization policy dependencies.
 - id: youtube-channel-monetization-policies
   url: https://support.google.com/youtube/answer/1311392?hl=en
   title: YouTube channel monetization policies
   publisher: YouTube Help
   retrieved_at: '2026-05-18'
   source_type: primary
-  notes: Official YouTube monetization policy source for original/authentic content requirements, inauthentic mass-produced or repetitive content risk, reused-content rules, payment holds, and channel-level monetization enforcement.
+  notes: Official YouTube monetization policy source for original/authentic content requirements, inauthentic mass-produced or repetitive content risk, reused-content
+    rules, payment holds, and channel-level monetization enforcement.
+- id: onlyfans-terms
+  url: https://onlyfans.com/terms
+  title: Terms of Service
+  publisher: OnlyFans
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OnlyFans Terms of Service source including the AI Generated Content clause requiring clear and conspicuous AI-generated captions, plus creator account,
+    content, payout, and policy terms.
+- id: onlyfans-help-ai-content
+  url: https://onlyfans.com/help/196/205/211
+  title: Can I post AI content on OnlyFans?
+  publisher: OnlyFans Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OnlyFans help article surfaced in search results stating AI-generated, altered, or enhanced content may be shared only when it clearly features
+    the verified Creator and users can tell the content is AI-generated, altered, or enhanced.
+- id: onlyfans-acceptable-use-policy
+  url: https://onlyfans.com/acceptable-use-policy
+  title: Acceptable Use Policy
+  publisher: OnlyFans
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OnlyFans acceptable-use policy cited as a required review surface for content restrictions, account enforcement, safety constraints, and edge cases
+    involving synthetic media or impersonation.
+- id: x-api-create-post
+  url: https://docs.x.com/x-api/posts/create-post
+  title: Create or Edit Post
+  publisher: X Developer Platform
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X API v2 documentation for creating or editing authenticated-user posts, including made_with_ai and paid_partnership fields relevant to AI creator
+    disclosure and sponsorship workflows.
+- id: x-api-media-upload
+  url: https://docs.x.com/x-api/media/upload-media
+  title: Upload media
+  publisher: X Developer Platform
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X API media upload documentation for uploading media files for use in posts or other content.
+- id: x-developer-guidelines
+  url: https://docs.x.com/developer-guidelines
+  title: Developer Guidelines
+  publisher: X Developer Platform
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X developer guidance on allowed and prohibited automation patterns, including user-initiated actions, transparency, opt-out, official API use, spam
+    avoidance, replies, DMs, and engagement manipulation.
+- id: x-creator-revenue-sharing
+  url: https://help.x.com/en/using-x/creator-revenue-sharing
+  title: Creator Revenue Sharing
+  publisher: X Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X Creator Revenue Sharing help page covering eligibility, payout cadence, $30 minimum payout, discretionary participation, and AI-generated armed-conflict
+    video disclosure enforcement.
+- id: x-authenticity-policy
+  url: https://help.x.com/en/rules-and-policies/authenticity
+  title: Authenticity
+  publisher: X Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X authenticity policy hub covering synthetic and manipulated media risk, platform manipulation, spam, and inauthentic behavior.
+- id: x-content-monetization-standards
+  url: https://help.x.com/en/rules-and-policies/content-monetization-standards
+  title: X's Creator Monetization Standards
+  publisher: X Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official X monetization standards source for creator monetization eligibility, rule compliance, and excluded or restricted monetized content patterns.
+- id: tiktok-shop-before-becoming-creator
+  url: https://seller-us.tiktok.com/university/essay?knowledge_id=7608640301074219&lang=en
+  title: What You Need to Know before Becoming a TikTok Shop Creator
+  publisher: TikTok Shop Academy
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop Creator guide covering creator account types, affiliate creator monetization, product marketplace access, identity verification, eligibility,
+    and follower thresholds.
+- id: tiktok-shop-content-policy
+  url: https://seller-us.tiktok.com/university/essay?knowledge_id=6837891779151617&lang=en
+  title: Content Policy
+  publisher: TikTok Shop Seller Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop content policy for promotional content, including the rule that AI-generated content is not allowed if it misleads or deceives viewers,
+    impersonates others, or violates TikTok Shop policy or TikTok Community Guidelines.
+- id: tiktok-shop-creator-eligibility-policy
+  url: https://seller-us.tiktok.com/university/essay?knowledge_id=6939143037667118&lang=en
+  title: Creator Eligibility Policy
+  publisher: TikTok Shop Seller Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop creator eligibility policy surface for creator types, age confirmation, identity verification, creator pilot programs, posting limits,
+    enforcement actions, and appeals.
+- id: tiktok-shop-creator-health-rating
+  url: https://seller-us.tiktok.com/university/essay?knowledge_id=5054301796321070&lang=en
+  title: Creator Health Rating Overview and Requirements
+  publisher: TikTok Shop Seller Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop Creator Health Rating guidance describing account health, policy-violation point deductions, and links to Creator Enforcement Policy.
+- id: onlyfans-creator-center
+  url: https://blog.onlyfans.com/creator-center/
+  title: Creator Center
+  publisher: OnlyFans Blog
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OnlyFans creator resource describing creator onboarding, 18+ access, identity verification, collaboration requirements, creator ownership, and the
+    statement that creators keep 80% of earnings.
+- id: x-api-v2-media-upload-announcement
+  url: https://devcommunity.x.com/t/announcing-media-upload-endpoints-in-the-x-api-v2/234175
+  title: Announcing media upload endpoints in the X API v2
+  publisher: X Developer Community
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: X Developer Platform announcement stating that developers can upload images or videos through X API v2 media upload endpoints and attach media to posts.
+- id: x-synthetic-manipulated-media-policy
+  url: https://blog.x.com/en_us/topics/company/2020/new-approach-to-synthetic-and-manipulated-media
+  title: Building rules in public - Our approach to synthetic and manipulated media
+  publisher: X Blog
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: X policy blog source stating users may not deceptively share synthetic or manipulated media likely to cause harm and that X may label such media to give
+    people context.
+- id: tiktok-shop-creator-page
+  url: https://business.tiktokshop.com/us/creator
+  title: Creator
+  publisher: TikTok Shop
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop creator page describing creator commission opportunities through shoppable videos and LIVE streams, brand collaboration, samples, creator
+    eligibility, 18+ requirement, follower requirement, and risk evaluation.
+- id: tiktok-shop-affiliate-marketing-policy
+  url: https://seller-us.tiktok.com/university/essay?knowledge_id=2244964886103809&lang=en
+  title: Affiliate Marketing Policy
+  publisher: TikTok Shop Seller Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok Shop Affiliate Marketing policy covering commission-based seller/creator relationships, shop/product/creator qualification, performance and
+    health thresholds, and enforcement when qualification or policy requirements are not met.

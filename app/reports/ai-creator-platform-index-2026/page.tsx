@@ -53,6 +53,7 @@ export const metadata = {
 
 export default function PlatformIndexReportPage() {
   const platforms = getAllPlatforms();
+  const reviewedCount = platforms.filter((platform) => platform.last_checked && platform.sources.length > 0).length;
   const rows = platforms.map((platform) => ({
     ...platform,
     status: platform.last_checked ? 'Source reviewed' : 'Source review pending'
@@ -69,7 +70,7 @@ export default function PlatformIndexReportPage() {
           AI Creator Platform Index 2026
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)]">
-          A transparent scoring framework for comparing social platforms, fan platforms, and monetization rails for AI creator businesses. This first version defines the methodology and seed dataset before public source review.
+          A transparent scoring framework for comparing social platforms, fan platforms, and monetization rails for AI creator businesses. This version defines the methodology and tracks a source-reviewed seed dataset while final numeric scores remain pending.
         </p>
         <div className="mt-8 grid gap-3 md:grid-cols-3">
           <Card>
@@ -82,7 +83,7 @@ export default function PlatformIndexReportPage() {
           </Card>
           <Card>
             <p className="font-mono text-xs text-[var(--dim)]">Source status</p>
-            <p className="mt-2 text-2xl font-semibold tracking-[-.04em]">Pending review</p>
+            <p className="mt-2 text-2xl font-semibold tracking-[-.04em]">{reviewedCount}/{platforms.length} reviewed</p>
           </Card>
         </div>
       </section>
@@ -156,7 +157,7 @@ export default function PlatformIndexReportPage() {
             <Badge tone="amber">CAVEAT</Badge>
             <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]">Why this is a draft</h2>
             <p className="mt-4 leading-7 text-[var(--muted)]">
-              The page is intentionally labeled as a draft index until the source desk reviews each platform's current policy, monetization, and automation documentation. That prevents fake certainty and gives the project a clean editorial standard from day one.
+              The page is intentionally labeled as a draft index until the source desk finishes scoring each platform against the published criteria. Source review is underway; numeric rankings remain withheld to avoid fake certainty.
             </p>
           </Card>
           <Card className="p-7">

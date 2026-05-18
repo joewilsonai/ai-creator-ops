@@ -3,6 +3,10 @@ import { notFound } from 'next/navigation';
 import { Badge, Card } from '@/components/ui';
 import { getAllTools, getSource, getTool } from '@/lib/data';
 
+function sourceTypeLabel(sourceType: string) {
+  return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
+}
+
 export function generateStaticParams() { return getAllTools().map((tool) => ({ slug: tool.id })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -49,7 +53,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       </section>
       <section className="mt-8 grid gap-4 md:grid-cols-[1fr_.6fr]">
         <Card><h2 className="text-2xl font-semibold tracking-[-.04em]">Best for</h2><ul className="mt-4 space-y-2 text-[var(--muted)]">{tool.best_for.map((item) => <li key={item}>• {item}</li>)}</ul></Card>
-        <Card><h2 className="text-2xl font-semibold tracking-[-.04em]">Source status</h2><p className="mt-4 text-[var(--muted)]">Last checked: {tool.last_checked ?? 'pending source review'}</p><a className="mt-4 inline-block text-[var(--cyan)]" href={tool.url}>Official site</a></Card>
+        <Card><h2 className="text-2xl font-semibold tracking-[-.04em]">Source status</h2><p className="mt-4 text-[var(--muted)]">Last checked: {tool.last_checked ?? 'pending source review'}</p><a className="mt-4 inline-block text-[var(--cyan)]" href={tool.url} rel="noopener noreferrer">{tool.name} official site</a></Card>
       </section>
 
       <section className="mt-8 grid gap-4 md:grid-cols-2">
@@ -66,7 +70,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
           <h2 className="text-2xl font-semibold tracking-[-.04em]">Sources</h2>
           {sources.length > 0 ? (
             <ul className="mt-4 space-y-3 text-[var(--muted)]">
-              {sources.map((source) => <li key={source.id}><a className="text-[var(--cyan)]" href={source.url}>{source.title}</a> — {source.publisher}</li>)}
+              {sources.map((source) => <li key={source.id}><a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a> <span className="text-xs uppercase tracking-[.18em] text-[var(--dim)]">{sourceTypeLabel(source.source_type)}</span> — {source.publisher}, retrieved {source.retrieved_at}. {source.notes}</li>)}
             </ul>
           ) : (
             <p className="mt-4 text-[var(--muted)]">Primary-source review pending. Do not treat pricing, API, commercial-rights, or policy notes as fully verified until sources are attached.</p>

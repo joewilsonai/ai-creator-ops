@@ -3,6 +3,10 @@ import { notFound } from 'next/navigation';
 import { Badge, Card } from '@/components/ui';
 import { getAllPlatforms, getPlatform, getSource } from '@/lib/data';
 
+function sourceTypeLabel(sourceType: string) {
+  return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
+}
+
 export function generateStaticParams() { return getAllPlatforms().map((platform) => ({ slug: platform.id })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -43,7 +47,7 @@ export default async function PlatformPage({ params }: { params: Promise<{ slug:
         <Card>
           <Badge tone="green">DIRECT ANSWER</Badge>
           <p className="mt-4 max-w-4xl leading-7 text-[var(--muted)]">
-            {platform.name} is tracked as a {platform.type.replaceAll('_', ' ')} for AI creators, AI influencers, virtual influencers, synthetic creator teams, and AI companion operators. This page summarizes source-backed notes where available and labels unresolved scoring fields as pending methodology/source review.
+            {platform.name} is tracked as a {platform.type.replaceAll('_', ' ')} for AI creators, AI influencers, AI girlfriend business operators, virtual influencers, synthetic creator teams, and AI companion operators. This page summarizes source-backed notes where available and labels unresolved scoring fields as pending methodology/source review.
           </p>
         </Card>
       </section>
@@ -75,7 +79,7 @@ export default async function PlatformPage({ params }: { params: Promise<{ slug:
           <h2 className="text-2xl font-semibold tracking-[-.04em]">Sources</h2>
           {sources.length > 0 ? (
             <ul className="mt-4 space-y-3 text-[var(--muted)]">
-              {sources.map((source) => <li key={source.id}><a className="text-[var(--cyan)]" href={source.url}>{source.title}</a> — {source.publisher}</li>)}
+              {sources.map((source) => <li key={source.id}><a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a> <span className="text-xs uppercase tracking-[.18em] text-[var(--dim)]">{sourceTypeLabel(source.source_type)}</span> — {source.publisher}, retrieved {source.retrieved_at}. {source.notes}</li>)}
             </ul>
           ) : (
             <p className="mt-4 text-[var(--muted)]">Primary-source review pending. Treat policy, monetization, and automation notes as seed editorial context until source records are attached.</p>

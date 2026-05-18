@@ -34,7 +34,28 @@
     - tiktok-content-posting-api-get-started
     - tiktok-content-posting-api-product
     - tiktok-aigc-support
-  last_checked: '2026-05-17'
+  last_checked: '2026-05-18'
+- id: tiktok-shop
+  name: TikTok Shop
+  type: commerce_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Commerce and affiliate rail for AI creator operators who can make product-led videos or LIVEs without misleading viewers about identity, product results, or endorsements.
+    - TikTok Shop Creator guidance describes Affiliate Creators as creators who promote products through shoppable videos, LIVEs, and affiliate links and earn commissions from generated orders.
+    - US TikTok Shop Creator guidance lists general eligibility requirements including being at least 18, based in the United States, not a government/political account, policy compliance, no prior e-commerce-permission revocation, and creator identity verification where applicable.
+    - The same TikTok Shop Creator guidance lists follower thresholds by account type, including 1,000+ followers for Affiliate Creators and 5,000+ followers for Marketing Creators promoting other sellers' marketplace products.
+    - TikTok Shop Content Policy says AI-generated content is not allowed if it misleads or deceives viewers, impersonates others, or violates TikTok Shop Content Policy or TikTok Community Guidelines.
+    - TikTok Shop creator accounts can face e-commerce permission loss, Creator Health Rating impact, and shoppable content limits for policy violations, so AI model/virtual creator workflows need product-claim QA before posting.
+  sources:
+    - tiktok-shop-before-becoming-creator
+    - tiktok-shop-content-policy
+    - tiktok-shop-creator-eligibility-policy
+    - tiktok-shop-creator-health-rating
+  last_checked: '2026-05-18'
 - id: fanvue
   name: Fanvue
   type: fan_platform
@@ -44,7 +65,7 @@
   discovery_score: null
   policy_risk: medium
   notes:
-    - Monetization platform to evaluate for AI creator friendliness, locked content, and policy clarity.
+    - Fan platform with unusually explicit AI creator support; still requires disclosure, provenance controls, age-appearance review, copyright care, and verified real-person handling when a real body or face is involved.
     - Fanvue's Help Centre says it welcomes AI creators and allows fully AI-generated content, while requiring clear disclosure that AI-generated media is not real and was generated using AI.
     - Fanvue says deepfaked or face-swapped content is allowed only when the real model behind the AI is verified, and its AI-generated model help article says a model using a real person's body is classed as a real model requiring KYC.
     - Fanvue's AI-content rules prohibit harmful or misleading AI media, content resembling or intending to resemble someone under 18, copyright infringement, and AI media of a real person other than the account owner.
@@ -66,9 +87,17 @@
   discovery_score: null
   policy_risk: high
   notes:
-    - Large fan platform; synthetic creator use requires careful policy, provenance, and identity review.
-  sources: []
-  last_checked: null
+    - Major fan monetization platform, but pure synthetic AI model and AI girlfriend operations need stricter identity, disclosure, consent, and account-review controls than Fanvue.
+    - OnlyFans Terms of Service state that AI Generated Content must comply with the Terms and be clearly and conspicuously captioned as AI Generated Content with a signifier such as #ai or #AIGenerated.
+    - OnlyFans Help says creators can share content generated, altered, or enhanced by AI only if it clearly features the verified Creator and users can tell the content was generated, altered, or enhanced by AI.
+    - OnlyFans Acceptable Use Policy is the primary content-risk layer for synthetic creators because adult, likeness, consent, age, and prohibited-content issues can trigger content or account deactivation.
+    - OnlyFans Terms list the platform fee as 20% of total Fan Payments, meaning creator earnings are the remaining share before any additional payout/payment conditions.
+    - For AI influencer or AI companion operators, OnlyFans should be treated as high-risk unless the account is built around a verified creator, transparent AI labeling, and documented rights to the underlying likeness and media.
+  sources:
+    - onlyfans-terms
+    - onlyfans-help-ai-content
+    - onlyfans-acceptable-use-policy
+  last_checked: '2026-05-18'
 - id: youtube-shorts
   name: YouTube Shorts
   type: social_platform
@@ -90,4 +119,28 @@
     - youtube-api-quota-compliance-audits
     - youtube-shorts-monetization-policies
     - youtube-channel-monetization-policies
-  last_checked: '2026-05-17'
+  last_checked: '2026-05-18'
+- id: x-twitter
+  name: X / Twitter
+  type: social_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Conversation and distribution surface for AI influencer, virtual influencer, AI model, and AI companion brands, with stronger official API support than many social platforms but meaningful spam and monetization risk.
+    - X API v2 supports creating or editing posts through POST /2/tweets, including fields for made_with_ai and paid_partnership labeling when applicable.
+    - X API v2 supports media upload for posts and other content through the official media upload endpoint; automation should use official API access rather than scraping or browser automation.
+    - X Developer Guidelines emphasize user-initiated, transparent, opt-out-capable automation; identical content across multiple accounts, trend manipulation, unsolicited auto-replies, unsolicited bulk DMs, and engagement-selling patterns are prohibited or high risk.
+    - X Creator Revenue Sharing requires Premium/Premium Business/Premium Organizations, 5M organic impressions in the last three months, 500 verified followers, a supported payout country, and compliance with X rules and agreements.
+    - X Creator Revenue Sharing states payouts are currently processed every two weeks with a $30 minimum, but X may modify, cancel, accept, or revoke participation at its discretion.
+    - X states that effective March 3, 2026, users who post AI-generated videos of armed conflict without disclosure are suspended from Creator Revenue Sharing for 90 days, with subsequent violations causing permanent payment suspension.
+  sources:
+    - x-api-create-post
+    - x-api-media-upload
+    - x-developer-guidelines
+    - x-creator-revenue-sharing
+    - x-authenticity-policy
+    - x-content-monetization-standards
+  last_checked: '2026-05-18'

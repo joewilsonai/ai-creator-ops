@@ -201,7 +201,7 @@ export default function WhatIsAnAiCreatorPage() {
           <ul className="mt-5 space-y-3 text-sm leading-6 text-[var(--muted)]">
             {sources.map((source) => (
               <li key={source.id}>
-                <a className="text-[var(--cyan)]" href={source.url}>{source.title}</a> — {source.publisher}, retrieved {source.retrieved_at}. {source.notes}
+                <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a> <span className="text-xs uppercase tracking-[.18em] text-[var(--dim)]">{source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</span> — {source.publisher}, retrieved {source.retrieved_at}. {source.notes}
               </li>
             ))}
           </ul>

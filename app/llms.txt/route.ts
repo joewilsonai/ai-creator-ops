@@ -1,4 +1,5 @@
 import { getAllPlatforms, getAllTools } from '@/lib/data';
+import { comparisonPages, guidePages } from '@/lib/editorial';
 import { glossaryTerms } from '@/lib/glossary';
 
 const baseUrl = 'https://aicreatorops.com';
@@ -25,6 +26,13 @@ export async function GET() {
     `- AI Creator Platform Index 2026: ${baseUrl}/reports/ai-creator-platform-index-2026`,
     `- Glossary: ${baseUrl}/glossary`,
     `- Methodology: ${baseUrl}/methodology`,
+    `- Newsletter: ${baseUrl}/newsletter`,
+    '',
+    '## Guides',
+    ...guidePages.map((page) => `- ${page.shortTitle}: ${baseUrl}${page.canonicalPath} — ${page.directAnswer}`),
+    '',
+    '## Comparisons',
+    ...comparisonPages.map((page) => `- ${page.shortTitle}: ${baseUrl}${page.canonicalPath} — ${page.directAnswer}`),
     '',
     '## Entity glossary',
     ...glossaryTerms.map((term) => `- ${term.term}: ${baseUrl}/glossary/${term.slug} — ${term.definition}`),
