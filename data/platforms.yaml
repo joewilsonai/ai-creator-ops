@@ -144,3 +144,43 @@
     - x-authenticity-policy
     - x-content-monetization-standards
   last_checked: '2026-05-18'
+- id: patreon
+  name: Patreon
+  type: fan_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Membership and digital-product monetization surface for AI creator operators, but Adult/18+ AI workflows need separate page-category, verification, and feature-access review before public recommendations.
+    - Patreon search results surface an official AI policy for Adult/18+ creators stating that Patreon allows AI-generated works with different rules based on Safe for All Audiences versus Adult/18+ page categorization; the source needs manual recheck because automated extraction failed.
+    - Patreon's fee guide states creators publishing after August 4, 2025 are on the standard 10% platform plan, with additional payment processing, currency conversion, tax, payout, and possible iOS purchase fees.
+    - Patreon search results surface an official Adult/18+ feature-access article stating all Adult/18+ creators must be ID-verified and age-verified; the source needs manual recheck before detailed eligibility claims.
+  sources:
+    - patreon-adult-ai-policy
+    - patreon-creator-fees-overview
+    - patreon-adult-creator-features
+  last_checked: '2026-05-18'
+- id: reddit
+  name: Reddit
+  type: community_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Community-distribution and research surface for virtual influencer, synthetic creator, and AI companion operators; community rules and Reddit-wide policies matter more than generic posting tactics.
+    - Reddit's manipulated-content policy says generative-AI content is generally allowed subject to community rules and Reddit Rules, but prohibits AI-generated content that deliberately misleads about real-life events or real-life individuals, or that presents itself as human-generated.
+    - Reddit encourages transparent AI tagging or another indication when posting permissible AI-generated content to reduce confusion.
+    - Reddit's impersonation policy prohibits misleading or deceptive impersonation of individuals or entities, which makes fictional-character clarity and profile disclosure important for synthetic creator accounts.
+    - Reddit's Responsible Builder Policy says Reddit data/API access requires approval and transparency, commercial use requires explicit written approval, and bots, AI agents, or non-human accounts must not circumvent Reddit labeling.
+    - Reddit's Devvit developer platform is a separate build path for community apps, games, and mod tools; it is not a generic license for unaudited posting automation.
+  sources:
+    - reddit-manipulated-content-policy
+    - reddit-impersonation-policy
+    - reddit-responsible-builder-policy
+    - reddit-devvit-docs
+    - reddit-developer-platform-blog
+  last_checked: '2026-05-18'

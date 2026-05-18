@@ -466,3 +466,59 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Fansly Creator Hub guide for setting subscription tiers, benefits, discounts, and recurring revenue structures.
+- id: patreon-adult-ai-policy
+  url: https://support.patreon.com/hc/en-us/articles/34055590411789-Understanding-Patreon-s-AI-policies-for-Adult-18-creators
+  title: Understanding Patreon's AI policies for Adult/18+ creators
+  publisher: Patreon Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Patreon help article surfaced in search results stating Patreon allows AI-generated works with different rules for Safe for All Audiences versus Adult/18+ pages; full page fetch failed and needs manual recheck before detailed public claims.
+- id: patreon-creator-fees-overview
+  url: https://support.patreon.com/hc/en-us/articles/11111747095181-Creator-fees-overview
+  title: Creator fees overview
+  publisher: Patreon Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Patreon fee guide stating creators publishing after August 4, 2025 are on the standard 10% platform plan, with additional payment processing, currency conversion, taxes, payout, and possible iOS in-app purchase fees.
+- id: patreon-adult-creator-features
+  url: https://support.patreon.com/hc/en-us/articles/31714988741645-Access-to-Patreon-s-features-and-products-for-Adult-18-creators
+  title: Access to Patreon's features and products for Adult/18+ creators
+  publisher: Patreon Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Patreon help article surfaced in search results stating Adult/18+ creators must be ID-verified and age-verified; full page fetch failed and needs manual recheck before detailed public claims.
+- id: reddit-manipulated-content-policy
+  url: https://support.reddithelp.com/hc/en-us/articles/41180423371156-Manipulated-Content-and-Misleading-Behavior
+  title: Manipulated Content and Misleading Behavior
+  publisher: Reddit Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Reddit policy source stating generative-AI content is generally allowed subject to community rules and Reddit Rules, but content that deliberately misleads about real-life events/actions or presents itself as human-generated is prohibited; transparent AI tagging is encouraged.
+- id: reddit-impersonation-policy
+  url: https://support.reddithelp.com/hc/en-us/articles/360043075032-Impersonation
+  title: Impersonation
+  publisher: Reddit Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Reddit impersonation policy prohibiting misleading or deceptive impersonation of individuals or entities, with profile and community signals considered in enforcement.
+- id: reddit-responsible-builder-policy
+  url: https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy
+  title: Responsible Builder Policy
+  publisher: Reddit Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Reddit data/API policy source stating API data access requires approval, transparency, no masking of purpose, Devvit preference for apps, commercial use requires explicit written approval, and bots/AI agents/non-human accounts must not circumvent Reddit labeling.
+- id: reddit-devvit-docs
+  url: https://developers.reddit.com/docs/
+  title: Devvit - Reddit's Developer Platform
+  publisher: Reddit for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Reddit developer documentation describing Devvit as the platform for interactive games and apps that live on Reddit, with examples and Reddit Developer Funds references.
+- id: reddit-developer-platform-blog
+  url: https://developers.reddit.com/docs/blog/welcome
+  title: Welcome to Reddit's Developer Platform Blog
+  publisher: Reddit for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Reddit developer blog stating Reddit Developer Platform apps can ship into subreddits, reach communities, and access monetization options including temporary Developer Funds programs.
