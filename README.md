@@ -22,4 +22,11 @@ Build the creator business, not just the character.
 
 ## MVP artifacts
 
-See `docs/` for the starting strategy, UI direction, architecture, agent team, data model, and first content map.
+See `docs/` for the starting strategy, UI direction, architecture, agent team, data model, monitoring plan, and first content map.
+
+## Monitoring
+
+Traffic and SEO progress are tracked through Google Search Console, Plausible/GA4-compatible site analytics, and weekly JSON snapshots in `data/monitoring/`.
+
+- Setup/runbook: `docs/MONITORING.md`
+- Weekly report command: `pnpm traffic:report`

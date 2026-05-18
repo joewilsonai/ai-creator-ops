@@ -10,7 +10,8 @@
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "validate:content": "tsx scripts/validate-content.ts"
+    "validate:content": "tsx scripts/validate-content.ts",
+    "traffic:report": "tsx scripts/weekly-growth-report.ts"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",

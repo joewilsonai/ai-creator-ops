@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-18",
+  "searchConsole": {
+    "clicks": 0,
+    "impressions": 0,
+    "ctr": 0,
+    "position": 0,
+    "indexedPages": 0,
+    "topQueries": [],
+    "topPages": []
+  },
+  "analytics": {
+    "visitors": 0,
+    "pageviews": 0,
+    "topPages": [],
+    "referrers": []
+  },
+  "notes": [
+    "Initial baseline created when analytics instrumentation and monitoring workflow were added. Replace with Search Console/Plausible/GA4 exports once accounts are connected."
+  ]
+}
