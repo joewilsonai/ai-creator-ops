@@ -12,9 +12,9 @@
   creator_ops_score: null
   policy_risk: medium
   sources:
-    - https://help.fanvue.com/en/articles/9538738-is-ai-content-allowed-on-fanvue
-    - https://legal.fanvue.com/creator-earnings-payouts
-    - https://help.fanvue.com/en/articles/9515801-how-to-receive-a-payout-on-fanvue
+    - fanvue-ai-content-allowed
+    - fanvue-creator-earnings-payouts
+    - fanvue-receive-payout-help
   last_checked: '2026-05-18'
 - id: onlyfans
   name: OnlyFans

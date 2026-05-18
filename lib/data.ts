@@ -34,8 +34,19 @@ const PlatformSchema = z.object({
   last_checked: z.string().nullable()
 });
 
+const SourceSchema = z.object({
+  id: z.string(),
+  url: z.string().url(),
+  title: z.string(),
+  publisher: z.string(),
+  retrieved_at: z.string(),
+  source_type: z.enum(['primary', 'secondary', 'market_signal']),
+  notes: z.string()
+});
+
 export type Tool = z.infer<typeof ToolSchema>;
 export type Platform = z.infer<typeof PlatformSchema>;
+export type Source = z.infer<typeof SourceSchema>;
 
 function readYaml<T>(fileName: string, schema: z.ZodSchema<T>): T {
   const fullPath = path.join(dataDir, fileName);
@@ -58,4 +69,12 @@ export function getAllPlatforms(): Platform[] {
 
 export function getPlatform(id: string): Platform | undefined {
   return getAllPlatforms().find((platform) => platform.id === id);
+}
+
+export function getAllSources(): Source[] {
+  return readYaml('sources.yaml', z.array(SourceSchema));
+}
+
+export function getSource(id: string): Source | undefined {
+  return getAllSources().find((source) => source.id === id);
 }

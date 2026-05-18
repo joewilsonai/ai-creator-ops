@@ -16,7 +16,7 @@
   api_available: unknown
   creator_ops_score: null
   policy_risk: medium
-  sources: []
+  sources: [] # source IDs from data/sources.yaml
   last_checked: null
 ```
 
@@ -32,7 +32,7 @@
   discovery_score: null
   policy_risk: medium
   notes: []
-  sources: []
+  sources: [] # source IDs from data/sources.yaml
   last_checked: null
 ```
 
@@ -47,6 +47,12 @@
   source_type: primary
   notes: ''
 ```
+
+`source_type` values are `primary`, `secondary`, or `market_signal`. Public policy,
+pricing, API, payout, and monetization claims should use `primary` sources where
+possible. Tool and platform `sources` arrays should reference source IDs from
+`data/sources.yaml`, not raw URLs, so templates can resolve titles, publishers,
+retrieval dates, and notes consistently.
 
 ## `data/comparisons.yaml`
 

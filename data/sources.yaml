@@ -63,3 +63,59 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Fanvue help article describing the creator payout workflow, minimum available balance requirements, five-upload requirement, co-creator verification, regional threshold variation, and estimated payout timing.
+- id: tiktok-content-posting-api-get-started
+  url: https://developers.tiktok.com/doc/content-posting-api-get-started
+  title: Content Posting API - Get Started
+  publisher: TikTok for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok developer documentation for direct video/photo posting, required posting scope, creator info query, post initialization, and the private-viewing restriction for unaudited clients.
+- id: tiktok-content-posting-api-product
+  url: https://developers.tiktok.com/products/content-posting-api/
+  title: Content Posting API
+  publisher: TikTok for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok developer product page describing Content Posting APIs, including direct posting and upload/draft-style publishing modes for applications.
+- id: tiktok-aigc-support
+  url: https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content
+  title: About AI-generated content
+  publisher: TikTok Support
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official TikTok support article defining AI-generated content, creator and auto labels, required labeling for realistic AI-generated images/audio/video, C2PA Content Credentials, and prohibited misleading or harmful AIGC categories.
+- id: youtube-help-altered-synthetic-content
+  url: https://support.google.com/youtube/answer/14328491?hl=en
+  title: Disclosing use of altered or synthetic content
+  publisher: YouTube Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official YouTube disclosure policy for realistic meaningfully altered or synthetically generated content, including synthetic depictions of people, places, events, or speech.
+- id: youtube-data-api-videos-insert
+  url: https://developers.google.com/youtube/v3/docs/videos/insert
+  title: Videos - insert
+  publisher: Google for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official YouTube Data API upload endpoint documentation covering media upload, OAuth scopes, 100-unit quota cost, writable metadata, and status.containsSyntheticMedia.
+- id: youtube-api-quota-compliance-audits
+  url: https://developers.google.com/youtube/v3/guides/quota_and_compliance_audits
+  title: Quota and Compliance Audits
+  publisher: Google for Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official YouTube Data API quota and audit guide documenting the default daily quota allocation, quota usage checks, compliance audits, quota extension requests, periodic audits, and change-of-control forms.
+- id: youtube-shorts-monetization-policies
+  url: https://support.google.com/youtube/answer/12504220?hl=en
+  title: YouTube Shorts monetization policies
+  publisher: YouTube Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official YouTube Help policy for Shorts ad revenue sharing, Shorts Monetization Module acceptance, eligible engaged views, Creator Pool allocation, and related monetization policy dependencies.
+- id: youtube-channel-monetization-policies
+  url: https://support.google.com/youtube/answer/1311392?hl=en
+  title: YouTube channel monetization policies
+  publisher: YouTube Help
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official YouTube monetization policy source for original/authentic content requirements, inauthentic mass-produced or repetitive content risk, reused-content rules, payment holds, and channel-level monetization enforcement.
