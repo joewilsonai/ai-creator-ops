@@ -7,6 +7,51 @@ function sourceTypeLabel(sourceType: string) {
   return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
 }
 
+function relatedGlossaryLinks(category: string) {
+  const linksByCategory: Record<string, { label: string; href: string }[]> = {
+    video_generation: [
+      { label: 'Image-to-video', href: '/glossary/image-to-video' },
+      { label: 'AI disclosure', href: '/glossary/ai-disclosure' },
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' }
+    ],
+    image_generation: [
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'LoRA', href: '/glossary/lora' },
+      { label: 'Provenance', href: '/glossary/provenance' }
+    ],
+    identity_workflow: [
+      { label: 'Face swap', href: '/glossary/face-swap' },
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'Platform risk', href: '/glossary/platform-risk' }
+    ],
+    social_scheduler: [
+      { label: 'Creator automation', href: '/glossary/creator-automation' },
+      { label: 'Creator funnel', href: '/glossary/creator-funnel' },
+      { label: 'Platform risk', href: '/glossary/platform-risk' }
+    ],
+    dm_automation: [
+      { label: 'DM automation', href: '/glossary/dm-automation' },
+      { label: 'Creator automation', href: '/glossary/creator-automation' },
+      { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' }
+    ],
+    link_in_bio: [
+      { label: 'Creator funnel', href: '/glossary/creator-funnel' },
+      { label: 'Locked content', href: '/glossary/locked-content' },
+      { label: 'Fan platform', href: '/glossary/fan-platform' }
+    ],
+    fan_platform: [
+      { label: 'Fan platform', href: '/glossary/fan-platform' },
+      { label: 'Locked content', href: '/glossary/locked-content' },
+      { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' }
+    ]
+  };
+  return linksByCategory[category] ?? [
+    { label: 'AI creator', href: '/glossary/ai-creator' },
+    { label: 'Creator automation', href: '/glossary/creator-automation' },
+    { label: 'Platform risk', href: '/glossary/platform-risk' }
+  ];
+}
+
 export function generateStaticParams() { return getAllTools().map((tool) => ({ slug: tool.id })); }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -31,6 +76,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
   const tool = getTool(slug);
   if (!tool) notFound();
   const sources = tool.sources.map((sourceId) => getSource(sourceId)).filter((source) => source !== undefined);
+  const glossaryLinks = relatedGlossaryLinks(tool.category);
   return (
     <main className="wrap py-16">
       <Badge>{tool.category.replaceAll('_', ' ')}</Badge>
@@ -47,9 +93,9 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
       </section>
 
       <section className="mt-8 grid gap-4 md:grid-cols-3">
-        <Card><h2 className="font-semibold">Pricing model</h2><p className="mt-2 text-[var(--muted)]">{tool.pricing_model.replaceAll('_', ' ')}</p></Card>
-        <Card><h2 className="font-semibold">API availability</h2><p className="mt-2 text-[var(--muted)]">{String(tool.api_available)}</p></Card>
-        <Card><h2 className="font-semibold">Policy risk</h2><p className="mt-2 text-[var(--muted)]">{tool.policy_risk}</p></Card>
+        <Card><Badge tone="green">KEY FACT</Badge><h2 className="mt-3 font-semibold">Pricing model</h2><p className="mt-2 text-[var(--muted)]">{tool.pricing_model.replaceAll('_', ' ')}</p></Card>
+        <Card><Badge tone="green">KEY FACT</Badge><h2 className="mt-3 font-semibold">API availability</h2><p className="mt-2 text-[var(--muted)]">{String(tool.api_available)}</p></Card>
+        <Card><Badge tone="green">KEY FACT</Badge><h2 className="mt-3 font-semibold">Policy risk</h2><p className="mt-2 text-[var(--muted)]">{tool.policy_risk}</p></Card>
       </section>
       <section className="mt-8 grid gap-4 md:grid-cols-[1fr_.6fr]">
         <Card><h2 className="text-2xl font-semibold tracking-[-.04em]">Best for</h2><ul className="mt-4 space-y-2 text-[var(--muted)]">{tool.best_for.map((item) => <li key={item}>• {item}</li>)}</ul></Card>
@@ -64,6 +110,7 @@ export default async function ToolPage({ params }: { params: Promise<{ slug: str
             <li><a className="text-[var(--cyan)]" href="/platforms">AI Creator Platform Index</a></li>
             <li><a className="text-[var(--cyan)]" href="/guides/what-is-an-ai-creator">What is an AI creator?</a></li>
             <li><a className="text-[var(--cyan)]" href="/methodology">Scoring methodology</a></li>
+            {glossaryLinks.map((link) => <li key={link.href}><a className="text-[var(--cyan)]" href={link.href}>{link.label}</a></li>)}
           </ul>
         </Card>
         <Card>
