@@ -20,8 +20,13 @@
   policy_risk: medium
   notes:
     - Discovery engine for motion-first synthetic creator content; TikTok Shop/affiliate eligibility needs separate review.
-  sources: []
-  last_checked: null
+    - Official Content Posting API supports direct video/photo posting and draft upload workflows, but unaudited clients are restricted to private viewing mode until app audit approval.
+    - Realistic AI-generated or significantly AI-edited images, audio, or video require AI-generated content labeling under TikTok's AIGC guidance.
+  sources:
+    - https://developers.tiktok.com/doc/content-posting-api-get-started
+    - https://developers.tiktok.com/products/content-posting-api/
+    - https://support.tiktok.com/en/using-tiktok/creating-videos/ai-generated-content
+  last_checked: '2026-05-17'
 - id: fanvue
   name: Fanvue
   type: fan_platform
