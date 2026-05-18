@@ -28,3 +28,38 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Meta newsroom source explaining AI Info label approach, user self-disclosure, industry-shared technical signals, and shift from removal-only approach to labels/context.
+- id: fanvue-ai-content-allowed
+  url: https://help.fanvue.com/en/articles/9538738-is-ai-content-allowed-on-fanvue
+  title: Is AI content allowed on Fanvue?
+  publisher: Fanvue Help Centre
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fanvue help article stating that Fanvue welcomes AI creators, allows fully AI-generated content, requires clear disclosure, and sets rules for deepfakes, face-swaps, age appearance, copyright, and moderation.
+- id: fanvue-ai-generated-content
+  url: https://help.fanvue.com/en/articles/8442803-ai-generated-content
+  title: AI Generated Content
+  publisher: Fanvue Help Centre
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fanvue help article summarizing AI-generated media rules, including no harmful or misleading content, moderation under Fanvue's Reasonable Person's Test, age-appearance restrictions, copyright compliance, and enforcement consequences.
+- id: fanvue-ai-generated-model-definition
+  url: https://help.fanvue.com/en/articles/9538752-what-is-an-ai-generated-model
+  title: What is an AI-Generated model?
+  publisher: Fanvue Help Centre
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fanvue help article defining AI-generated models as virtual characters or avatars and distinguishing them from deepfakes or face-swaps involving a real person's body, which require verification.
+- id: fanvue-creator-earnings-payouts
+  url: https://legal.fanvue.com/creator-earnings-payouts
+  title: Creator Earnings & Payouts
+  publisher: Fanvue Policies
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fanvue policy covering creator earnings, the standard 80% creator earning rate/20% platform fee, settlement periods, payout requests, refunds, chargebacks, and related payout conditions.
+- id: fanvue-receive-payout-help
+  url: https://help.fanvue.com/en/articles/9515801-how-to-receive-a-payout-on-fanvue
+  title: How to receive a payout on Fanvue
+  publisher: Fanvue Help Centre
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fanvue help article describing the creator payout workflow, minimum available balance requirements, five-upload requirement, co-creator verification, regional threshold variation, and estimated payout timing.
