@@ -3,11 +3,11 @@
 ## Launch MVP: first 46 pages
 
 ### Pillar guides
-1. What Is an AI Creator?
-2. How to Build an AI Creator Brand
+1. What Is an AI Creator? Meaning, AI Influencer Overlap, and Business Model
+2. How to Build an AI Influencer Brand
 3. AI Creator Business Models
 4. Best AI Creator Tools
-5. How to Monetize an AI Creator
+5. How to Monetize an AI Influencer or AI Girlfriend Brand
 6. AI Creator Automation Stack
 7. AI Creator Identity Consistency Guide
 8. How to Create a Persistent Character Universe

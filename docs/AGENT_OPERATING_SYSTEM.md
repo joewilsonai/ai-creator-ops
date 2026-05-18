@@ -42,6 +42,7 @@ Cadence: daily.
 Purpose:
 - Create or improve one high-value page at a time.
 - Prioritize flagship assets, canonical guides, tool pages, platform pages, and comparison pages.
+- Capture real market/search language — AI influencer, AI girlfriend, virtual influencer, synthetic influencer, AI model, and virtual creator — while mapping it into the AI Creator Ops operator framework.
 - Avoid bulk thin content.
 
 Outputs:

@@ -12,11 +12,30 @@ If someone is building an AI creator, synthetic influencer, virtual model, fan-p
 
 Primary:
 - AI creator operators
+- AI influencer builders
+- AI girlfriend / AI companion brand operators
 - synthetic influencer builders
+- virtual influencer studios
 - creator agencies and studios
 - fan-platform entrepreneurs
 - indie hackers building creator tools
 - automation/agent operators
+
+## Search language / entity map
+
+`AI Creator Ops` is the brand and operator category, but the market does not search in clean internal language. The site should deliberately capture and normalize related search terms including:
+
+- AI influencer
+- AI influencers
+- AI girlfriend
+- AI girlfriend business
+- virtual influencer
+- synthetic influencer
+- virtual creator
+- AI model / AI models, when used for creator-brand businesses
+- AI companion creator
+
+Editorial stance: use the public terms naturally, then map them into the more serious operating framework: identity consistency, platform strategy, monetization, policy risk, automation, analytics, and creator business systems.
 
 Secondary:
 - journalists
