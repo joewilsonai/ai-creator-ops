@@ -4,7 +4,7 @@ AI Creator Ops should run like a small editorial intelligence desk, not a single
 
 Canonical domain: https://aicreatorops.com
 
-Core rule: agents operate in autonomy-first mode. They should research, decide, edit, validate, and commit improvements without waiting for human approval. If a standard deployment pipeline is configured, they may let validated commits flow through that pipeline. They must not buy tools/domains, change billing, change DNS, add secrets, or send external outreach.
+Core rule: agents operate in autonomy-first mode. They should research, decide, edit, validate, commit, and push improvements without waiting for human approval. Validated commits to `main` may flow through the standard GitHub/hosting deployment pipeline. They must not buy tools/domains, change billing, change DNS, add secrets, or send external outreach.
 
 ## 24/7 team shape
 
@@ -80,7 +80,7 @@ Agents must:
 - Prefer primary sources for factual claims.
 - Mark uncertain claims as pending source review.
 - Run `pnpm validate:content`, `pnpm test`, `pnpm typecheck`, and `pnpm build` before committing code/content changes when practical.
-- Make small commits with clear messages.
+- Make small commits with clear messages and push validated commits to `origin/main` when the remote is configured.
 - If validation fails, either fix the failure or commit only a clear research/audit note; do not leave broken public routes.
 - If the working tree is dirty with unrelated changes, inspect carefully and avoid overwriting user work; create additive files or stop with a note if conflict risk is high.
 - Never add credentials or secrets to the repo.
