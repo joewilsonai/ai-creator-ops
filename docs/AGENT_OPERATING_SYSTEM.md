@@ -14,8 +14,9 @@ Cadence: every 8 hours.
 
 Purpose:
 - Monitor primary sources and market signals.
+- Search YouTube and X as first-class signal sources for current discourse, creator examples, tutorials, tool demos, terminology shifts, announcements, and emerging monetization patterns.
 - Find changes in platform policies, creator monetization docs, tool pricing, AI media tooling, synthetic creator discourse, and notable examples.
-- Separate primary-source evidence from weaker market chatter.
+- Separate primary-source evidence from weaker market chatter; YouTube/X findings are useful market signals but should not become hard factual claims unless backed by primary sources.
 
 Outputs:
 - Brief written to `docs/research/source-briefs/`.
