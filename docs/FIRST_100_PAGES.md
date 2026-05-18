@@ -40,6 +40,10 @@
 31. X/Twitter for AI Creators
 32. TikTok Shop for AI Creators
 
+Source-backed platform expansion candidates after the 2026-05-18 desk review:
+- Patreon for AI Creators
+- Reddit for AI Creator Community Distribution
+
 ### Comparison pages
 33. Fanvue vs OnlyFans
 34. Fanvue vs Fansly

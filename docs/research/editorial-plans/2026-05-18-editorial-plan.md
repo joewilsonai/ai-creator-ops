@@ -1,252 +1,134 @@
-# Weekly editorial plan: 2026-05-18
+# Weekly editorial plan — 2026-05-18
 
-Role: autonomous weekly Editor-in-Chief  
+Desk: Weekly Editor-in-Chief  
 Canonical domain: https://aicreatorops.com  
-Positioning: Build the creator business, not just the character.
+Status: active plan after source/data/route review
 
-## Executive judgment
+## Executive editorial call
 
-AI Creator Ops is staying on strategy: the strongest current opportunity is not generic AI news or broad tool blogging. The market is visibly converging around practical, monetizable synthetic persona workflows — especially `AI influencer`, `AI model`, `AI girlfriend`, `virtual influencer`, and Fanvue/Instagram-style funnels — while the site's editorial advantage is source-backed operations: disclosure, identity consistency, platform risk, monetization mechanics, automation limits, and methodology.
+AI Creator Ops should keep moving toward a source-backed operator intelligence product, not a generic AI side-hustle site. The strongest current market signal is a noisy `AI influencer` / `AI model` / `AI girlfriend` monetization wave around Fanvue, OnlyFans-style workflows, Higgsfield-style visual generation, and 24/7 automation claims. The opportunity is to capture that language while refusing the spam layer: no fake income claims, no “easy passive income” framing, and no platform-policy certainty without primary sources.
 
-This week should move from seed pages toward a citable operating desk:
+The next authority push should be the **fan-platform and disclosure cluster**: Fanvue, OnlyFans, Patreon, TikTok Shop, Reddit/community distribution, AI disclosure, and a real Fanvue vs OnlyFans comparison tied to methodology. This cluster matches search demand, existing source work, and the flagship Platform Index.
 
-1. Finish primary-source review for the remaining high-risk fan platform: OnlyFans.
-2. Turn the already-reviewed Fanvue, Instagram, TikTok, and YouTube Shorts findings into better public page sections.
-3. Promote the Platform Index from a draft shell into a dataset-backed report with visible source status and scoring readiness.
-4. Build the first canonical guides around search language people actually use: `AI influencer`, `AI girlfriend business`, `virtual influencer`, `AI model`, and `AI creator`.
-5. Keep comparison pages gated until both sides have comparable source coverage.
+## What changed in the market this week
 
-## What changed in the market
+### High-confidence source-backed changes
 
-### High-confidence changes from internal source briefs
+- The source desk added primary-source review for Patreon and Reddit as relevant surfaces for AI creator operations.
+- Patreon now belongs in the platform set as a membership/digital-product monetization rail, but adult/18+ AI workflows remain a caution area because AI-policy and Adult/18+ feature-access details need manual recheck beyond crawler snippets.
+- Reddit now belongs in the platform set as a community-distribution, research, and app/developer surface. Its policy posture makes transparent AI labeling, anti-impersonation, community-specific rules, and approved API/data use core constraints.
+- TikTok Shop should be treated as commerce infrastructure, not simply “TikTok posting.” Its AI-generated content, product-claim, creator-health, identity, and affiliate rules create a distinct risk layer for synthetic creators.
+- OnlyFans remains high-risk for pure synthetic AI model / AI girlfriend operations unless the setup is based on a verified creator, conspicuous AI labeling, and rights documentation.
 
-- Fanvue is currently the clearest source-backed fan-platform fit for AI creator monetization. Its own Help Centre says it welcomes AI creators and allows fully AI-generated content, but requires clear disclosure and adds constraints around deepfakes/face-swaps, real-person bodies, age appearance, copyright, moderation, creator earnings, payout readiness, and verification.
-- Instagram remains a discovery/funnel surface rather than a simple automation target. Meta's Content Publishing API supports professional-account publishing workflows, but with permissions, public media hosting, endpoint/rate-limit constraints, and caveats such as branded-content tag limitations.
-- TikTok and YouTube Shorts both matter for discovery, but the useful editorial angle is not “post AI videos and get paid.” It is disclosure, upload/API constraints, originality/repetitiveness risk, and funnel design.
-- Public market language is messier than the brand category. `AI model`, `AI girlfriend`, `AI influencer`, `AI OFM`, and `Fanvue` are recurring demand signals, especially in social/video tutorials.
+### Market-signal changes, not hard claims
 
-### Market-signal findings from current search
+- YouTube search is saturated with `AI influencer`, `AI model`, `Fanvue`, `OnlyFans AI`, `AI girlfriend business`, and high-income tutorial framing. These results are useful for search language and workflow context, not evidence of earnings or policy permission.
+- X discussion since 2026-05-11 is especially centered on an `AI OFM` / AI OnlyFans Model hustle: Higgsfield-style character generation, Fanvue monetization, TikTok promotion, ElevenLabs/WaveSpeed automation, and DM-gated setup instructions.
+- Disclosure is largely absent from the most promotional market chatter. That gap is an editorial opening: AI Creator Ops can rank by being the source that explains the business workflow *and* the disclosure/platform-risk layer.
 
-Use as demand/terminology signal only, not as hard factual claims:
+## What changed in the project/site
 
-- Web and YouTube search continues surfacing 2026 tutorials around creating AI influencers/AI models, often using Higgsfield, then posting to Instagram/TikTok and funneling to Fanvue.
-- Recent X chatter repeats a simple playbook: create a consistent AI girl/model, post short-form social content, funnel to Fanvue, and sell subscriptions or digital products. The same threads often contain promotional or unverifiable earnings claims.
-- OnlyFans appears in search language, but current source coverage in the repo is weak. Secondary pages claim new AI-content rules, but AI Creator Ops should not publish those claims until official OnlyFans policy/help sources are captured cleanly.
-- Higgsfield is increasingly visible in YouTube/X market chatter and deserves a primary-source tool review before being added to `data/tools.yaml` or public recommendations.
+Recent git history shows steady progress toward the intended authority model:
 
-## Site and data status reviewed
+- `dc8812b` added Patreon and Reddit source scout coverage.
+- `00e8cbf` added traffic monitoring instrumentation.
+- `eadceea` completed queued comparisons with video links.
+- `f8f9557` audited source links and route surfaces.
+- `af6b280` and `94d6ea3` improved internal glossary/source link coverage.
+- `4db09e6` and `43936fc` expanded guide and glossary coverage.
+- `1d4b534` completed source coverage for creator tool records.
 
-### Recent git history
+Current route structure has live/generated surfaces for:
 
-Recent commits show the project is moving in the right direction:
+- `/guides`, `/guides/[slug]`, and `/guides/what-is-an-ai-creator`
+- `/tools` and `/tools/[slug]`
+- `/platforms` and `/platforms/[slug]`
+- `/comparisons` and `/comparisons/[slug]`
+- `/reports` and `/reports/ai-creator-platform-index-2026`
+- `/glossary` and `/glossary/[slug]`
+- `/methodology`, `/newsletter`, `/llms.txt`, `/sitemap.xml`, and `/robots.txt`
 
-- `Improve SEO entity glossary coverage`
-- `Add what is an AI creator guide`
-- `Normalize source references in structured data`
-- `Add Fanvue AI creator source brief`
-- `Add Instagram AI labeling source brief`
-- `docs: require youtube and x source scouting`
-- `Add YouTube Shorts source brief`
-- `docs: map ai creator ops to public search terms`
+Because platform pages are generated from `data/platforms.yaml`, the new `patreon` and `reddit` platform records should be route-addressable through `/platforms/patreon` and `/platforms/reddit` once built.
 
-### Data records reviewed
+## Source-backed pages/data records updated
 
-Current structured records:
-
-- `data/platforms.yaml`
-  - Source-reviewed: Instagram, TikTok, Fanvue, YouTube Shorts.
-  - Pending/weak: OnlyFans.
-  - All scoring fields remain null, which is appropriate until methodology and criteria are operationalized.
-- `data/tools.yaml`
-  - Fanvue has source references because it is also tracked as a monetization tool/platform entity.
-  - Most tool records remain unsourced seed entries: Runway, Kling, GPT Image, FaceFusion, Buffer, Metricool, Zernio, Midjourney, OnlyFans.
-- `data/sources.yaml`
-  - Contains primary source records for Meta/Instagram, Fanvue, TikTok, and YouTube.
-- `data/comparisons.yaml`
-  - Still empty. This is correct until comparison methodology and source parity are strong enough.
-
-### Live route structure reviewed
-
-Public routes currently include:
-
-- `/`
-- `/tools`
-- `/tools/[slug]`
-- `/platforms`
-- `/platforms/[slug]`
-- `/guides`
-- `/guides/what-is-an-ai-creator`
-- `/glossary`
-- `/glossary/[slug]`
-- `/reports`
-- `/reports/ai-creator-platform-index-2026`
-- `/methodology`
-- `/comparisons`
-- `/llms.txt`
-- `/sitemap.xml`
-- `/robots.txt`
-
-The route base is strong for an authority site, but major pages need deeper trust layers, answer blocks, and source-specific sections.
-
-## Source-backed pages/data records updated recently
-
-Already updated by recent agent work:
+The strongest source-backed records are now:
 
 - `data/platforms.yaml`
-  - Instagram: source-backed publishing automation, AI disclosure, AI Info labels, branded-content caveat.
-  - TikTok: source-backed Content Posting API and AIGC labeling notes.
-  - Fanvue: source-backed AI content allowance, disclosure, deepfake/face-swap verification, age/copyright/moderation constraints, standard 80/20 creator earnings, payout workflow caveats.
-  - YouTube Shorts: source-backed synthetic media disclosure, upload API, quota/compliance audit, Shorts monetization, repetitive/mass-produced content risk.
+  - Instagram
+  - TikTok
+  - TikTok Shop
+  - Fanvue
+  - OnlyFans
+  - YouTube Shorts
+  - X / Twitter
+  - Patreon
+  - Reddit
 - `data/tools.yaml`
-  - Fanvue source metadata added.
+  - Fanvue, OnlyFans, Runway, Kling, GPT Image, Midjourney, FaceFusion, Buffer, Metricool, Zernio, ManyChat, Linktree, Beacons
 - `data/sources.yaml`
-  - Primary source records added for Meta, Fanvue, TikTok, and YouTube.
-- `/guides/what-is-an-ai-creator`
-  - Added as the first canonical guide and correctly maps popular terms into the AI Creator Ops framework.
+  - Strong primary-source coverage exists for platform/tool docs, pricing, APIs, disclosure rules, payout docs, and policy surfaces.
 
-No new public factual claims were added in this weekly plan. This file is an internal editorial planning document.
+## Stale or weakly sourced claims to fix
 
-## Stale or weakly sourced claims
-
-Priority weak spots:
-
-1. **OnlyFans**
-   - `data/platforms.yaml` and `data/tools.yaml` include OnlyFans as high-risk/pending source review.
-   - No public comparison with Fanvue should be launched until official OnlyFans AI-content, payout, identity/provenance, and automation/API policy sources are captured.
-
-2. **Tool records**
-   - Runway, Kling, GPT Image, FaceFusion, Buffer, Metricool, Zernio, and Midjourney are seed records without source references.
-   - Tool pages are safe because they label source review as pending, but they are not yet authority pages.
-
-3. **Methodology page**
-   - `/methodology` is currently too thin for a flagship trust layer. It names categories but does not yet define scoring scales, evidence hierarchy, update cadence, correction policy, or ranking thresholds.
-
-4. **Platform Index status copy**
-   - `/reports/ai-creator-platform-index-2026` still says source status is broadly pending even though four platform records now have primary-source review. The page should be updated to report counts/status dynamically.
-
-5. **Comparison cluster**
-   - `/comparisons` exists, but `data/comparisons.yaml` is empty. This is safer than publishing weak comparisons, but the next comparison should only ship after source parity.
-
-6. **Higgsfield chatter**
-   - Higgsfield is a real market signal in X/YouTube search, but not yet primary-source reviewed. Do not add it as a recommended tool until official product/pricing/API/rights docs are captured.
+1. **Patreon Adult/18+ AI details** — current source brief says automated extraction failed for the most specific Adult/18+ AI policy and feature-access articles. Keep public language cautious until manually checked.
+2. **OnlyFans help article details** — some Help pages are difficult to extract cleanly. The public stance is directionally grounded, but details should be rechecked before expanding beyond the current cautious summary.
+3. **Higgsfield / Polymint / LureStudio chatter** — these appear in X/YouTube market signals but do not yet have official source records. Do not publish capability or monetization claims until official docs/pages are reviewed.
+4. **Earnings claims** — YouTube/X repeatedly claim $1k/week, $10k/month, $43k/month, etc. These should remain excluded or explicitly labeled as unverified hype examples in an anti-scam/disclosure guide.
+5. **Comparison data model** — `data/comparisons.yaml` is effectively empty while comparison routes exist through editorial code. A structured comparison source-of-truth is still missing.
+6. **Numeric scoring** — Platform Index has criteria and source-reviewed records, but no numeric scoring. That is correct for now; avoid ranking until the methodology has scoring definitions and review thresholds.
 
 ## Are agents using real search language without becoming spammy?
 
-Current verdict: mostly yes.
+Mostly yes. The core docs and templates include `AI influencer`, `AI girlfriend`, `virtual influencer`, `synthetic influencer`, `AI model`, `virtual creator`, and `AI companion` while mapping them into policy, monetization, identity consistency, automation, and risk. This is the right pattern.
 
-What is working:
+The next risk is tone drift: comparison and guide pages must not adopt the YouTube/X promise language around easy money. Use those sources as market-signal context only. Public copy should say things like “Fanvue is currently the clearest AI-native fan-platform candidate,” not “make $10k/month with AI models.”
 
-- The project brief and public guide now explicitly include `AI influencer`, `AI girlfriend`, `virtual influencer`, `synthetic influencer`, `AI model`, and `AI companion` without abandoning the operator-first AI Creator Ops category.
-- Source briefs correctly downgrade YouTube/X findings to market-signal evidence and avoid repeating earnings claims as fact.
-- The `What is an AI creator?` guide uses search terms naturally and maps them to operating controls.
-
-Risks to watch:
-
-- `AI girlfriend` and `AI model` pages can easily become lurid or affiliate-style if not framed around consent, disclosure, age/likeness risk, platform policy, chat claims, and monetization mechanics.
-- `best` and `vs` pages must not ship without criteria and source parity.
-- Agents should avoid copying the hustle-culture promise of X/YouTube tutorials. The editorial stance should be: the playbook exists; the risk controls and economics are usually underspecified.
-
-## Flagship asset progress
+## Flagship asset status
 
 ### AI Creator Platform Index 2026
 
-Status: promising draft, not yet a finished flagship.
-
-Progress:
-
-- Route exists.
-- Criteria and weights exist.
-- Seed platform dataset exists.
-- Four platform records have source-backed notes.
-
-Needed next:
-
-- Dynamic source-status counts.
-- Clear definition of “source reviewed” vs “scored.”
-- Criteria scales, not just weights.
-- No numeric rankings until all major records have comparable source review.
+Status: progressing. The report has a visible methodology scaffold, seed platform table, source status, and cautious draft label. Next step is to add transparent scoring definitions and begin assigning provisional scores only for fully reviewed records.
 
 ### Methodology
 
-Status: route exists but too thin.
-
-Needed next:
-
-- Expand into a real methodology page with source hierarchy, score definitions, 0–5 scale, evidence requirements, update cadence, and correction policy.
+Status: underbuilt. `/methodology` exists but is very thin compared with the seriousness of the Platform Index. It should become the next flagship support page with weights, scoring bands, disqualification rules, source hierarchy, correction policy, and review cadence.
 
 ### Canonical guides
 
-Status: first canonical guide shipped.
-
-Needed next:
-
-- Build `How to Build an AI Influencer Brand` and `How to Monetize an AI Influencer or AI Girlfriend Brand` with strict source-backed claims and no earnings hype.
+Status: partial. `What Is an AI Creator?` exists, and guide route infrastructure exists. Next canonical guide should be `How to Monetize an AI Influencer or AI Girlfriend Brand` with a policy-first, fan-platform/community/commerce funnel framing.
 
 ### Platform pages
 
-Status: generated pages exist and render source-backed notes where data is present.
-
-Needed next:
-
-- Add custom “Key facts for AI creators” sections to Fanvue, Instagram, TikTok, and YouTube Shorts pages from structured data.
-- Source-review OnlyFans.
+Status: improving. Platform data is stronger than page prose. Fanvue, OnlyFans, TikTok Shop, Patreon, Reddit, X, Instagram, TikTok, and YouTube Shorts are now good enough for source-backed platform pages, but Patreon needs cautious language until manual recheck.
 
 ### Comparison pages
 
-Status: intentionally gated.
+Status: visually/publicly improved but data-model weak. The editorial comparison pages need to be reconciled with `data/comparisons.yaml`, beginning with `fanvue-vs-onlyfans`.
 
-Needed next:
+## Content cluster to build next
 
-- Prepare Fanvue vs OnlyFans only after OnlyFans source review is complete.
+Build the **fan-platform monetization and disclosure cluster** next:
 
-## Recommended next content cluster
-
-Build the **AI influencer monetization and platform-risk cluster** next.
-
-Why this cluster:
-
-- It matches current search demand (`AI influencer`, `AI model`, `AI girlfriend business`, `Fanvue`, `OnlyFans`, `Instagram`).
-- It uses the strongest existing source base: Fanvue, Instagram, TikTok, YouTube Shorts.
-- It differentiates AI Creator Ops from generic tutorial/affiliate pages by focusing on operations, disclosure, policy, payout mechanics, and risk-adjusted monetization.
-
-Cluster sequence:
-
-1. Source brief: OnlyFans AI content, identity/provenance, payout, and automation/API policy.
-2. Public page upgrade: `/platforms/fanvue` key facts and monetization caveats.
-3. Public page upgrade: `/platforms/instagram` key facts and disclosure/automation caveats.
-4. Guide: `/guides/how-to-monetize-an-ai-influencer-or-ai-girlfriend-brand`.
-5. Comparison: `/comparisons/fanvue-vs-onlyfans` only after source parity.
+1. `/comparisons/fanvue-vs-onlyfans` — best first high-intent comparison; must include methodology, use-case winners, policy clarity, AI-content posture, payout/revenue-share notes, verification/rights/disclosure risk, and alternatives.
+2. `/guides/how-to-monetize-an-ai-influencer-or-ai-girlfriend-brand` — canonical monetization guide that captures AI influencer/AI girlfriend demand without hype.
+3. `/guides/ai-creator-disclosure-guide` — practical disclosure rules across Fanvue, OnlyFans, TikTok, Instagram, YouTube, X, Reddit, and Patreon.
+4. `/platforms/patreon` and `/platforms/reddit` page QA — ensure generated pages read well and link into the cluster.
+5. Structured `data/comparisons.yaml` records for Fanvue vs OnlyFans, Fanvue vs Fansly, Instagram vs TikTok, and Buffer vs Metricool.
 
 ## Highest-leverage next 5 tasks
 
-1. **OnlyFans source review**
-   - Capture official AI-content, acceptable-use, creator verification, payout, and API/automation constraints.
-   - Update `data/sources.yaml`, `data/platforms.yaml`, and `data/tools.yaml`.
+1. **Expand `/methodology` into a full public scoring methodology.** Include platform/tool score weights, scoring bands, source hierarchy, “no score without source review,” correction policy, and last-reviewed metadata.
+2. **Create a structured `fanvue-vs-onlyfans` comparison record.** Use existing Fanvue/OnlyFans sources; add criteria and use-case winners without unsupported “best” claims.
+3. **Build the monetization/disclosure guide pair.** One guide should translate AI influencer/AI girlfriend search demand into real monetization paths; the second should cover labeling, impersonation, rights, affiliate/ad disclosure, and platform-specific constraints.
+4. **Manually recheck Patreon and OnlyFans restricted/help-center source pages.** Keep current cautious language until extraction is verified; add a follow-up source brief if details change.
+5. **Source-discover Higgsfield before creating a tool page.** X/YouTube signal is strong enough to investigate, not strong enough to publish claims. Find official pricing, terms, API/commercial-rights docs, and safety/policy pages first.
 
-2. **Upgrade `/methodology`**
-   - Add platform and tool scoring scales, source hierarchy, update cadence, correction policy, and “when not to score” rules.
+## Immediate bounded improvement made in this run
 
-3. **Upgrade `/reports/ai-creator-platform-index-2026`**
-   - Show source-reviewed counts, pending records, and a non-ranked readiness table.
-   - Keep scores withheld until criteria are fully operational.
+- Wrote this dated editorial plan.
+- Updated the First 100 Pages roadmap to include Patreon and Reddit as platform expansion candidates now that source-backed records exist.
 
-4. **Add key-facts blocks to generated platform pages**
-   - Start with Fanvue and Instagram because they have the strongest source briefs.
-   - Use structured data first; avoid duplicating facts manually across pages unless necessary.
+## Validation plan for this run
 
-5. **Primary-source review Higgsfield before adding it to the tool index**
-   - It is now a recurring market signal for AI influencer/AI model workflows.
-   - Add only after official docs clarify product capabilities, pricing, commercial rights, and automation/API posture.
-
-## Editorial guardrails for the coming week
-
-- Do not publish earnings claims from YouTube/X.
-- Do not call Fanvue “risk-free”; call it comparatively explicit about AI content with disclosure, verification, payout, and moderation constraints.
-- Do not publish Fanvue vs OnlyFans until OnlyFans has comparable source coverage.
-- Use `AI influencer`, `AI girlfriend`, `AI model`, `virtual influencer`, and `synthetic influencer` in titles/answer blocks where search intent warrants it, but always map the terms into operations and risk controls.
-- Keep `AI Creator Ops` as the serious category and site entity.
-
-## Changes made in this run
-
-- Created this dated editorial plan at `docs/research/editorial-plans/2026-05-18-editorial-plan.md`.
-- No public route, schema, or structured data changes were made in this run.
+Only docs were changed. Public app/data files were not changed, so full Next.js build validation is not required for runtime safety. Run lightweight content validation and git checks before commit.
