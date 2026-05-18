@@ -1,7 +1,32 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Badge, Card } from '@/components/ui';
+import { getSource } from '@/lib/data';
 import { getGlossaryTerm, glossaryTerms } from '@/lib/glossary';
+
+const glossarySourceIds: Record<string, string[]> = {
+  'ai-creator': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
+  'ai-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
+  'ai-girlfriend-business': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy'],
+  'synthetic-influencer': ['meta-labeling-ai-content-impact', 'youtube-help-altered-synthetic-content'],
+  'virtual-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
+  'identity-consistency': ['openai-image-generation-guide', 'midjourney-terms', 'facefusion-docs'],
+  'fan-platform': ['fanvue-creator-earnings-payouts', 'onlyfans-creator-center', 'onlyfans-terms'],
+  'creator-funnel': ['linktree-pricing', 'beacons-pricing'],
+  'dm-automation': ['manychat-instagram-product', 'manychat-developer-docs', 'x-developer-guidelines'],
+  provenance: ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
+  'ai-disclosure': ['meta-community-standards-misinformation-ai-disclosure', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content', 'x-api-create-post'],
+  'locked-content': ['fanvue-ai-content-allowed', 'fanvue-creator-earnings-payouts', 'onlyfans-terms'],
+  'creator-automation': ['buffer-api-docs', 'metricool-api-overview', 'zernio-docs', 'x-developer-guidelines'],
+  'image-to-video': ['runway-api-docs', 'kling-terms'],
+  lora: ['lora-paper', 'openai-usage-policies'],
+  'face-swap': ['facefusion-github', 'fanvue-ai-content-allowed', 'onlyfans-acceptable-use-policy'],
+  'platform-risk': ['meta-community-standards-misinformation-ai-disclosure', 'tiktok-aigc-support', 'youtube-channel-monetization-policies', 'x-authenticity-policy']
+};
+
+function sourceTypeLabel(sourceType: string) {
+  return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
+}
 
 export function generateStaticParams() {
   return glossaryTerms.map((term) => ({ slug: term.slug }));
@@ -28,6 +53,9 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
   const { slug } = await params;
   const term = getGlossaryTerm(slug);
   if (!term) notFound();
+  const sources = (glossarySourceIds[term.slug] ?? [])
+    .map((sourceId) => getSource(sourceId))
+    .filter((source) => source !== undefined);
 
   return (
     <main className="wrap py-16">
@@ -35,7 +63,18 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
       <h1 className="mt-5 max-w-4xl text-5xl font-semibold leading-[.96] tracking-[-.06em] md:text-7xl">{term.term}</h1>
       <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)]">{term.definition}</p>
 
-      <section className="mt-10 grid gap-4 md:grid-cols-[1fr_.7fr]">
+      <section className="mt-10">
+        <Card>
+          <Badge tone="green">KEY FACTS</Badge>
+          <ul className="mt-4 grid gap-3 leading-7 text-[var(--muted)] md:grid-cols-3">
+            <li><strong className="text-[var(--ink)]">Entity:</strong> {term.term}</li>
+            <li><strong className="text-[var(--ink)]">Also searched as:</strong> {term.alsoKnownAs.slice(0, 3).join(', ')}</li>
+            <li><strong className="text-[var(--ink)]">Last updated:</strong> 2026-05-18</li>
+          </ul>
+        </Card>
+      </section>
+
+      <section className="mt-8 grid gap-4 md:grid-cols-[1fr_.7fr]">
         <Card>
           <Badge tone="green">DIRECT ANSWER</Badge>
           <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]">What {term.term.toLowerCase()} means in AI Creator Ops</h2>
@@ -72,6 +111,16 @@ export default async function GlossaryTermPage({ params }: { params: Promise<{ s
           <p className="mt-4 leading-7 text-[var(--muted)]">
             Last updated: 2026-05-18. This glossary page is an editorial entity definition. Platform, pricing, API, payout, and policy claims should be verified on the linked platform/tool pages and methodology-backed source records before being treated as current operational guidance.
           </p>
+          {sources.length > 0 ? (
+            <ul className="mt-4 space-y-3 text-[var(--muted)]">
+              {sources.map((source) => (
+                <li key={source.id}>
+                  <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                  <span className="text-xs uppercase tracking-[.18em] text-[var(--dim)]">{sourceTypeLabel(source.source_type)}</span> — {source.publisher}, retrieved {source.retrieved_at}.
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </Card>
       </section>
     </main>

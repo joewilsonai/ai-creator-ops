@@ -437,3 +437,10 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Beacons help-center pricing article summarizing plan tiers, transaction fees, email limits, memberships, courses, and creator-business tools.
+- id: lora-paper
+  url: https://arxiv.org/abs/2106.09685
+  title: 'LoRA: Low-Rank Adaptation of Large Language Models'
+  publisher: arXiv
+  retrieved_at: '2026-05-18'
+  source_type: secondary
+  notes: Original LoRA paper record used as a technical background source for the low-rank adaptation glossary definition; creator-media workflow claims still require tool-specific source review.
