@@ -49,6 +49,9 @@
   policy_risk: medium
   sources:
     - runway-api-docs
+    - runway-api-setup-configuration
+    - runway-api-content-moderation
+    - runway-api-product-branding
     - runway-pricing-plans
   last_checked: '2026-05-18'
 - id: kling
@@ -65,8 +68,10 @@
   creator_ops_score: null
   policy_risk: medium
   sources:
+    - kling-homepage-ai-tools-api
     - kling-pricing
     - kling-terms
+    - kuaishou-kling-multi-image-reference
   last_checked: '2026-05-18'
 - id: gpt-image
   name: GPT Image
@@ -102,6 +107,8 @@
   sources:
     - midjourney-plans
     - midjourney-terms
+    - midjourney-commercial-use
+    - midjourney-video-docs
   last_checked: '2026-05-18'
 - id: facefusion
   name: FaceFusion

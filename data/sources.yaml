@@ -276,6 +276,27 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Runway API docs describing generative video/image/audio models, image-to-video endpoints, SDK examples, and developer portal usage.
+- id: runway-api-setup-configuration
+  url: https://docs.dev.runwayml.com/guides/setup/
+  title: API Setup & Configuration
+  publisher: Runway API
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Runway developer setup guide covering organizations, API keys, credit-based billing setup, request authentication, and production secret-handling guidance.
+- id: runway-api-content-moderation
+  url: https://docs.dev.runwayml.com/api-details/moderation/
+  title: Content Moderation System
+  publisher: Runway API
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Runway API moderation guide stating API requests are moderated, moderated generations can cost credits, repeated moderated requests can lead to suspension, and contentModeration settings are available for some requests.
+- id: runway-api-product-branding
+  url: https://runwayml.com/api
+  title: AI Video Generation API for Developers
+  publisher: Runway
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Runway API product page describing Build and Enterprise API use cases, Gen-4 model embedding, credit management, and the requirement that end-user applications display Powered by Runway branding with a runwayml.com link.
 - id: runway-pricing-plans
   url: https://help.runwayml.com/hc/en-us/articles/1500006006521-Runway-Plans
   title: Runway Plans
@@ -297,6 +318,20 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Kling terms source for service, account, and output-use review.
+- id: kling-homepage-ai-tools-api
+  url: https://klingai.com/
+  title: 'Kling AI: Next-Generation AI Creative Studio'
+  publisher: Kling AI
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Kling homepage showing Creative Studio and API Platform navigation, Video Generation, Image Generation, Sound Generation, effects, mobile apps, developer pricing, documentation, quick start, and Kling 3.0 positioning around multimodal instruction parsing and consistency.
+- id: kuaishou-kling-multi-image-reference
+  url: https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-kling-ai-unveils-multi-image-reference-feature-further/
+  title: Kuaishou Kling AI Launches Multi-Image Reference for More Consistent AI Video Generation
+  publisher: Kuaishou Technology Investor Relations
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Kuaishou release announcing Kling AI multi-image reference availability through Kling AI 1.6, with creator-relevant claims about maintaining subject, object, and scene consistency across generated video.
 - id: openai-image-generation-guide
   url: https://platform.openai.com/docs/guides/image-generation
   title: Image generation guide
@@ -332,6 +367,20 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Midjourney terms covering asset ownership, public visibility defaults, account restrictions, and service limitations.
+- id: midjourney-commercial-use
+  url: https://docs.midjourney.com/hc/en-us/articles/27870375276557-Using-Images-Videos-Commercially
+  title: Using Images & Videos Commercially
+  publisher: Midjourney Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Midjourney commercial-use help page stating users own images and videos they create subject to exceptions and the Terms of Service.
+- id: midjourney-video-docs
+  url: https://docs.midjourney.com/hc/en-us/articles/37460773864589-Video
+  title: Midjourney Video generation documentation
+  publisher: Midjourney Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Midjourney video documentation covering 5-second image-to-video generation, plan and mode constraints, GPU-time implications, web and Discord workflows, and external-image responsibilities including rights and sexualized-deepfake restrictions.
 - id: facefusion-github
   url: https://github.com/facefusion/facefusion
   title: facefusion/facefusion repository
