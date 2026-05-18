@@ -38,5 +38,6 @@ AI creator brands are becoming businesses, but information is fragmented, hype-h
 ## Initial brand
 
 Name: AI Creator Ops
+Canonical domain: https://aicreatorops.com
 Tagline: Build the creator business, not just the character.
 Tone: sharp, practical, authoritative, operator-first, mildly opinionated.

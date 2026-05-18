@@ -2,6 +2,8 @@
 
 The operating manual and market intelligence hub for AI creator businesses.
 
+Canonical domain: https://aicreatorops.com
+
 AI Creator Ops is a continuously updated authority site for synthetic creators, AI influencers, fan-platform monetization, creator automation, and platform/tool intelligence.
 
 ## Working positioning
