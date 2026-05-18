@@ -12,10 +12,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'weekly' as const,
     priority: route === '' ? 1 : 0.7
   }));
+  const guideRoutes = guidePages.map((page) => ({ url: `${baseUrl}${page.canonicalPath}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.75 }));
+  const comparisonRoutes = comparisonPages.map((page) => ({ url: `${baseUrl}${page.canonicalPath}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.72 }));
   const toolRoutes = getAllTools().map((tool) => ({ url: `${baseUrl}/tools/${tool.id}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.6 }));
   const platformRoutes = getAllPlatforms().map((platform) => ({ url: `${baseUrl}/platforms/${platform.id}`, lastModified: new Date(), changeFrequency: 'weekly' as const, priority: 0.6 }));
   const glossaryRoutes = glossaryTerms.map((term) => ({ url: `${baseUrl}/glossary/${term.slug}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.55 }));
-  const guideRoutes = guidePages.map((page) => ({ url: `${baseUrl}${page.canonicalPath}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.65 }));
-  const comparisonRoutes = comparisonPages.map((page) => ({ url: `${baseUrl}${page.canonicalPath}`, lastModified: new Date(), changeFrequency: 'monthly' as const, priority: 0.65 }));
   return [...staticRoutes, ...guideRoutes, ...comparisonRoutes, ...toolRoutes, ...platformRoutes, ...glossaryRoutes];
 }
