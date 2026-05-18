@@ -1,1 +1,60 @@
-# Platform database starts here.
+- id: instagram
+  name: Instagram
+  type: social_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Public-safe editorial and funnel content surface; direct publishing automation depends on account type, Meta app scopes, and token handling.
+  sources: []
+  last_checked: null
+- id: tiktok
+  name: TikTok
+  type: social_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Discovery engine for motion-first synthetic creator content; TikTok Shop/affiliate eligibility needs separate review.
+  sources: []
+  last_checked: null
+- id: fanvue
+  name: Fanvue
+  type: fan_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Monetization platform to evaluate for AI creator friendliness, locked content, and policy clarity.
+  sources: []
+  last_checked: null
+- id: onlyfans
+  name: OnlyFans
+  type: fan_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: high
+  notes:
+    - Large fan platform; synthetic creator use requires careful policy, provenance, and identity review.
+  sources: []
+  last_checked: null
+- id: youtube-shorts
+  name: YouTube Shorts
+  type: social_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Short-form distribution surface for public-safe creator lore, educational explainers, and brand-building clips.
+  sources: []
+  last_checked: null

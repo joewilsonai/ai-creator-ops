@@ -1,1 +1,150 @@
-# Tool database starts here.
+- id: fanvue
+  name: Fanvue
+  category: fan_platform
+  url: https://www.fanvue.com/
+  summary: Creator monetization platform relevant to AI and synthetic creator businesses.
+  best_for:
+    - fan subscriptions
+    - locked content
+    - AI creator monetization
+  pricing_model: revenue_share
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null
+- id: onlyfans
+  name: OnlyFans
+  category: fan_platform
+  url: https://onlyfans.com/
+  summary: Large subscription fan platform that requires careful policy and identity/provenance review for synthetic creator strategies.
+  best_for:
+    - subscriptions
+    - creator payments
+    - fan relationships
+  pricing_model: revenue_share
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: high
+  sources: []
+  last_checked: null
+- id: runway
+  name: Runway
+  category: video_generation
+  url: https://runwayml.com/
+  summary: AI video generation and creative production platform for short-form creator assets and visual experiments.
+  best_for:
+    - AI video
+    - creative production
+    - short-form motion tests
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null
+- id: kling
+  name: Kling
+  category: video_generation
+  url: https://klingai.com/
+  summary: AI video generation platform to track for creator motion, image-to-video, and short-form production workflows.
+  best_for:
+    - AI video
+    - image-to-video
+    - social motion clips
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null
+- id: gpt-image
+  name: GPT Image
+  category: image_generation
+  url: https://openai.com/
+  summary: Image generation/editing family useful for editorial creator assets, reference-aware workflows, and web-safe visuals.
+  best_for:
+    - image generation
+    - reference editing
+    - editorial assets
+  pricing_model: usage_based
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null
+- id: facefusion
+  name: FaceFusion
+  category: identity_workflow
+  url: https://github.com/facefusion/facefusion
+  summary: Open-source face/identity post-processing workflow for continuity-sensitive creator media pipelines.
+  best_for:
+    - identity consistency
+    - post-production
+    - local workflows
+  pricing_model: open_source
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: high
+  sources: []
+  last_checked: null
+- id: buffer
+  name: Buffer
+  category: social_scheduler
+  url: https://buffer.com/
+  summary: Social scheduling platform candidate for assisted publishing workflows and queued creator content.
+  best_for:
+    - social scheduling
+    - queue management
+    - multi-platform publishing
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: low
+  sources: []
+  last_checked: null
+- id: metricool
+  name: Metricool
+  category: social_scheduler
+  url: https://metricool.com/
+  summary: Social media planning and analytics platform relevant to creator publishing and performance reporting.
+  best_for:
+    - social scheduling
+    - analytics
+    - reporting
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: low
+  sources: []
+  last_checked: null
+- id: zernio
+  name: Zernio
+  category: social_scheduler
+  url: https://zernio.com/
+  summary: Scheduler/API-style candidate to evaluate for creator publishing automation fallback workflows.
+  best_for:
+    - API-first scheduling
+    - creator publishing
+    - automation fallback
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null
+- id: midjourney
+  name: Midjourney
+  category: image_generation
+  url: https://www.midjourney.com/
+  summary: Image generation platform relevant for moodboards, style exploration, and non-identity-locked creator visuals.
+  best_for:
+    - image generation
+    - concept art
+    - style exploration
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources: []
+  last_checked: null

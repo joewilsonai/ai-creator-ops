@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #07080c;
+  --panel: #0f1016;
+  --surface: rgba(255,255,255,0.035);
+  --surface-2: rgba(255,255,255,0.055);
+  --border: rgba(255,255,255,0.08);
+  --border-soft: rgba(255,255,255,0.05);
+  --text: #f4f5f7;
+  --muted: #9aa3b2;
+  --dim: #626a78;
+  --violet: #8b5cf6;
+  --cyan: #22d3ee;
+  --green: #34d399;
+  --amber: #f59e0b;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(139,92,246,.22), transparent 34rem),
+    radial-gradient(circle at top right, rgba(34,211,238,.12), transparent 30rem),
+    var(--bg);
+  color: var(--text);
+  font-family: var(--font-inter), Inter, system-ui, -apple-system, sans-serif;
+  font-feature-settings: "cv01", "ss03";
+}
+a { color: inherit; text-decoration: none; }
+::selection { background: rgba(139,92,246,.45); }
+
+.wrap { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+.card-glow { box-shadow: 0 24px 90px rgba(0,0,0,.36); }
