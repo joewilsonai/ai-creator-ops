@@ -444,3 +444,25 @@
   retrieved_at: '2026-05-18'
   source_type: secondary
   notes: Original LoRA paper record used as a technical background source for the low-rank adaptation glossary definition; creator-media workflow claims still require tool-specific source review.
+
+- id: fansly-terms-of-service
+  url: https://fansly.com/tos
+  title: Fansly Terms of Service
+  publisher: Fansly
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fansly terms covering creator revenue share, content restrictions, AI-generated photorealistic/lifelike content constraints, account, and platform obligations.
+- id: fansly-requesting-payout
+  url: https://help.fansly.com/en/articles/10544475-requesting-a-payout
+  title: Requesting a Payout
+  publisher: Fansly Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fansly help-center source for payout request workflow, minimum withdrawal notes, and payout processing expectations.
+- id: fansly-subscriptions-creator-hub
+  url: https://creatorhub.fansly.com/set-up-your-subscriptions/
+  title: Set Up Your Subscriptions
+  publisher: Fansly Creator Hub
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Fansly Creator Hub guide for setting subscription tiers, benefits, discounts, and recurring revenue structures.

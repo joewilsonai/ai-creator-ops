@@ -71,6 +71,23 @@ export function EditorialArticle({ page }: { page: EditorialPage }) {
           ))}
         </section>
 
+        {page.videoLinks?.length ? (
+          <section className="mt-12">
+            <h2 className="text-3xl font-semibold tracking-[-.05em]">Useful current YouTube videos</h2>
+            <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--muted)]">These videos are current visual market signals and workflow demos. They are included for interface, output, and creator-process context; official documentation below remains the source of truth for policy, pricing, API, and commercial claims.</p>
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              {page.videoLinks.map((video) => (
+                <Card key={video.url}>
+                  <Badge tone="violet">YOUTUBE</Badge>
+                  <h3 className="mt-4 text-xl font-semibold tracking-[-.04em]"><a className="text-[var(--cyan)]" href={video.url} rel="noopener noreferrer">{video.title}</a></h3>
+                  <p className="mt-2 text-xs uppercase tracking-[.18em] text-[var(--dim)]">{video.channel} · {video.published}</p>
+                  <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{video.note}</p>
+                </Card>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <section className="mt-12 grid gap-4 md:grid-cols-2">
           <Card>
             <h2 className="text-2xl font-semibold tracking-[-.04em]">Related AI Creator Ops pages</h2>

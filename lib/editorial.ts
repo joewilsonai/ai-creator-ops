@@ -12,6 +12,7 @@ export type EditorialPage = {
   framework?: { label: string; detail: string }[];
   internalLinks: { href: string; label: string }[];
   sourceIds: string[];
+  videoLinks?: { title: string; url: string; channel: string; published: string; note: string }[];
 };
 
 export const guidePages: EditorialPage[] = [
@@ -372,6 +373,194 @@ export const comparisonPages: EditorialPage[] = [
       { href: '/methodology', label: 'AI Creator Ops comparison methodology' }
     ],
     sourceIds: ['meta-instagram-content-publishing', 'meta-community-standards-misinformation-ai-disclosure', 'tiktok-content-posting-api-get-started', 'tiktok-content-posting-api-product', 'tiktok-aigc-support']
+
+  },
+  {
+    slug: 'runway-vs-kling',
+    title: 'Runway vs Kling for AI Creator Video: Image-to-Video, API, and Workflow Comparison',
+    shortTitle: 'Runway vs Kling',
+    description: 'A source-backed comparison of Runway and Kling for AI influencer video, virtual influencer motion tests, image-to-video clips, and social creative production.',
+    badge: 'COMPARISON',
+    canonicalPath: '/comparisons/runway-vs-kling',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'Use Runway when the AI creator operation needs API-backed production, repeatable team workflows, and a documented developer surface. Use Kling when the priority is fast image-to-video experimentation and social motion clips, but treat its automation surface as less mature until official API and integration documentation is clearer.',
+    keyFacts: [
+      'Runway has official developer documentation for generative media APIs, including image-to-video style workflows.',
+      'Kling has official pricing and terms sources, but this review did not find an equivalent public API documentation source in the current source set.',
+      'For AI creator operations, the deciding factor is usually repeatability and rights/policy review, not which demo looks flashiest on a single prompt.'
+    ],
+    sections: [
+      { heading: 'Winner by use case', body: 'Choose Runway for production teams that need a documented API surface, repeatable video generation workflows, and cleaner automation planning. Choose Kling for quick motion experiments, image-to-video ideation, and visual tests where manual review is acceptable.' },
+      { heading: 'Criteria', body: 'This comparison evaluates video quality workflow, image-to-video fit, API/automation readiness, pricing clarity, commercial/policy review, and usefulness for AI influencer or AI girlfriend short-form production.' },
+      { heading: 'Runway strengths and cautions', body: 'Runway is stronger for operator systems because its developer docs make it easier to plan queueing, generation, QA, and future automation. Cautions include credit costs, generation variability, and the need to keep realistic synthetic media inside each publishing platform’s disclosure rules.' },
+      { heading: 'Kling strengths and cautions', body: 'Kling is useful for motion tests and creator-facing image-to-video experimentation. Cautions are automation uncertainty, source-review limits, and the need to verify output rights, terms, and pricing before making it the core pipeline.' }
+    ],
+    framework: [
+      { label: 'Runway', detail: 'Better for API-backed production, repeatability, and automated creator-ops pipelines.' },
+      { label: 'Kling', detail: 'Better for fast manual experimentation, image-to-video tests, and social motion drafts.' },
+      { label: 'Operator pick', detail: 'Use both if possible: Kling for exploration, Runway for repeatable production and QA handoff.' }
+    ],
+    internalLinks: [
+      { href: '/tools/runway', label: 'Runway tool record' },
+      { href: '/tools/kling', label: 'Kling tool record' },
+      { href: '/glossary/image-to-video', label: 'Image-to-video glossary' },
+      { href: '/guides/ai-creator-automation-stack', label: 'AI creator automation stack' },
+      { href: '/methodology', label: 'Comparison methodology' }
+    ],
+    sourceIds: ['runway-api-docs', 'runway-pricing-plans', 'kling-pricing', 'kling-terms'],
+    videoLinks: [
+      { title: 'Runway Gen 4.5 Image To Video is HERE (and it is GOOD!)', url: 'https://www.youtube.com/watch?v=D9iTe6tbNXU', channel: 'YouTube creator demo', published: '2026 search result', note: 'Useful visual market signal for Runway image-to-video output expectations; verify claims against Runway docs.' },
+      { title: 'Kling AI Image to Video Tutorial (Best Workflow 2026)', url: 'https://www.youtube.com/watch?v=wxb3w7MFTNk', channel: 'YouTube creator tutorial', published: '2026 search result', note: 'Useful current walkthrough for Kling image-to-video workflows; treat as tutorial evidence, not policy.' }
+    ]
+  },
+  {
+    slug: 'gpt-image-vs-midjourney',
+    title: 'GPT Image vs Midjourney for AI Creator Assets: Identity, Editing, and Style Comparison',
+    shortTitle: 'GPT Image vs Midjourney',
+    description: 'A practical comparison of GPT Image and Midjourney for AI influencer portraits, virtual creator moodboards, branded assets, and repeatable image workflows.',
+    badge: 'COMPARISON',
+    canonicalPath: '/comparisons/gpt-image-vs-midjourney',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'Use GPT Image when the workflow needs API access, editing, productized asset generation, or integration with broader OpenAI systems. Use Midjourney when the priority is visual taste, moodboards, concept art, and high-style exploration. For identity-locked AI creator brands, neither should be trusted without a separate identity QA process.',
+    keyFacts: [
+      'OpenAI publishes image generation documentation, API pricing, and usage policies that make GPT Image easier to evaluate for programmatic creator workflows.',
+      'Midjourney publishes plan and terms documentation, but the reviewed source set treats it as a creator-facing subscription workflow rather than an API-first pipeline.',
+      'For realistic AI influencers, image quality is not enough; identity consistency, provenance, and platform disclosure controls are the operating gate.'
+    ],
+    sections: [
+      { heading: 'Winner by use case', body: 'GPT Image wins for integrated editing and API-shaped workflows. Midjourney wins for fast style exploration, moodboards, and art direction. A serious AI creator operation may use Midjourney to discover a visual language and GPT Image or a dedicated identity workflow to operationalize assets.' },
+      { heading: 'Criteria', body: 'This comparison evaluates API readiness, image editing, identity consistency support, pricing clarity, rights/policy review, and usefulness for repeatable creator production.' },
+      { heading: 'GPT Image strengths and cautions', body: 'GPT Image is stronger for teams that need source-controlled prompts, editing, automation, and usage-policy review. Cautions include cost management, output review, and avoiding unsupported claims about likeness or commercial suitability.' },
+      { heading: 'Midjourney strengths and cautions', body: 'Midjourney is strong for aesthetic exploration and visual taste. Cautions include weaker structured automation in the reviewed source set, potential identity drift, and the need to verify terms before using outputs commercially or at scale.' }
+    ],
+    framework: [
+      { label: 'GPT Image', detail: 'Best for API-shaped generation, editing, and productized content workflows.' },
+      { label: 'Midjourney', detail: 'Best for art direction, moodboards, and high-style visual exploration.' },
+      { label: 'Operator pick', detail: 'Choose by pipeline need: integration and edits versus taste and exploration.' }
+    ],
+    internalLinks: [
+      { href: '/tools/gpt-image', label: 'GPT Image tool record' },
+      { href: '/tools/midjourney', label: 'Midjourney tool record' },
+      { href: '/guides/ai-creator-identity-consistency', label: 'Identity consistency guide' },
+      { href: '/glossary/provenance', label: 'Provenance glossary' },
+      { href: '/methodology', label: 'Comparison methodology' }
+    ],
+    sourceIds: ['openai-image-generation-guide', 'openai-api-pricing', 'openai-usage-policies', 'midjourney-plans', 'midjourney-terms'],
+    videoLinks: [
+      { title: 'Midjourney vs ChatGPT 2026 Ultimate Test! The Winner is...', url: 'https://www.youtube.com/watch?v=SEsaHwFuRIo', channel: 'YouTube comparison video', published: '2026 search result', note: 'Current visual comparison signal for creator-facing image workflows; verify product facts against official docs.' }
+    ]
+  },
+  {
+    slug: 'buffer-vs-metricool',
+    title: 'Buffer vs Metricool for AI Creator Scheduling: Publishing, Analytics, and API Comparison',
+    shortTitle: 'Buffer vs Metricool',
+    description: 'A source-backed comparison of Buffer and Metricool for AI influencer scheduling, creator analytics, reporting, and automation workflows.',
+    badge: 'COMPARISON',
+    canonicalPath: '/comparisons/buffer-vs-metricool',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'Use Buffer when the AI creator operation wants a straightforward publishing queue and documented API surface for scheduling workflows. Use Metricool when analytics, reporting, brand dashboards, and performance review matter as much as scheduling. For synthetic creator teams, the best choice depends on whether the bottleneck is publishing discipline or performance intelligence.',
+    keyFacts: [
+      'Buffer publishes pricing and API documentation relevant to scheduling and workflow automation review.',
+      'Metricool publishes pricing and API overview sources relevant to analytics, reporting, and social media management review.',
+      'Schedulers do not remove platform disclosure or content-policy obligations; they only organize approved assets.'
+    ],
+    sections: [
+      { heading: 'Winner by use case', body: 'Buffer is the simpler pick for queue management and lightweight creator publishing. Metricool is stronger when the operator needs reporting, analytics, and multi-brand performance review. AI creator teams should choose based on whether they need operational simplicity or measurement depth.' },
+      { heading: 'Criteria', body: 'This comparison evaluates scheduling workflow, analytics, reporting, API/automation posture, pricing clarity, and fit for AI influencer content calendars.' },
+      { heading: 'Buffer strengths and cautions', body: 'Buffer is useful for clean scheduling, team workflow, and API-supported publishing operations. Cautions include making sure every asset has passed identity, disclosure, and platform-fit QA before it enters the queue.' },
+      { heading: 'Metricool strengths and cautions', body: 'Metricool is useful when reporting and analytics are central to the operation. Cautions include API/access details, plan limits, and the need to separate performance metrics from platform account-health or monetization reality.' }
+    ],
+    framework: [
+      { label: 'Buffer', detail: 'Best for simple queue discipline, publishing operations, and API-backed scheduling.' },
+      { label: 'Metricool', detail: 'Best for analytics, reporting, dashboarding, and cross-platform review.' },
+      { label: 'Operator pick', detail: 'Buffer if publishing is the bottleneck; Metricool if measurement and reporting are the bottleneck.' }
+    ],
+    internalLinks: [
+      { href: '/tools/buffer', label: 'Buffer tool record' },
+      { href: '/tools/metricool', label: 'Metricool tool record' },
+      { href: '/guides/ai-creator-automation-stack', label: 'AI creator automation stack' },
+      { href: '/glossary/creator-automation', label: 'Creator automation glossary' },
+      { href: '/methodology', label: 'Comparison methodology' }
+    ],
+    sourceIds: ['buffer-pricing', 'buffer-api-docs', 'metricool-pricing', 'metricool-api-overview'],
+    videoLinks: [
+      { title: 'Metricool vs Buffer (2026) - Which One Is BETTER?', url: 'https://www.youtube.com/watch?v=KTuKHz_j070', channel: 'YouTube comparison video', published: '2026 search result', note: 'Useful visual comparison of scheduler UX and positioning; verify pricing/API claims against official sources.' }
+    ]
+  },
+  {
+    slug: 'fanvue-vs-fansly',
+    title: 'Fanvue vs Fansly for AI Creators: AI Content, Payouts, and Fan Monetization Comparison',
+    shortTitle: 'Fanvue vs Fansly',
+    description: 'A source-backed comparison of Fanvue and Fansly for AI creators, AI girlfriend brands, fan subscriptions, locked content, and synthetic creator monetization.',
+    badge: 'COMPARISON',
+    canonicalPath: '/comparisons/fanvue-vs-fansly',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'Choose Fanvue when the priority is explicit AI-creator positioning and documented AI-generated content guidance. Treat Fansly as a fan-platform alternative for tiered subscriptions and creator monetization, but review its Terms of Service carefully because its AI-content restrictions and verification requirements may make fully synthetic or photorealistic AI creator launches riskier.',
+    keyFacts: [
+      'Fanvue publishes AI creator and AI-generated content guidance, including disclosure and restriction notes.',
+      'Fansly Terms of Service include an 80% creator revenue statement and restrictions on certain AI-generated photorealistic or lifelike content use.',
+      'Fansly help and creator-hub sources document payout workflows and subscription-tier setup, making it relevant for fan monetization but not automatically ideal for synthetic identity.'
+    ],
+    sections: [
+      { heading: 'Winner by use case', body: 'Fanvue is the stronger default for openly synthetic AI creator brands because its official materials directly address AI creators. Fansly is more interesting when tiered fan subscriptions, creator discovery, and broader fan-platform mechanics matter, but synthetic identity risk needs stricter review.' },
+      { heading: 'Criteria', body: 'This comparison evaluates AI-content clarity, payout model, subscription tooling, verification/consent risk, adult/fan-platform fit, and source quality.' },
+      { heading: 'Fanvue strengths and cautions', body: 'Fanvue has clearer public positioning for AI creators and specific AI-content guidance. Operators still need disclosure, age-appearance, copyright, real-person likeness, and moderation controls.' },
+      { heading: 'Fansly strengths and cautions', body: 'Fansly has flexible subscription/fan monetization mechanics and official payout/subscription help. The caution for AI creator ops is that its Terms of Service must be reviewed for photorealistic AI, synthetic likeness, collaboration, and verification constraints before launch.' }
+    ],
+    framework: [
+      { label: 'Fanvue', detail: 'Best for explicit AI creator positioning and source-backed synthetic-content review.' },
+      { label: 'Fansly', detail: 'Best as a fan-platform alternative when tiered subscriptions and fan mechanics matter, after strict AI-content review.' },
+      { label: 'Operator pick', detail: 'Fanvue first for fully synthetic brands; Fansly only after conservative terms and identity verification review.' }
+    ],
+    internalLinks: [
+      { href: '/platforms/fanvue', label: 'Fanvue platform record' },
+      { href: '/tools/fanvue', label: 'Fanvue tool record' },
+      { href: '/guides/ai-influencer-ai-girlfriend-monetization', label: 'AI influencer monetization guide' },
+      { href: '/glossary/fan-platform', label: 'Fan platform glossary' },
+      { href: '/methodology', label: 'Comparison methodology' }
+    ],
+    sourceIds: ['fanvue-ai-content-allowed', 'fanvue-ai-generated-content', 'fanvue-creator-earnings-payouts', 'fansly-terms-of-service', 'fansly-requesting-payout', 'fansly-subscriptions-creator-hub'],
+    videoLinks: [
+      { title: 'Fanvue Review: Build & Monetize AI Creators in 2026', url: 'https://www.youtube.com/watch?v=eNcaeYY6fRM', channel: 'YouTube creator review', published: '2026 search result', note: 'Current visual market signal for Fanvue AI creator positioning; verify platform facts against Fanvue help/legal pages.' },
+      { title: 'Fansly: The Ultimate Creator-First Platform for 2026 – Comprehensive Review', url: 'https://www.youtube.com/watch?v=Rp6Zk_lqU00', channel: 'YouTube creator review', published: '18 Mar 2026 search result', note: 'Current visual market signal for Fansly creator monetization; verify terms and payout facts against Fansly sources.' }
+    ]
+  },
+  {
+    slug: 'linktree-vs-beacons',
+    title: 'Linktree vs Beacons for AI Creator Funnels: Link-in-Bio, Commerce, Email, and Analytics Comparison',
+    shortTitle: 'Linktree vs Beacons',
+    description: 'A source-backed comparison of Linktree and Beacons for AI influencer funnels, fan-platform routing, digital products, email capture, and creator monetization links.',
+    badge: 'COMPARISON',
+    canonicalPath: '/comparisons/linktree-vs-beacons',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'Use Linktree when the AI creator brand needs a simple, recognizable link-in-bio hub with fast setup. Use Beacons when the funnel needs more creator-business tooling: storefront, email, media kit, analytics, affiliate/commerce features, or DM automation. For AI creator ops, Beacons is often stronger as a business hub; Linktree is stronger as a lightweight routing layer.',
+    keyFacts: [
+      'Linktree publishes pricing and legal terms sources covering plans, seller fees, analytics, scheduling, and service constraints.',
+      'Beacons publishes pricing/help sources covering link-in-bio, storefront, media kit, email, affiliate, DM automation, and plan features.',
+      'A link-in-bio tool is not just a profile decoration; it is the conversion bridge between public social discovery and monetized offers.'
+    ],
+    sections: [
+      { heading: 'Winner by use case', body: 'Linktree wins for simplicity, speed, and familiar profile routing. Beacons wins for creators who want a fuller business layer with storefront, email, media kit, analytics, and monetization blocks. AI creator brands should choose based on funnel complexity.' },
+      { heading: 'Criteria', body: 'This comparison evaluates setup speed, offer routing, commerce/email features, analytics, creator monetization support, pricing clarity, and internal link-funnel usefulness.' },
+      { heading: 'Linktree strengths and cautions', body: 'Linktree is easy to understand and fast to deploy. Cautions include making sure the page explains synthetic identity, paid offers, and audience expectations clearly rather than just dumping links.' },
+      { heading: 'Beacons strengths and cautions', body: 'Beacons is broader as a creator business platform, especially when commerce, email, media kit, and analytics matter. Cautions include plan/fee review and avoiding overbuilt funnels before the AI creator has tested real audience demand.' }
+    ],
+    framework: [
+      { label: 'Linktree', detail: 'Best for quick, recognizable link routing from Instagram, TikTok, YouTube Shorts, or X.' },
+      { label: 'Beacons', detail: 'Best for creator-business funnels with commerce, email, media kit, and richer analytics.' },
+      { label: 'Operator pick', detail: 'Use Linktree for minimal routing; use Beacons when the AI creator needs an owned monetization hub.' }
+    ],
+    internalLinks: [
+      { href: '/tools/linktree', label: 'Linktree tool record' },
+      { href: '/tools/beacons', label: 'Beacons tool record' },
+      { href: '/glossary/creator-funnel', label: 'Creator funnel glossary' },
+      { href: '/guides/ai-creator-business-models', label: 'AI creator business models' },
+      { href: '/methodology', label: 'Comparison methodology' }
+    ],
+    sourceIds: ['linktree-pricing', 'linktree-terms', 'beacons-pricing', 'beacons-help-pricing'],
+    videoLinks: [
+      { title: 'Beacons ai vs Linktree | (2026) Which One is Better?', url: 'https://www.youtube.com/watch?v=GzkQPDKXI90', channel: 'YouTube comparison video', published: '8 Jan 2026 search result', note: 'Current visual comparison of link-in-bio positioning and creator-business features; verify pricing against official pages.' }
+    ]
   }
 ];
 
