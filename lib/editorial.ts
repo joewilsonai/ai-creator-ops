@@ -198,6 +198,108 @@ export const guidePages: EditorialPage[] = [
       { href: '/platforms/youtube-shorts', label: 'YouTube Shorts disclosure and API notes' }
     ],
     sourceIds: ['tiktok-aigc-support', 'youtube-help-altered-synthetic-content', 'meta-community-standards-misinformation-ai-disclosure', 'fanvue-ai-content-allowed']
+  },
+  {
+    slug: 'ai-creator-automation-stack',
+    title: 'AI Creator Automation Stack: Publishing, QA, and Workflow Controls',
+    shortTitle: 'AI Creator Automation Stack',
+    description: 'A practical automation-stack guide for AI influencers, virtual influencers, AI girlfriend funnels, and synthetic creator operations that need speed without policy or quality failures.',
+    badge: 'GUIDE',
+    canonicalPath: '/guides/ai-creator-automation-stack',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'An AI creator automation stack should automate repeatable operations — asset naming, QA checklists, scheduling, link routing, reporting, and source review — while keeping human approval around identity, disclosure, adult/age-sensitive boundaries, sponsorship claims, and platform policy risk. Automation is useful only when it preserves continuity and account health.',
+    keyFacts: [
+      'Official posting APIs exist for major platforms, but they are not blanket permission for bot-like posting or unrestricted automation.',
+      'TikTok Content Posting API audit status can affect whether posts created by an integration are public or private-only.',
+      'Instagram Content Publishing API has documented professional-account, media-container, publishing, and rate-limit constraints.'
+    ],
+    sections: [
+      { heading: 'Start with the control points', body: 'Map the workflow before buying tools: generation, retouching, identity QA, captioning, disclosure decision, scheduling, comments/DM handling, funnel routing, analytics, and archive. The most valuable automation usually sits between these handoffs, not inside the image prompt itself.' },
+      { heading: 'Separate production automation from publishing authority', body: 'It is reasonable to automate file movement, draft creation, caption variants, and reporting. Final publish authority should stay behind a checklist when the asset is realistic, monetized, sponsored, intimate, or policy-sensitive.' },
+      { heading: 'Use platform APIs conservatively', body: 'Treat official API documentation as the minimum operating surface. Instagram and TikTok publishing APIs have scopes, account requirements, audit expectations, supported-media rules, and rate or visibility constraints that should be reflected in the operator runbook.' },
+      { heading: 'Track failures as data', body: 'Log rejected assets, disclosure escalations, identity mismatches, moderation events, low-retention drops, and support issues. A mature creator operation learns where automation creates risk, then tightens that step.' }
+    ],
+    framework: [
+      { label: 'Create', detail: 'Prompt libraries, reference packs, approved tool chains, and sandbox experiments.' },
+      { label: 'Review', detail: 'Identity, artifacts, realism, disclosure, rights, age appearance, and brand-safety checks.' },
+      { label: 'Publish', detail: 'Scheduler/API drafts, platform-specific captions, labels, and manual approval gates.' },
+      { label: 'Measure', detail: 'Reach, conversion, retention, unlocks, account health, and content-quality feedback loops.' }
+    ],
+    internalLinks: [
+      { href: '/guides/ai-creator-identity-consistency', label: 'AI creator identity consistency guide' },
+      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
+      { href: '/comparisons/instagram-vs-tiktok-for-ai-creators', label: 'Instagram vs TikTok automation comparison' },
+      { href: '/platforms/tiktok', label: 'TikTok platform notes' }
+    ],
+    sourceIds: ['meta-instagram-content-publishing', 'tiktok-content-posting-api-get-started', 'tiktok-content-posting-api-product', 'x-developer-guidelines']
+  },
+  {
+    slug: 'persistent-character-universe',
+    title: 'How to Create a Persistent Character Universe for an AI Creator Brand',
+    shortTitle: 'Persistent Character Universe',
+    description: 'How operators turn an AI influencer, AI model, AI companion, or virtual influencer from disconnected posts into a durable world with lore, formats, and monetizable continuity.',
+    badge: 'GUIDE',
+    canonicalPath: '/guides/persistent-character-universe',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'A persistent character universe is the operating system behind a synthetic creator: recurring identity, settings, relationships, rituals, conflicts, products, and audience promises that make each post feel like part of the same brand. Build it as a bible, canon library, content calendar, and QA process before scaling volume.',
+    keyFacts: [
+      'Continuity is what separates a synthetic creator brand from a folder of attractive generated images.',
+      'The universe should define what is canon, what is experimental, and what is prohibited before audience expectations harden.',
+      'Fan-platform and AI companion offers need especially clear world boundaries so fictional intimacy does not become misleading representation.'
+    ],
+    sections: [
+      { heading: 'Write the world bible', body: 'Document the character origin, age presentation, recurring locations, visual rules, relationships, routines, content pillars, audience promise, monetization boundaries, and off-limits themes. Keep it specific enough that another operator can reject an asset confidently.' },
+      { heading: 'Create recurring formats', body: 'Use repeatable episode types: morning check-ins, training arcs, outfit drops, travel logs, character diaries, polls, behind-the-scenes notes, or product tests. Recurring formats give the audience a reason to come back and give the team a production rhythm.' },
+      { heading: 'Maintain canon and sandbox libraries', body: 'Published identity-locked assets belong in the canon library. Tests, prompt variants, failed videos, and alternate styles belong in the sandbox. Never let sandbox artifacts redefine the public character by accident.' },
+      { heading: 'Connect lore to business outcomes', body: 'The point of a universe is not endless lore. It should clarify sponsorship fit, paid drops, fan-platform packages, newsletter themes, affiliate selection, and why a follower would subscribe or buy again.' }
+    ],
+    framework: [
+      { label: 'Character', detail: 'Identity, voice, motivations, boundaries, and recurring traits.' },
+      { label: 'World', detail: 'Locations, objects, rituals, relationships, timeline, and visual atmosphere.' },
+      { label: 'Formats', detail: 'Repeatable posts, arcs, drops, polls, captions, and paid content packages.' },
+      { label: 'Canon control', detail: 'Approved assets, rejected variants, lore changes, and continuity reviews.' }
+    ],
+    internalLinks: [
+      { href: '/guides/how-to-build-ai-influencer-brand', label: 'How to build an AI influencer brand' },
+      { href: '/guides/ai-creator-identity-consistency', label: 'Identity consistency workflow' },
+      { href: '/guides/ai-creator-business-models', label: 'AI creator business models' },
+      { href: '/glossary/synthetic-influencer', label: 'Synthetic influencer definition' }
+    ],
+    sourceIds: ['fanvue-ai-generated-model-definition', 'fanvue-ai-content-allowed', 'meta-labeling-ai-generated-content-manipulated-media']
+  },
+  {
+    slug: 'synthetic-influencer-legal-platform-risks',
+    title: 'Synthetic Influencer Legal and Platform Risks: Operator Checklist',
+    shortTitle: 'Synthetic Influencer Risks',
+    description: 'A risk checklist for AI influencers, AI girlfriend brands, AI models, virtual creators, and synthetic influencers covering disclosure, likeness, age appearance, monetization, and automation.',
+    badge: 'GUIDE',
+    canonicalPath: '/guides/synthetic-influencer-legal-platform-risks',
+    lastUpdated: '2026-05-18',
+    directAnswer: 'The biggest synthetic influencer risks are misleading realism, undisclosed AI-generated or altered media, real-person likeness or deepfake misuse, underage-looking content, copyright/source-reference issues, unsafe monetization claims, spammy automation, and platform-specific enforcement. Operators should maintain a documented review checklist before publishing or monetizing realistic synthetic media.',
+    keyFacts: [
+      'Fanvue AI-content sources explicitly reference disclosure, age-appearance, real-person likeness, copyright, and moderation constraints.',
+      'OnlyFans official sources require careful review of AI captions, verified-creator appearance, acceptable use, and account terms before synthetic content launches.',
+      'Major social platforms have separate synthetic-media, AI-labeling, and automation surfaces; no single disclosure rule covers every channel.'
+    ],
+    sections: [
+      { heading: 'Likeness and consent risk', body: 'Do not use a real person’s face, body, voice, or identity markers without a clear rights and verification basis. Deepfake, face-swap, or “inspired by” workflows are higher risk than fully fictional character generation.' },
+      { heading: 'Age appearance and adult-context risk', body: 'For AI girlfriend, AI model, and fan-platform workflows, age presentation must be treated as a hard gate. If a realistic character could be read as underage, do not publish or monetize the asset.' },
+      { heading: 'Disclosure and deception risk', body: 'Realistic synthetic scenes, voices, or claims can mislead audiences even when technically fictional. Use platform labels, plain-language bios or captions, and internal provenance logs to reduce review and trust problems.' },
+      { heading: 'Automation and monetization risk', body: 'Automation can create spam, undisclosed paid promotion, misleading chat expectations, or policy-breaking posting patterns at scale. Keep human review around sponsored claims, paid messages, direct posting, and support escalations.' }
+    ],
+    framework: [
+      { label: 'Identity rights', detail: 'Consent, verified likeness, no impersonation, and no unauthorized real-person references.' },
+      { label: 'Content safety', detail: 'Age appearance, prohibited content, claims, realism, and audience deception checks.' },
+      { label: 'Commercial safety', detail: 'Ad labels, payout terms, refund risk, affiliate claims, and platform eligibility.' },
+      { label: 'Operational safety', detail: 'API limits, spam rules, audit logs, moderation events, and rollback procedures.' }
+    ],
+    internalLinks: [
+      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
+      { href: '/comparisons/fanvue-vs-onlyfans', label: 'Fanvue vs OnlyFans policy comparison' },
+      { href: '/guides/ai-influencer-ai-girlfriend-monetization', label: 'AI influencer and AI girlfriend monetization' },
+      { href: '/methodology', label: 'AI Creator Ops methodology' }
+    ],
+    sourceIds: ['fanvue-ai-content-allowed', 'fanvue-ai-generated-content', 'onlyfans-terms', 'onlyfans-help-ai-content', 'onlyfans-acceptable-use-policy', 'tiktok-aigc-support', 'x-developer-guidelines']
   }
 ];
 

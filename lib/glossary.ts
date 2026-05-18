@@ -208,6 +208,146 @@ export const glossaryTerms: GlossaryTerm[] = [
       { label: 'YouTube Shorts for AI creators', href: '/platforms/youtube-shorts' },
       { label: 'Synthetic influencer', href: '/glossary/synthetic-influencer' }
     ]
+  },
+  {
+    slug: 'ai-disclosure',
+    term: 'AI Disclosure',
+    alsoKnownAs: ['AI label', 'synthetic media disclosure', 'AI-generated content label'],
+    definition:
+      'AI disclosure is the visible or machine-readable signal that a creator asset, persona, audio track, image, or video was generated or materially altered with AI.',
+    whyItMatters:
+      'AI influencer and virtual creator brands need disclosure rules because platforms increasingly treat realistic synthetic media, AI-generated models, and altered likenesses as policy-sensitive content.',
+    operatorNotes: [
+      'Build disclosure into the publishing checklist before scaling output volume.',
+      'Track platform-specific language for realistic AI images, video, audio, altered likenesses, and paid partnerships.',
+      'Disclosure reduces trust and enforcement risk, but it does not replace consent, rights, or age-safety review.'
+    ],
+    related: [
+      { label: 'Provenance', href: '/glossary/provenance' },
+      { label: 'Platform risk', href: '/glossary/platform-risk' },
+      { label: 'Instagram for AI creators', href: '/platforms/instagram' },
+      { label: 'TikTok for AI creators', href: '/platforms/tiktok' }
+    ]
+  },
+  {
+    slug: 'locked-content',
+    term: 'Locked Content',
+    alsoKnownAs: ['paid content', 'gated content', 'premium fan content'],
+    definition:
+      'Locked content is creator media or messaging access placed behind a subscription, pay-per-view unlock, tip, membership, or other direct fan-payment gate.',
+    whyItMatters:
+      'Locked content is a core monetization mechanic for AI girlfriend, AI companion, AI model, and fan-platform creator businesses, but it raises stronger provenance, consent, and platform-policy requirements.',
+    operatorNotes: [
+      'Separate public discovery posts from paid fan-platform inventory and track which assets are safe for each surface.',
+      'Do not publish likeness-based or face-swap material without documented rights, consent, and platform verification where required.',
+      'Measure unlock rate, refund risk, churn, and repeat buyer behavior rather than only content volume.'
+    ],
+    related: [
+      { label: 'Fan platform', href: '/glossary/fan-platform' },
+      { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' },
+      { label: 'Creator funnel', href: '/glossary/creator-funnel' },
+      { label: 'Fanvue', href: '/tools/fanvue' }
+    ]
+  },
+  {
+    slug: 'creator-automation',
+    term: 'Creator Automation',
+    alsoKnownAs: ['AI creator automation', 'agentic creator ops', 'creator workflow automation'],
+    definition:
+      'Creator automation is the use of schedulers, APIs, agents, templates, and QA workflows to produce, route, publish, measure, and improve creator content with less manual work.',
+    whyItMatters:
+      'AI creator operations become durable when automation supports repeatable quality, policy checks, publishing cadence, analytics, and monetization rather than simply generating more assets.',
+    operatorNotes: [
+      'Automate low-risk queueing, metadata, reporting, and QA first; keep approvals around policy-sensitive content and payments.',
+      'Prefer official APIs and approved partner tools over scraping or brittle browser automation.',
+      'Treat creator automation as a system with logs, source records, rollback paths, and human review gates for risky surfaces.'
+    ],
+    related: [
+      { label: 'DM automation', href: '/glossary/dm-automation' },
+      { label: 'Buffer', href: '/tools/buffer' },
+      { label: 'Metricool', href: '/tools/metricool' },
+      { label: 'Zernio', href: '/tools/zernio' }
+    ]
+  },
+  {
+    slug: 'image-to-video',
+    term: 'Image-to-Video',
+    alsoKnownAs: ['I2V', 'AI motion generation', 'still-to-video'],
+    definition:
+      'Image-to-video is an AI video workflow that animates a still image or reference frame into a short motion clip while attempting to preserve the subject, setting, and visual style.',
+    whyItMatters:
+      'Virtual influencers and AI models often start from identity-locked stills, so image-to-video tools are useful for reels, Shorts, TikToks, and motion tests when continuity can be maintained.',
+    operatorNotes: [
+      'Use short motion tests to evaluate identity drift, hand artifacts, wardrobe continuity, and scene plausibility before publishing.',
+      'Pair image-to-video with a content calendar and platform-specific synthetic-media disclosure rules.',
+      'Do not treat a high-quality still as proof the animated output remains identity-safe.'
+    ],
+    related: [
+      { label: 'Runway', href: '/tools/runway' },
+      { label: 'Kling', href: '/tools/kling' },
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'AI influencer', href: '/glossary/ai-influencer' }
+    ]
+  },
+  {
+    slug: 'lora',
+    term: 'LoRA',
+    alsoKnownAs: ['low-rank adaptation', 'character LoRA', 'style LoRA'],
+    definition:
+      'LoRA is a lightweight model-adaptation technique commonly used to steer image or video generation toward a specific character, style, object, wardrobe mode, or visual domain.',
+    whyItMatters:
+      'For AI creator brands, LoRA-style workflows can support identity consistency and repeatable aesthetics, but training data rights, likeness consent, and overfitting risk must be controlled.',
+    operatorNotes: [
+      'Document training data, consent, rights, model version, prompt recipes, and rejected outputs.',
+      'Use LoRA as one continuity layer, not a substitute for QA, brand memory, or post-production review.',
+      'Avoid training or distributing likeness models without explicit rights and a clear operational purpose.'
+    ],
+    related: [
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'Synthetic influencer', href: '/glossary/synthetic-influencer' },
+      { label: 'GPT Image', href: '/tools/gpt-image' },
+      { label: 'Midjourney', href: '/tools/midjourney' }
+    ]
+  },
+  {
+    slug: 'face-swap',
+    term: 'Face Swap',
+    alsoKnownAs: ['face replacement', 'likeness transfer', 'deepfake workflow'],
+    definition:
+      'Face swap is a post-production or generation workflow that transfers or replaces a face or likeness across media to improve continuity or create altered synthetic content.',
+    whyItMatters:
+      'Face-swap workflows can help identity consistency for consented synthetic creator pipelines, but they are high-risk because platforms and fan sites scrutinize likeness rights, consent, disclosure, and impersonation.',
+    operatorNotes: [
+      'Use only with documented consent, rights, and platform-specific verification where a real person or real body is involved.',
+      'Label realistic altered media when platform rules require it and keep provenance records for source assets.',
+      'Run identity QA and policy QA separately; a convincing face match can still be unacceptable for publication.'
+    ],
+    related: [
+      { label: 'FaceFusion', href: '/tools/facefusion' },
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'Provenance', href: '/glossary/provenance' },
+      { label: 'AI disclosure', href: '/glossary/ai-disclosure' }
+    ]
+  },
+  {
+    slug: 'platform-risk',
+    term: 'Platform Risk',
+    alsoKnownAs: ['policy risk', 'enforcement risk', 'account risk'],
+    definition:
+      'Platform risk is the chance that a tool, social network, fan platform, payment rail, or marketplace limits, labels, demonetizes, removes, or bans creator activity.',
+    whyItMatters:
+      'AI creators, AI girlfriends, synthetic influencers, and virtual creators depend on third-party surfaces whose rules for automation, synthetic media, adult content, monetization, and identity can change quickly.',
+    operatorNotes: [
+      'Track policy sources, last-checked dates, account status, moderation events, and fallback distribution paths.',
+      'Treat high-risk workflows such as adult locked content, face swaps, DMs, and aggressive automation as separately gated operations.',
+      'Design the creator funnel so no single platform owns the audience, payment flow, and operational memory.'
+    ],
+    related: [
+      { label: 'AI disclosure', href: '/glossary/ai-disclosure' },
+      { label: 'Creator automation', href: '/glossary/creator-automation' },
+      { label: 'Platform index', href: '/platforms' },
+      { label: 'Methodology', href: '/methodology' }
+    ]
   }
 ];
 
