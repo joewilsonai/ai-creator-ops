@@ -269,3 +269,171 @@
   source_type: primary
   notes: Official TikTok Shop Affiliate Marketing policy covering commission-based seller/creator relationships, shop/product/creator qualification, performance and
     health thresholds, and enforcement when qualification or policy requirements are not met.
+- id: runway-api-docs
+  url: https://docs.dev.runwayml.com/
+  title: API Documentation
+  publisher: Runway API
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Runway API docs describing generative video/image/audio models, image-to-video endpoints, SDK examples, and developer portal usage.
+- id: runway-pricing-plans
+  url: https://help.runwayml.com/hc/en-us/articles/1500006006521-Runway-Plans
+  title: Runway Plans
+  publisher: Runway Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Runway plans page for subscription and feature review.
+- id: kling-pricing
+  url: https://klingai.com/global/pricing
+  title: Kling AI pricing
+  publisher: Kling AI
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Kling pricing page used for subscription and credit review.
+- id: kling-terms
+  url: https://klingai.com/global/terms-of-service
+  title: Kling AI Terms of Service
+  publisher: Kling AI
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Kling terms source for service, account, and output-use review.
+- id: openai-image-generation-guide
+  url: https://platform.openai.com/docs/guides/image-generation
+  title: Image generation guide
+  publisher: OpenAI Platform Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OpenAI image-generation documentation for model capabilities and API usage.
+- id: openai-api-pricing
+  url: https://openai.com/api/pricing/
+  title: OpenAI API Pricing
+  publisher: OpenAI
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OpenAI API pricing page for GPT Image model pricing and usage-based cost review.
+- id: openai-usage-policies
+  url: https://openai.com/policies/usage-policies/
+  title: OpenAI Usage Policies
+  publisher: OpenAI
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official OpenAI usage policy source for synthetic media and prohibited-use review.
+- id: midjourney-plans
+  url: https://docs.midjourney.com/hc/en-us/articles/27870484040333-Plans
+  title: Midjourney Plans
+  publisher: Midjourney Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Midjourney subscription-plan documentation for pricing and plan-feature review.
+- id: midjourney-terms
+  url: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service
+  title: Terms of Service
+  publisher: Midjourney Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Midjourney terms covering asset ownership, public visibility defaults, account restrictions, and service limitations.
+- id: facefusion-github
+  url: https://github.com/facefusion/facefusion
+  title: facefusion/facefusion repository
+  publisher: GitHub
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official FaceFusion repository describing the face manipulation platform, installation caveats, command modes, license, and release status.
+- id: facefusion-docs
+  url: https://docs.facefusion.io/
+  title: FaceFusion documentation
+  publisher: FaceFusion Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official FaceFusion documentation for installation, usage, and workflow review.
+- id: buffer-pricing
+  url: https://buffer.com/pricing
+  title: Pricing
+  publisher: Buffer
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Buffer pricing page covering free and paid plans, channel-based billing, publishing, engagement, and analytics features.
+- id: buffer-api-docs
+  url: https://buffer.com/developers/api
+  title: Buffer GraphQL API
+  publisher: Buffer Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Buffer API documentation for programmatic scheduling, publishing, integrations, and workflow automation review.
+- id: metricool-pricing
+  url: https://metricool.com/pricing/
+  title: Metricool Pricing
+  publisher: Metricool
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Metricool pricing page covering free, Starter, Advanced, and Custom plans, reporting, brand limits, and API availability notes.
+- id: metricool-api-overview
+  url: https://metricool.com/api/
+  title: API overview
+  publisher: Metricool
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Metricool official API overview used as a source for API-related scheduling and analytics context.
+- id: zernio-homepage
+  url: https://zernio.com/
+  title: Social APIs for developers and AI agents
+  publisher: Zernio
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Zernio page describing API-first social posting, scheduling, analytics, inbox, webhooks, OAuth connection, and supported social platforms.
+- id: zernio-docs
+  url: https://docs.zernio.com/
+  title: Zernio documentation
+  publisher: Zernio Docs
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Zernio documentation hub for endpoint, platform, webhook, and integration review.
+- id: manychat-pricing
+  url: https://manychat.com/pricing
+  title: Pricing Info from Free to Pro
+  publisher: Manychat
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Manychat pricing page covering active-contact-based pricing, supported channels, creator automation tiers, and plan constraints.
+- id: manychat-instagram-product
+  url: https://manychat.com/product/instagram
+  title: Manychat for Instagram
+  publisher: Manychat
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Manychat Instagram product page describing DM automation, comment replies, lead capture, and Meta partner positioning.
+- id: manychat-developer-docs
+  url: https://developers.manychat.com/docs
+  title: Manychat developer documentation
+  publisher: Manychat Developers
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Manychat developer documentation for API and integration review.
+- id: linktree-pricing
+  url: https://linktr.ee/s/pricing/
+  title: Linktree pricing
+  publisher: Linktree
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Linktree pricing page covering free, Starter, Pro, and Premium plans, seller fees, analytics, scheduling, and monetization features.
+- id: linktree-terms
+  url: https://linktr.ee/s/legal/terms/
+  title: Linktree Terms
+  publisher: Linktree
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Linktree legal terms source for acceptable use, account, commerce, and service constraints.
+- id: beacons-pricing
+  url: https://beacons.ai/i/pricing
+  title: Beacons Pricing
+  publisher: Beacons
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Beacons pricing page describing AI-powered creator business features, link-in-bio, storefront, media kit, email, affiliate, DM automation, and plan pricing.
+- id: beacons-help-pricing
+  url: https://help.beacons.ai/en/articles/4695681
+  title: Beacons Pricing Plans
+  publisher: Beacons Help Center
+  retrieved_at: '2026-05-18'
+  source_type: primary
+  notes: Official Beacons help-center pricing article summarizing plan tiers, transaction fees, email limits, memberships, courses, and creator-business tools.
