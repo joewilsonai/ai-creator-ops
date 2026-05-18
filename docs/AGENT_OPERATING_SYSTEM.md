@@ -4,7 +4,7 @@ AI Creator Ops should run like a small editorial intelligence desk, not a single
 
 Canonical domain: https://aicreatorops.com
 
-Core rule: agents may research, draft, validate, and commit local changes, but they must not publish, deploy, merge, buy tools/domains, change DNS, or send external outreach without explicit approval.
+Core rule: agents operate in autonomy-first mode. They should research, decide, edit, validate, and commit improvements without waiting for human approval. If a standard deployment pipeline is configured, they may let validated commits flow through that pipeline. They must not buy tools/domains, change billing, change DNS, add secrets, or send external outreach.
 
 ## 24/7 team shape
 
@@ -76,13 +76,16 @@ Outputs:
 ## Guardrails
 
 Agents must:
+- Operate without waiting for approval on routine research, content, data, SEO/AEO, and code-quality improvements.
 - Prefer primary sources for factual claims.
 - Mark uncertain claims as pending source review.
 - Run `pnpm validate:content`, `pnpm test`, `pnpm typecheck`, and `pnpm build` before committing code/content changes when practical.
 - Make small commits with clear messages.
-- Stop if the working tree is dirty with unrelated changes.
-- Never merge/deploy/publish externally without approval.
+- If validation fails, either fix the failure or commit only a clear research/audit note; do not leave broken public routes.
+- If the working tree is dirty with unrelated changes, inspect carefully and avoid overwriting user work; create additive files or stop with a note if conflict risk is high.
 - Never add credentials or secrets to the repo.
+- Never buy services, alter billing, change DNS, or send external outreach.
+- Never manufacture sources, fake firsthand experience, or inflate weak evidence into hard claims.
 
 ## First priority queue
 
