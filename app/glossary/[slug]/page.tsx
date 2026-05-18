@@ -2,27 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Badge, Card } from '@/components/ui';
 import { getSource } from '@/lib/data';
-import { getGlossaryTerm, glossaryTerms } from '@/lib/glossary';
-
-const glossarySourceIds: Record<string, string[]> = {
-  'ai-creator': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
-  'ai-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
-  'ai-girlfriend-business': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy'],
-  'synthetic-influencer': ['meta-labeling-ai-content-impact', 'youtube-help-altered-synthetic-content'],
-  'virtual-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
-  'identity-consistency': ['openai-image-generation-guide', 'midjourney-terms', 'facefusion-docs'],
-  'fan-platform': ['fanvue-creator-earnings-payouts', 'onlyfans-creator-center', 'onlyfans-terms'],
-  'creator-funnel': ['linktree-pricing', 'beacons-pricing'],
-  'dm-automation': ['manychat-instagram-product', 'manychat-developer-docs', 'x-developer-guidelines'],
-  provenance: ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
-  'ai-disclosure': ['meta-community-standards-misinformation-ai-disclosure', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content', 'x-api-create-post'],
-  'locked-content': ['fanvue-ai-content-allowed', 'fanvue-creator-earnings-payouts', 'onlyfans-terms'],
-  'creator-automation': ['buffer-api-docs', 'metricool-api-overview', 'zernio-docs', 'x-developer-guidelines'],
-  'image-to-video': ['runway-api-docs', 'kling-terms'],
-  lora: ['lora-paper', 'openai-usage-policies'],
-  'face-swap': ['facefusion-github', 'fanvue-ai-content-allowed', 'onlyfans-acceptable-use-policy'],
-  'platform-risk': ['meta-community-standards-misinformation-ai-disclosure', 'tiktok-aigc-support', 'youtube-channel-monetization-policies', 'x-authenticity-policy']
-};
+import { getGlossaryTerm, glossarySourceIds, glossaryTerms } from '@/lib/glossary';
 
 function sourceTypeLabel(sourceType: string) {
   return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;

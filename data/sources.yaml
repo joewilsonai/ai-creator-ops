@@ -78,7 +78,7 @@
     restriction for unaudited clients.
 - id: tiktok-content-posting-api-product
   url: https://developers.tiktok.com/products/content-posting-api/
-  title: Content Posting API
+  title: TikTok Content Posting API product page
   publisher: TikTok for Developers
   retrieved_at: '2026-05-18'
   source_type: primary
@@ -132,7 +132,7 @@
     rules, payment holds, and channel-level monetization enforcement.
 - id: onlyfans-terms
   url: https://onlyfans.com/terms
-  title: Terms of Service
+  title: OnlyFans Terms of Service
   publisher: OnlyFans
   retrieved_at: '2026-05-18'
   source_type: primary
@@ -255,7 +255,7 @@
     people context.
 - id: tiktok-shop-creator-page
   url: https://business.tiktokshop.com/us/creator
-  title: Creator
+  title: TikTok Shop Creator program page
   publisher: TikTok Shop
   retrieved_at: '2026-05-18'
   source_type: primary
@@ -327,7 +327,7 @@
   notes: Official Midjourney subscription-plan documentation for pricing and plan-feature review.
 - id: midjourney-terms
   url: https://docs.midjourney.com/hc/en-us/articles/32083055291277-Terms-of-Service
-  title: Terms of Service
+  title: Midjourney Terms of Service
   publisher: Midjourney Docs
   retrieved_at: '2026-05-18'
   source_type: primary
@@ -348,7 +348,7 @@
   notes: Official FaceFusion documentation for installation, usage, and workflow review.
 - id: buffer-pricing
   url: https://buffer.com/pricing
-  title: Pricing
+  title: Buffer pricing plans
   publisher: Buffer
   retrieved_at: '2026-05-18'
   source_type: primary
@@ -369,7 +369,7 @@
   notes: Official Metricool pricing page covering free, Starter, Advanced, and Custom plans, reporting, brand limits, and API availability notes.
 - id: metricool-api-overview
   url: https://metricool.com/api/
-  title: API overview
+  title: Metricool API overview
   publisher: Metricool
   retrieved_at: '2026-05-18'
   source_type: primary

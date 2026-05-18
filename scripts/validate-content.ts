@@ -3,7 +3,7 @@ import * as path from 'node:path';
 import sitemap from '../app/sitemap';
 import { GET as getLlmsTxt } from '../app/llms.txt/route';
 import { comparisonPages, guidePages } from '../lib/editorial';
-import { glossaryTerms } from '../lib/glossary';
+import { glossarySourceIds, glossaryTerms } from '../lib/glossary';
 import { getAllPlatforms, getAllSources, getAllTools } from '../lib/data';
 
 function assertUnique(ids: string[], label: string) {
@@ -32,18 +32,35 @@ function assertKnownSources(sourceRefs: string[], label: string) {
   }
 }
 
+function assertSourceVisibility(sourceRefs: string[], label: string) {
+  if (!sourceRefs.length) throw new Error(`${label} needs at least one visible clickable source reference`);
+  assertKnownSources(sourceRefs, label);
+}
+
+function assertDescriptiveSource(sourceId: string) {
+  const source = sources.find((candidate) => candidate.id === sourceId);
+  if (!source) return;
+  if (source.title.trim().length < 8 || /^source\s*\d*$/i.test(source.title.trim())) {
+    throw new Error(`Source ${source.id} needs a descriptive anchor label, not a generic label: ${source.title}`);
+  }
+  if (!source.publisher.trim()) throw new Error(`Source ${source.id} needs a publisher for citation visibility`);
+  if (!source.retrieved_at.trim()) throw new Error(`Source ${source.id} needs retrieved_at metadata`);
+}
+
+for (const source of sources) assertDescriptiveSource(source.id);
+
 for (const tool of tools) {
   if (!tool.summary || tool.summary.length < 40) throw new Error(`Tool ${tool.id} needs a more useful summary`);
-  assertKnownSources(tool.sources, `Tool ${tool.id}`);
+  assertSourceVisibility(tool.sources, `Tool ${tool.id}`);
 }
 
 for (const platform of platforms) {
   if (!platform.notes.length) throw new Error(`Platform ${platform.id} needs at least one note`);
-  assertKnownSources(platform.sources, `Platform ${platform.id}`);
+  assertSourceVisibility(platform.sources, `Platform ${platform.id}`);
 }
 
 for (const page of [...guidePages, ...comparisonPages]) {
-  assertKnownSources(page.sourceIds, `Editorial page ${page.canonicalPath}`);
+  assertSourceVisibility(page.sourceIds, `Editorial page ${page.canonicalPath}`);
 }
 
 const publicRoutes = new Set([
@@ -68,6 +85,15 @@ const publicRoutes = new Set([
 for (const page of [...guidePages, ...comparisonPages]) {
   for (const link of page.internalLinks) {
     if (!publicRoutes.has(link.href)) throw new Error(`Editorial page ${page.canonicalPath} links to unknown route: ${link.href}`);
+  }
+}
+
+for (const term of glossaryTerms) {
+  const sourceRefs = glossarySourceIds[term.slug] ?? [];
+  assertSourceVisibility(sourceRefs, `Glossary page /glossary/${term.slug}`);
+  for (const link of term.related) {
+    if (!publicRoutes.has(link.href)) throw new Error(`Glossary page /glossary/${term.slug} links to unknown route: ${link.href}`);
+    if (!link.label || link.label.trim().length < 4) throw new Error(`Glossary page /glossary/${term.slug} has a non-descriptive internal link label for ${link.href}`);
   }
 }
 
@@ -101,8 +127,11 @@ for (const filePath of filesToScan) {
   if (raw.includes('nofollow')) throw new Error(`Do not use nofollow for editorial citations: ${filePath}`);
 
   for (const line of raw.split('\n')) {
-    if (line.includes('<a') && /href=\{(?:source|tool)\.url\}/.test(line) && !line.includes('rel="noopener noreferrer"')) {
-      throw new Error(`External source/tool anchor missing rel="noopener noreferrer": ${filePath}`);
+    if (line.includes('<a') && /href=\{[^}]*\.url\}/.test(line) && !line.includes('rel="noopener noreferrer"')) {
+      throw new Error(`External data-driven anchor missing rel="noopener noreferrer": ${filePath}`);
+    }
+    if (line.includes('<a') && /href=["']https?:\/\//.test(line) && !line.includes('rel="noopener noreferrer"')) {
+      throw new Error(`External literal anchor missing rel="noopener noreferrer": ${filePath}`);
     }
   }
 
