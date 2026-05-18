@@ -2,7 +2,7 @@
   name: Fanvue
   category: fan_platform
   url: https://www.fanvue.com/
-  summary: Creator monetization platform relevant to AI and synthetic creator businesses.
+  summary: Creator monetization platform relevant to AI and synthetic creator businesses, with official AI-content guidance that makes it a priority fan-platform record.
   best_for:
     - fan subscriptions
     - locked content
@@ -20,7 +20,7 @@
   name: OnlyFans
   category: fan_platform
   url: https://onlyfans.com/
-  summary: Large subscription fan platform that requires careful policy and identity/provenance review for synthetic creator strategies.
+  summary: Large subscription fan platform that requires careful policy, identity, disclosure, and verified-likeness review for synthetic creator strategies.
   best_for:
     - subscriptions
     - creator payments
@@ -29,28 +29,33 @@
   api_available: unknown
   creator_ops_score: null
   policy_risk: high
-  sources: []
-  last_checked: null
+  sources:
+    - onlyfans-terms
+    - onlyfans-help-ai-content
+    - onlyfans-acceptable-use-policy
+  last_checked: '2026-05-18'
 - id: runway
   name: Runway
   category: video_generation
   url: https://runwayml.com/
-  summary: AI video generation and creative production platform for short-form creator assets and visual experiments.
+  summary: AI video generation and creative production platform for short-form creator assets, image-to-video tests, and repeatable visual experiments.
   best_for:
     - AI video
     - creative production
     - short-form motion tests
   pricing_model: subscription
-  api_available: unknown
+  api_available: true
   creator_ops_score: null
   policy_risk: medium
-  sources: []
-  last_checked: null
+  sources:
+    - runway-api-docs
+    - runway-pricing-plans
+  last_checked: '2026-05-18'
 - id: kling
   name: Kling
   category: video_generation
   url: https://klingai.com/
-  summary: AI video generation platform to track for creator motion, image-to-video, and short-form production workflows.
+  summary: AI video generation platform to track for virtual influencer motion, image-to-video workflows, and social clip production.
   best_for:
     - AI video
     - image-to-video
@@ -59,13 +64,15 @@
   api_available: unknown
   creator_ops_score: null
   policy_risk: medium
-  sources: []
-  last_checked: null
+  sources:
+    - kling-pricing
+    - kling-terms
+  last_checked: '2026-05-18'
 - id: gpt-image
   name: GPT Image
   category: image_generation
-  url: https://openai.com/
-  summary: Image generation/editing family useful for editorial creator assets, reference-aware workflows, and web-safe visuals.
+  url: https://openai.com/api/pricing/
+  summary: OpenAI image generation/editing model family useful for editorial creator assets, reference-aware workflows, and web-safe visuals.
   best_for:
     - image generation
     - reference editing
@@ -74,73 +81,16 @@
   api_available: true
   creator_ops_score: null
   policy_risk: medium
-  sources: []
-  last_checked: null
-- id: facefusion
-  name: FaceFusion
-  category: identity_workflow
-  url: https://github.com/facefusion/facefusion
-  summary: Open-source face/identity post-processing workflow for continuity-sensitive creator media pipelines.
-  best_for:
-    - identity consistency
-    - post-production
-    - local workflows
-  pricing_model: open_source
-  api_available: unknown
-  creator_ops_score: null
-  policy_risk: high
-  sources: []
-  last_checked: null
-- id: buffer
-  name: Buffer
-  category: social_scheduler
-  url: https://buffer.com/
-  summary: Social scheduling platform candidate for assisted publishing workflows and queued creator content.
-  best_for:
-    - social scheduling
-    - queue management
-    - multi-platform publishing
-  pricing_model: subscription
-  api_available: unknown
-  creator_ops_score: null
-  policy_risk: low
-  sources: []
-  last_checked: null
-- id: metricool
-  name: Metricool
-  category: social_scheduler
-  url: https://metricool.com/
-  summary: Social media planning and analytics platform relevant to creator publishing and performance reporting.
-  best_for:
-    - social scheduling
-    - analytics
-    - reporting
-  pricing_model: subscription
-  api_available: unknown
-  creator_ops_score: null
-  policy_risk: low
-  sources: []
-  last_checked: null
-- id: zernio
-  name: Zernio
-  category: social_scheduler
-  url: https://zernio.com/
-  summary: Scheduler/API-style candidate to evaluate for creator publishing automation fallback workflows.
-  best_for:
-    - API-first scheduling
-    - creator publishing
-    - automation fallback
-  pricing_model: subscription
-  api_available: unknown
-  creator_ops_score: null
-  policy_risk: medium
-  sources: []
-  last_checked: null
+  sources:
+    - openai-image-generation-guide
+    - openai-api-pricing
+    - openai-usage-policies
+  last_checked: '2026-05-18'
 - id: midjourney
   name: Midjourney
   category: image_generation
   url: https://www.midjourney.com/
-  summary: Image generation platform relevant for moodboards, style exploration, and non-identity-locked creator visuals.
+  summary: Image generation platform relevant for moodboards, style exploration, concept art, and non-identity-locked creator visuals.
   best_for:
     - image generation
     - concept art
@@ -149,5 +99,127 @@
   api_available: unknown
   creator_ops_score: null
   policy_risk: medium
-  sources: []
-  last_checked: null
+  sources:
+    - midjourney-plans
+    - midjourney-terms
+  last_checked: '2026-05-18'
+- id: facefusion
+  name: FaceFusion
+  category: identity_workflow
+  url: https://github.com/facefusion/facefusion
+  summary: Open-source face-manipulation and identity post-production workflow for continuity-sensitive creator media pipelines.
+  best_for:
+    - identity consistency
+    - post-production
+    - local workflows
+  pricing_model: open_source
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: high
+  sources:
+    - facefusion-github
+    - facefusion-docs
+  last_checked: '2026-05-18'
+- id: buffer
+  name: Buffer
+  category: social_scheduler
+  url: https://buffer.com/
+  summary: Social scheduling platform for queue management, assisted publishing workflows, and multi-platform creator content calendars.
+  best_for:
+    - social scheduling
+    - queue management
+    - multi-platform publishing
+  pricing_model: subscription
+  api_available: true
+  creator_ops_score: null
+  policy_risk: low
+  sources:
+    - buffer-pricing
+    - buffer-api-docs
+  last_checked: '2026-05-18'
+- id: metricool
+  name: Metricool
+  category: social_scheduler
+  url: https://metricool.com/
+  summary: Social media planning and analytics platform relevant to AI creator publishing, reporting, link-in-bio routing, and performance review.
+  best_for:
+    - social scheduling
+    - analytics
+    - reporting
+  pricing_model: subscription
+  api_available: true
+  creator_ops_score: null
+  policy_risk: low
+  sources:
+    - metricool-pricing
+    - metricool-api-overview
+  last_checked: '2026-05-18'
+- id: zernio
+  name: Zernio
+  category: social_scheduler
+  url: https://zernio.com/
+  summary: API-first social publishing infrastructure candidate for developer-led creator scheduling, automation fallback, analytics, and inbox workflows.
+  best_for:
+    - API-first scheduling
+    - creator publishing
+    - automation fallback
+  pricing_model: subscription
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - zernio-homepage
+    - zernio-docs
+  last_checked: '2026-05-18'
+- id: manychat
+  name: ManyChat
+  category: dm_automation
+  url: https://manychat.com/
+  summary: Social messaging automation platform for Instagram, TikTok, Messenger, WhatsApp, and creator DM routing workflows.
+  best_for:
+    - DM automation
+    - comment-to-message flows
+    - lead capture
+  pricing_model: subscription
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - manychat-pricing
+    - manychat-instagram-product
+    - manychat-developer-docs
+  last_checked: '2026-05-18'
+- id: linktree
+  name: Linktree
+  category: link_in_bio
+  url: https://linktr.ee/
+  summary: Link-in-bio and lightweight creator commerce platform for routing AI influencer audiences from social profiles to offers and owned channels.
+  best_for:
+    - link in bio
+    - creator funnel routing
+    - digital product links
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: low
+  sources:
+    - linktree-pricing
+    - linktree-terms
+  last_checked: '2026-05-18'
+- id: beacons
+  name: Beacons
+  category: link_in_bio
+  url: https://beacons.ai/
+  summary: Creator business platform combining link-in-bio, storefront, media kit, email, analytics, and Instagram DM automation for creator funnels.
+  best_for:
+    - link in bio
+    - creator storefront
+    - media kit and email
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: low
+  sources:
+    - beacons-pricing
+    - beacons-help-pricing
+  last_checked: '2026-05-18'

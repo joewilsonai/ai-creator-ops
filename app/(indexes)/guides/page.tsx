@@ -14,7 +14,7 @@ const guides = [
     status: 'LIVE',
     description: page.description
   })),
-  { title: 'AI Creator Automation Stack', href: null, status: 'COMING MVP', description: 'Queued for launch content production after platform/tool source review.' }
+  { title: 'Best AI Creator Tools', href: null, status: 'COMING MVP', description: 'Queued for source-backed tool scoring and methodology review.' }
 ];
 
 export const metadata = {

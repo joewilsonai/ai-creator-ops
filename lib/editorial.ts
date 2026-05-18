@@ -334,7 +334,8 @@ export const comparisonPages: EditorialPage[] = [
       { href: '/platforms/fanvue', label: 'Fanvue for AI creators' },
       { href: '/platforms/onlyfans', label: 'OnlyFans platform record' },
       { href: '/guides/ai-influencer-ai-girlfriend-monetization', label: 'AI influencer monetization guide' },
-      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' }
+      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
+      { href: '/methodology', label: 'AI Creator Ops comparison methodology' }
     ],
     sourceIds: ['fanvue-ai-content-allowed', 'fanvue-ai-generated-content', 'fanvue-ai-generated-model-definition', 'fanvue-creator-earnings-payouts', 'onlyfans-terms', 'onlyfans-help-ai-content', 'onlyfans-acceptable-use-policy']
   },
@@ -367,7 +368,8 @@ export const comparisonPages: EditorialPage[] = [
       { href: '/platforms/instagram', label: 'Instagram for AI creators' },
       { href: '/platforms/tiktok', label: 'TikTok for AI creators' },
       { href: '/guides/how-to-build-ai-influencer-brand', label: 'How to build an AI influencer brand' },
-      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' }
+      { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
+      { href: '/methodology', label: 'AI Creator Ops comparison methodology' }
     ],
     sourceIds: ['meta-instagram-content-publishing', 'meta-community-standards-misinformation-ai-disclosure', 'tiktok-content-posting-api-get-started', 'tiktok-content-posting-api-product', 'tiktok-aigc-support']
   }
