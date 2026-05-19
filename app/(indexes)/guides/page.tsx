@@ -13,8 +13,7 @@ const guides = [
     href: page.canonicalPath,
     status: 'LIVE',
     description: page.description
-  })),
-  { title: 'Best AI Creator Tools', href: null, status: 'COMING MVP', description: 'Queued for source-backed tool scoring and methodology review.' }
+  }))
 ];
 
 export const metadata = {
@@ -26,6 +25,22 @@ export default function GuidesPage() {
   return (
     <main>
       <PageHero eyebrow="GUIDES" title="Operating manuals for AI creator businesses" description="Evergreen playbooks for building, producing, publishing, monetizing, automating, governing, and measuring synthetic creator brands." />
+      <section className="wrap pb-8">
+        <Card>
+          <Badge tone="green">DIRECT ANSWER</Badge>
+          <p className="mt-4 max-w-4xl leading-7 text-[var(--muted)]">
+            Start with the AI creator definition, then move into operating guides for AI influencer brand building, AI girlfriend and AI companion monetization, identity consistency, disclosure, automation, and platform risk. These guides are written as source-backed operator playbooks, not generic AI trend articles.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm">
+            <a className="text-[var(--cyan)]" href="/glossary/ai-influencer">AI influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-girlfriend-business">AI girlfriend business</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI model / AI creator</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">AI companion operations</a>
+          </div>
+        </Card>
+      </section>
       <section className="wrap grid gap-4 md:grid-cols-2">
         {guides.map((guide) => (
           <Card key={guide.title}>
