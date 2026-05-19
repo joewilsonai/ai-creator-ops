@@ -458,6 +458,27 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Manychat developer documentation for API and integration review.
+- id: meta-instagram-messaging-api
+  url: https://developers.facebook.com/docs/instagram-messaging/
+  title: Instagram Messaging API
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-19'
+  source_type: primary
+  notes: Official Meta documentation stating that the Instagram Messaging API supports Instagram Professional business and creator accounts, including receiving and responding to messages and sending private replies to post/comment interactions.
+- id: meta-instagram-private-replies
+  url: https://developers.facebook.com/docs/messenger-platform/instagram/features/private-replies/
+  title: Private Replies - Instagram Messaging
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-19'
+  source_type: primary
+  notes: Official Meta documentation for one-message private replies to users who comment on professional account posts, ads posts, reels, or live stories, including the seven-day comment window, live-broadcast limit, and 24-hour messaging window after user response.
+- id: meta-instagram-human-agent-escalation
+  url: https://developers.facebook.com/docs/messenger-platform/instagram/features/human-agent-escalation
+  title: Human Agent Escalation
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-19'
+  source_type: primary
+  notes: Official Meta documentation, updated April 1, 2026, describing human-agent escalation paths for Instagram Messaging automated experiences and custom inbox workflows.
 - id: linktree-pricing
   url: https://linktr.ee/s/pricing/
   title: Linktree pricing
