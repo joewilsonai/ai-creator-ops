@@ -58,6 +58,7 @@ retrieval dates, and notes consistently.
 
 ```yaml
 - id: fanvue-vs-onlyfans
+  title: Fanvue vs OnlyFans for AI Creators
   entities:
     - fanvue
     - onlyfans
@@ -68,8 +69,23 @@ retrieval dates, and notes consistently.
     - policy clarity
     - automation support
     - discovery/funnel potential
-  winner_by_use_case: []
+  winner_by_use_case:
+    - use_case: Explicitly synthetic creator brand
+      winner: fanvue
+      rationale: Fanvue has clearer reviewed AI-content guidance in the current source set.
+  source_ids:
+    - fanvue-ai-content-allowed
+    - onlyfans-terms
+  methodology_path: /methodology
+  last_checked: YYYY-MM-DD
 ```
+
+Comparison records are now validated as structured data, not just editorial copy.
+Every public comparison route in `lib/editorial.ts` should have a matching
+`data/comparisons.yaml` record with at least two known entities, explicit
+criteria, winner-by-use-case notes, source IDs, `/methodology`, and a
+last-checked date. Use the editorial page for prose and the YAML record for
+machine-readable decision data.
 
 ## Scoring candidates
 

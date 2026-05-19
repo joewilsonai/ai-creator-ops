@@ -4,7 +4,7 @@ import sitemap from '../app/sitemap';
 import { GET as getLlmsTxt } from '../app/llms.txt/route';
 import { comparisonPages, guidePages } from '../lib/editorial';
 import { glossarySourceIds, glossaryTerms } from '../lib/glossary';
-import { getAllPlatforms, getAllSources, getAllTools } from '../lib/data';
+import { getAllComparisons, getAllPlatforms, getAllSources, getAllTools } from '../lib/data';
 
 function assertUnique(ids: string[], label: string) {
   const seen = new Set<string>();
@@ -17,11 +17,13 @@ function assertUnique(ids: string[], label: string) {
 const tools = getAllTools();
 const platforms = getAllPlatforms();
 const sources = getAllSources();
+const comparisons = getAllComparisons();
 
 assertUnique(tools.map((tool) => tool.id), 'tool');
 assertUnique(platforms.map((platform) => platform.id), 'platform');
 assertUnique(sources.map((source) => source.id), 'source');
 assertUnique(sources.map((source) => source.url), 'source URL');
+assertUnique(comparisons.map((comparison) => comparison.id), 'comparison');
 
 const sourceIds = new Set(sources.map((source) => source.id));
 const baseUrl = 'https://aicreatorops.com';
@@ -57,6 +59,27 @@ for (const tool of tools) {
 for (const platform of platforms) {
   if (!platform.notes.length) throw new Error(`Platform ${platform.id} needs at least one note`);
   assertSourceVisibility(platform.sources, `Platform ${platform.id}`);
+}
+
+const toolIds = new Set(tools.map((tool) => tool.id));
+const platformIds = new Set(platforms.map((platform) => platform.id));
+const entityIds = new Set([...Array.from(toolIds), ...Array.from(platformIds)]);
+const editorialComparisonIds = new Set(comparisonPages.map((page) => page.slug));
+
+for (const comparison of comparisons) {
+  if (!editorialComparisonIds.has(comparison.id)) throw new Error(`Comparison data has no public editorial route: ${comparison.id}`);
+  if (comparison.methodology_path !== '/methodology') throw new Error(`Comparison ${comparison.id} must link methodology_path to /methodology`);
+  assertSourceVisibility(comparison.source_ids, `Comparison ${comparison.id}`);
+  for (const entity of comparison.entities) {
+    if (!entityIds.has(entity)) throw new Error(`Comparison ${comparison.id} references unknown tool/platform entity: ${entity}`);
+  }
+  for (const winner of comparison.winner_by_use_case) {
+    if (!comparison.entities.includes(winner.winner)) throw new Error(`Comparison ${comparison.id} winner ${winner.winner} is not one of its entities`);
+  }
+}
+
+for (const page of comparisonPages) {
+  if (!comparisons.some((comparison) => comparison.id === page.slug)) throw new Error(`Public comparison route missing structured data record: ${page.canonicalPath}`);
 }
 
 for (const page of [...guidePages, ...comparisonPages]) {
@@ -98,14 +121,14 @@ for (const term of glossaryTerms) {
 }
 
 const sitemapUrls = new Set(sitemap().map((entry) => entry.url.replace(baseUrl, '') || '/'));
-for (const route of publicRoutes) {
+for (const route of Array.from(publicRoutes)) {
   if (!sitemapUrls.has(route)) throw new Error(`Public route missing from sitemap: ${route}`);
 }
 
 async function validateRouteSurfaces() {
   const llmsResponse = await getLlmsTxt();
   const llmsText = await llmsResponse.text();
-  for (const route of publicRoutes) {
+  for (const route of Array.from(publicRoutes)) {
     if (!llmsText.includes(`${baseUrl}${route === '/' ? '/' : route}`)) throw new Error(`Public route missing from llms.txt: ${route}`);
   }
 }
@@ -145,7 +168,7 @@ for (const filePath of filesToScan) {
 
 validateRouteSurfaces()
   .then(() => {
-    console.log(`Validated ${tools.length} tools, ${platforms.length} platforms, ${sources.length} sources, and ${publicRoutes.size} public routes.`);
+    console.log(`Validated ${tools.length} tools, ${platforms.length} platforms, ${comparisons.length} comparisons, ${sources.length} sources, and ${publicRoutes.size} public routes.`);
   })
   .catch((error: unknown) => {
     console.error(error);

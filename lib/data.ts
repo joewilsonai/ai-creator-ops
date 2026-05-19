@@ -44,9 +44,26 @@ const SourceSchema = z.object({
   notes: z.string()
 });
 
+const ComparisonSchema = z.object({
+  id: z.string(),
+  title: z.string(),
+  entities: z.array(z.string()).min(2),
+  intent: z.string(),
+  criteria: z.array(z.string()).min(3),
+  winner_by_use_case: z.array(z.object({
+    use_case: z.string(),
+    winner: z.string(),
+    rationale: z.string()
+  })).default([]),
+  source_ids: z.array(z.string()).default([]),
+  methodology_path: z.string(),
+  last_checked: z.string().nullable()
+});
+
 export type Tool = z.infer<typeof ToolSchema>;
 export type Platform = z.infer<typeof PlatformSchema>;
 export type Source = z.infer<typeof SourceSchema>;
+export type Comparison = z.infer<typeof ComparisonSchema>;
 
 function readYaml<T>(fileName: string, schema: z.ZodSchema<T>): T {
   const fullPath = path.join(dataDir, fileName);
@@ -77,4 +94,12 @@ export function getAllSources(): Source[] {
 
 export function getSource(id: string): Source | undefined {
   return getAllSources().find((source) => source.id === id);
+}
+
+export function getAllComparisons(): Comparison[] {
+  return readYaml('comparisons.yaml', z.array(ComparisonSchema));
+}
+
+export function getComparison(id: string): Comparison | undefined {
+  return getAllComparisons().find((comparison) => comparison.id === id);
 }

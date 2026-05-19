@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getAllPlatforms, getAllSources, getAllTools, getPlatform, getSource, getTool } from './data';
+import { getAllComparisons, getAllPlatforms, getAllSources, getAllTools, getComparison, getPlatform, getSource, getTool } from './data';
 
 describe('content data loaders', () => {
   it('loads seeded tool records with stable ids', () => {
@@ -19,5 +19,12 @@ describe('content data loaders', () => {
     expect(sources.length).toBeGreaterThanOrEqual(15);
     expect(getSource('youtube-help-altered-synthetic-content')?.publisher).toBe('YouTube Help');
     expect(getSource('tiktok-aigc-support')?.source_type).toBe('primary');
+  });
+
+  it('loads structured comparison records with criteria and sources', () => {
+    const comparisons = getAllComparisons();
+    expect(comparisons.length).toBeGreaterThanOrEqual(7);
+    expect(getComparison('fanvue-vs-onlyfans')?.criteria.length).toBeGreaterThanOrEqual(5);
+    expect(getComparison('instagram-vs-tiktok-for-ai-creators')?.methodology_path).toBe('/methodology');
   });
 });

@@ -1,1 +1,196 @@
-# Comparison database starts here.
+- id: fanvue-vs-onlyfans
+  title: Fanvue vs OnlyFans for AI Creators
+  entities:
+    - fanvue
+    - onlyfans
+  intent: Compare fan-platform monetization options for AI creator, AI model, AI girlfriend, and synthetic influencer businesses.
+  criteria:
+    - AI/synthetic creator friendliness
+    - monetization and payout model
+    - policy clarity
+    - verification and likeness risk
+    - discovery/funnel potential
+    - operator documentation quality
+  winner_by_use_case:
+    - use_case: Explicitly synthetic or fully AI-generated creator brand
+      winner: fanvue
+      rationale: Fanvue has the clearest reviewed official AI-creator positioning and AI-generated content guidance in the current source set.
+    - use_case: Verified creator using AI-assisted or AI-altered likeness content
+      winner: onlyfans
+      rationale: OnlyFans can be considered when the account clearly features the verified creator, labels AI content, and passes conservative acceptable-use review.
+  source_ids:
+    - fanvue-ai-content-allowed
+    - fanvue-ai-generated-content
+    - fanvue-ai-generated-model-definition
+    - fanvue-creator-earnings-payouts
+    - onlyfans-terms
+    - onlyfans-help-ai-content
+    - onlyfans-acceptable-use-policy
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
+- id: instagram-vs-tiktok-for-ai-creators
+  title: Instagram vs TikTok for AI Creators
+  entities:
+    - instagram
+    - tiktok
+  intent: Compare Instagram and TikTok as public discovery, disclosure, and automation surfaces for AI influencers, virtual influencers, AI models, and AI girlfriend funnels.
+  criteria:
+    - discovery potential
+    - identity presentation
+    - AI disclosure expectations
+    - official publishing/API posture
+    - funnel usefulness
+    - moderation and account-health risk
+  winner_by_use_case:
+    - use_case: Polished portfolio, visual trust, and link-in-bio funnel
+      winner: instagram
+      rationale: Instagram is stronger for profile trust, grid consistency, and controlled brand presentation.
+    - use_case: Motion-first discovery and rapid creative testing
+      winner: tiktok
+      rationale: TikTok is stronger for short-form motion experiments, hook testing, and discovery volatility.
+  source_ids:
+    - meta-instagram-content-publishing
+    - meta-community-standards-misinformation-ai-disclosure
+    - tiktok-content-posting-api-get-started
+    - tiktok-content-posting-api-product
+    - tiktok-aigc-support
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
+- id: runway-vs-kling
+  title: Runway vs Kling for AI Creator Video
+  entities:
+    - runway
+    - kling
+  intent: Compare Runway and Kling for AI influencer video, image-to-video clips, virtual influencer motion tests, and repeatable creator-production workflows.
+  criteria:
+    - video workflow fit
+    - image-to-video usefulness
+    - API/automation readiness
+    - pricing clarity
+    - policy and commercial-use review
+    - repeatability for creator operations
+  winner_by_use_case:
+    - use_case: API-backed production and automation planning
+      winner: runway
+      rationale: Runway has a stronger reviewed developer documentation surface for production systems.
+    - use_case: Manual motion experiments and social clip ideation
+      winner: kling
+      rationale: Kling is useful for creator-facing image-to-video experimentation when manual review is acceptable.
+  source_ids:
+    - runway-api-docs
+    - runway-pricing-plans
+    - kling-pricing
+    - kling-terms
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
+- id: gpt-image-vs-midjourney
+  title: GPT Image vs Midjourney for AI Creator Assets
+  entities:
+    - gpt-image
+    - midjourney
+  intent: Compare GPT Image and Midjourney for AI influencer portraits, virtual creator moodboards, branded assets, editing, and repeatable image workflows.
+  criteria:
+    - API readiness
+    - image editing support
+    - style exploration
+    - identity consistency workflow fit
+    - pricing clarity
+    - rights and policy review
+  winner_by_use_case:
+    - use_case: API-shaped generation, editing, and integrated workflows
+      winner: gpt-image
+      rationale: GPT Image has official OpenAI documentation, API pricing, and usage-policy surfaces for programmatic review.
+    - use_case: Moodboards, concept art, and high-style exploration
+      winner: midjourney
+      rationale: Midjourney remains strong for visual taste and exploratory creator art direction.
+  source_ids:
+    - openai-image-generation-guide
+    - openai-api-pricing
+    - openai-usage-policies
+    - midjourney-plans
+    - midjourney-terms
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
+- id: buffer-vs-metricool
+  title: Buffer vs Metricool for AI Creator Scheduling
+  entities:
+    - buffer
+    - metricool
+  intent: Compare Buffer and Metricool for AI creator scheduling, publishing discipline, analytics, reporting, and automation support.
+  criteria:
+    - scheduling workflow
+    - analytics and reporting
+    - API/automation posture
+    - pricing clarity
+    - multi-brand operations
+    - fit for synthetic creator QA handoffs
+  winner_by_use_case:
+    - use_case: Simple publishing queue and lightweight scheduling operations
+      winner: buffer
+      rationale: Buffer is the simpler reviewed choice for queue management and publishing discipline.
+    - use_case: Analytics, reporting, and multi-brand performance review
+      winner: metricool
+      rationale: Metricool is stronger when measurement and dashboarding matter as much as scheduling.
+  source_ids:
+    - buffer-pricing
+    - buffer-api-docs
+    - metricool-pricing
+    - metricool-api-overview
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
+- id: fanvue-vs-fansly
+  title: Fanvue vs Fansly for AI Creators
+  entities:
+    - fanvue
+    - fansly
+  intent: Compare Fanvue and Fansly for AI creator, AI girlfriend, fan subscription, locked content, and synthetic creator monetization strategies.
+  criteria:
+    - AI-content clarity
+    - subscription and fan monetization tooling
+    - payout model
+    - verification and identity risk
+    - policy/source quality
+    - fit for fully synthetic creator launches
+  winner_by_use_case:
+    - use_case: Openly synthetic AI creator brand
+      winner: fanvue
+      rationale: Fanvue has clearer official AI-creator and AI-generated content guidance in the reviewed source set.
+    - use_case: Tiered fan subscriptions after strict terms review
+      winner: fansly
+      rationale: Fansly is relevant for fan monetization mechanics but requires conservative AI-content, likeness, and verification review.
+  source_ids:
+    - fanvue-ai-content-allowed
+    - fanvue-ai-generated-content
+    - fanvue-creator-earnings-payouts
+    - fansly-terms-of-service
+    - fansly-requesting-payout
+    - fansly-subscriptions-creator-hub
+  methodology_path: /methodology
+  last_checked: '2026-05-19'
+- id: linktree-vs-beacons
+  title: Linktree vs Beacons for AI Creator Funnels
+  entities:
+    - linktree
+    - beacons
+  intent: Compare Linktree and Beacons for AI influencer funnels, fan-platform routing, digital products, email capture, media kits, and creator monetization links.
+  criteria:
+    - setup speed
+    - offer routing
+    - commerce and email features
+    - analytics
+    - pricing clarity
+    - creator-business fit
+  winner_by_use_case:
+    - use_case: Minimal recognizable link-in-bio routing
+      winner: linktree
+      rationale: Linktree is the simpler lightweight routing layer for fast social-profile setup.
+    - use_case: Creator-business hub with storefront, email, media kit, and analytics
+      winner: beacons
+      rationale: Beacons is broader when the AI creator needs more monetization and owned-audience tooling.
+  source_ids:
+    - linktree-pricing
+    - linktree-terms
+    - beacons-pricing
+    - beacons-help-pricing
+  methodology_path: /methodology
+  last_checked: '2026-05-18'
