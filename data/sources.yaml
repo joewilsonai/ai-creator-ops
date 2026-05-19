@@ -498,23 +498,23 @@
   url: https://fansly.com/tos
   title: Fansly Terms of Service
   publisher: Fansly
-  retrieved_at: '2026-05-18'
+  retrieved_at: '2026-05-19'
   source_type: primary
-  notes: Official Fansly terms covering creator revenue share, content restrictions, AI-generated photorealistic/lifelike content constraints, account, and platform obligations.
+  notes: Official Fansly terms covering creator revenue share, content restrictions, AI-generated photorealistic/lifelike content constraints, account, and platform obligations; search-result extraction surfaced the 80% creator revenue share language while the full page needs periodic manual recheck.
 - id: fansly-requesting-payout
   url: https://help.fansly.com/en/articles/10544475-requesting-a-payout
   title: Requesting a Payout
   publisher: Fansly Help Center
-  retrieved_at: '2026-05-18'
+  retrieved_at: '2026-05-19'
   source_type: primary
-  notes: Official Fansly help-center source for payout request workflow, minimum withdrawal notes, and payout processing expectations.
+  notes: Official Fansly help-center source for payout request workflow, minimum withdrawal notes, and payout processing expectations including the commonly listed $20 minimum for most serviced countries and up to four business days for processing.
 - id: fansly-subscriptions-creator-hub
   url: https://creatorhub.fansly.com/set-up-your-subscriptions/
   title: Set Up Your Subscriptions
   publisher: Fansly Creator Hub
-  retrieved_at: '2026-05-18'
+  retrieved_at: '2026-05-19'
   source_type: primary
-  notes: Official Fansly Creator Hub guide for setting subscription tiers, benefits, discounts, and recurring revenue structures.
+  notes: Official Fansly Creator Hub guide for setting subscription tiers, benefits, promotions, discounts, subscriber management, and recurring revenue structures.
 - id: patreon-adult-ai-policy
   url: https://support.patreon.com/hc/en-us/articles/34055590411789-Understanding-Patreon-s-AI-policies-for-Adult-18-creators
   title: Understanding Patreon's AI policies for Adult/18+ creators

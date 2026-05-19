@@ -34,6 +34,24 @@
     - onlyfans-help-ai-content
     - onlyfans-acceptable-use-policy
   last_checked: '2026-05-18'
+- id: fansly
+  name: Fansly
+  category: fan_platform
+  url: https://fansly.com/
+  summary: Subscription fan platform to track as an OnlyFans/Fanvue alternative for AI creator and virtual influencer monetization, with AI-content risk requiring source-backed review.
+  best_for:
+    - fan subscriptions
+    - locked content
+    - tiered creator communities
+  pricing_model: revenue_share
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: high
+  sources:
+    - fansly-terms-of-service
+    - fansly-requesting-payout
+    - fansly-subscriptions-creator-hub
+  last_checked: '2026-05-19'
 - id: runway
   name: Runway
   category: video_generation

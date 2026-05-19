@@ -98,6 +98,25 @@
     - onlyfans-help-ai-content
     - onlyfans-acceptable-use-policy
   last_checked: '2026-05-18'
+- id: fansly
+  name: Fansly
+  type: fan_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: high
+  notes:
+    - Subscription fan platform relevant to AI creator, AI girlfriend, AI model, and virtual influencer monetization research, but synthetic-media claims need cautious policy review before recommendation.
+    - Fansly Terms surfaced in search results state that creators earn 80% of revenue generated on subscriptions, sales, or tips related to their content and user profile.
+    - Fansly Help says creators request withdrawals from their Available for Payout balance after adding a payout method, with a commonly listed $20 minimum for most serviced countries and processing that may take up to four business days.
+    - Fansly Creator Hub describes subscription tiers, tier benefits, promotions, discounts, recurring-billing subscriber management, and creator dashboard workflows.
+    - Because the Terms source also covers content restrictions and AI-generated photorealistic or lifelike content constraints, AI influencer and AI companion operators should treat Fansly as high-risk until every likeness, disclosure, age-appearance, and rights question is checked against the current terms.
+  sources:
+    - fansly-terms-of-service
+    - fansly-requesting-payout
+    - fansly-subscriptions-creator-hub
+  last_checked: '2026-05-19'
 - id: youtube-shorts
   name: YouTube Shorts
   type: social_platform
