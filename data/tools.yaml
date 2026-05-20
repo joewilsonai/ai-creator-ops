@@ -200,7 +200,7 @@
   name: ManyChat
   category: dm_automation
   url: https://manychat.com/
-  summary: Social messaging automation platform for Instagram, TikTok, Messenger, WhatsApp, and creator DM routing workflows; Instagram automations should be reviewed against Meta's Instagram Messaging API limits and human-escalation requirements.
+  summary: Social messaging automation platform for Instagram, TikTok, Messenger, WhatsApp, and creator DM routing workflows; Instagram automations should be reviewed against Meta's Instagram Messaging API permissions, message-send limits, private-reply constraints, and human-escalation requirements.
   best_for:
     - DM automation
     - comment-to-message flows
@@ -216,7 +216,8 @@
     - meta-instagram-messaging-api
     - meta-instagram-private-replies
     - meta-instagram-human-agent-escalation
-  last_checked: '2026-05-19'
+    - meta-instagram-send-message
+  last_checked: '2026-05-20'
 - id: linktree
   name: Linktree
   category: link_in_bio

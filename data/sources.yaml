@@ -479,6 +479,13 @@
   retrieved_at: '2026-05-19'
   source_type: primary
   notes: Official Meta documentation, updated April 1, 2026, describing human-agent escalation paths for Instagram Messaging automated experiences and custom inbox workflows.
+- id: meta-instagram-send-message
+  url: https://developers.facebook.com/docs/messenger-platform/instagram/features/send-message
+  title: Send a Message - Instagram Messaging
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Meta documentation for sending text, link, image, video, audio, reaction, and sticker messages from Instagram Professional accounts through the Messenger Platform, including Page access token, instagram_manage_messages permission, Standard Access, message length, and media attachment limits.
 - id: linktree-pricing
   url: https://linktr.ee/s/pricing/
   title: Linktree pricing
