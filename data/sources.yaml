@@ -676,3 +676,52 @@
   retrieved_at: '2026-05-20'
   source_type: primary
   notes: Official Substack mailing-list import help article describing CSV/XLSX/ODS subscriber imports, opt-in confirmation, duplicate/invalid email skips, paid-subscriber trial handling, and support-assisted deletion of imported lists.
+- id: elevenlabs-text-to-speech-docs
+  url: https://elevenlabs.io/docs/overview/capabilities/text-to-speech
+  title: Text to Speech
+  publisher: ElevenLabs Documentation
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs docs describing the Text to Speech API, model options, real-time Flash v2.5 latency positioning, language coverage, output formats, voice options, prompting behavior, and nondeterministic generation notes.
+- id: elevenlabs-text-to-dialogue-docs
+  url: https://elevenlabs.io/docs/overview/capabilities/text-to-dialogue
+  title: Text to Dialogue
+  publisher: ElevenLabs Documentation
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs docs for expressive multi-speaker dialogue generation with Eleven v3, including audio tags such as whispering/giggling, output formats, language coverage, and the limitation that Text to Dialogue is not intended for real-time conversational agents.
+- id: elevenlabs-voice-cloning-concepts
+  url: https://elevenlabs.io/docs/eleven-api/concepts/voice-cloning
+  title: 'Voice cloning: how it works'
+  publisher: ElevenLabs Documentation
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs concept guide explaining Instant Voice Cloning versus Professional Voice Cloning, sample-quality dependencies, Creator-plan eligibility for professional cloning, voice verification/voice-CAPTCHA safeguards, and limitations of verification.
+- id: elevenlabs-voice-library-docs
+  url: https://elevenlabs.io/docs/eleven-creative/voices/voice-library
+  title: Voice Library
+  publisher: ElevenLabs Documentation
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs Voice Library docs describing the marketplace for community-shared Professional Voice Clones, creator rewards, search/filtering, notice periods, and live-moderation labels.
+- id: elevenlabs-pricing
+  url: https://elevenlabs.io/pricing
+  title: ElevenLabs Pricing for Creators & Businesses of All Sizes
+  publisher: ElevenLabs
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs pricing page covering Free, Starter, Creator, Pro, Scale, Business, and Enterprise plans; credits; commercial license availability beginning on Starter; Professional Voice Cloning on Creator; and API/audio-quality plan distinctions.
+- id: elevenlabs-prohibited-use-policy
+  url: https://elevenlabs.io/use-policy
+  title: ElevenLabs Prohibited Use Policy
+  publisher: ElevenLabs
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs prohibited-use policy, last updated 2025-09-03, covering child-safety restrictions, illegal behavior, IP/privacy-rights violations, deception/fraud/abuse, voice-verification evasion, unauthorized robocalling, spam, regulated goods, and tailored professional advice constraints.
+- id: elevenlabs-safety
+  url: https://elevenlabs.io/safety
+  title: ElevenLabs Safety
+  publisher: ElevenLabs
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official ElevenLabs safety page describing safety principles, C2PA and classifier transparency efforts, AI Speech Classifier, enforcement, monitoring, red-teaming, blocking of celebrity/high-risk voice cloning, and Professional Voice Cloning verification.

@@ -278,3 +278,26 @@
     - substack-custom-domain-help
     - substack-import-mailing-list-help
   last_checked: '2026-05-20'
+- id: elevenlabs
+  name: ElevenLabs
+  category: voice_audio_generation
+  url: https://elevenlabs.io/
+  summary: AI audio platform for text-to-speech, dialogue generation, voice cloning, dubbing, and voice library workflows relevant to voice-enabled AI influencers, virtual creators, and AI companion media.
+  best_for:
+    - AI voiceovers
+    - synthetic creator dialogue
+    - voice cloning with consent controls
+    - multilingual audio localization
+  pricing_model: subscription_and_usage_based
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - elevenlabs-text-to-speech-docs
+    - elevenlabs-text-to-dialogue-docs
+    - elevenlabs-voice-cloning-concepts
+    - elevenlabs-voice-library-docs
+    - elevenlabs-pricing
+    - elevenlabs-prohibited-use-policy
+    - elevenlabs-safety
+  last_checked: '2026-05-20'
