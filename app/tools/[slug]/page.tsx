@@ -39,6 +39,11 @@ function relatedGlossaryLinks(category: string) {
       { label: 'Locked content', href: '/glossary/locked-content' },
       { label: 'Fan platform', href: '/glossary/fan-platform' }
     ],
+    owned_audience: [
+      { label: 'Creator funnel', href: '/glossary/creator-funnel' },
+      { label: 'AI disclosure', href: '/glossary/ai-disclosure' },
+      { label: 'Platform risk', href: '/glossary/platform-risk' }
+    ],
     fan_platform: [
       { label: 'Fan platform', href: '/glossary/fan-platform' },
       { label: 'Locked content', href: '/glossary/locked-content' },

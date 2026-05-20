@@ -252,3 +252,24 @@
     - beacons-pricing
     - beacons-help-pricing
   last_checked: '2026-05-18'
+- id: substack
+  name: Substack
+  category: owned_audience
+  url: https://substack.com/
+  summary: Newsletter, publication, and subscriber relationship platform for AI creator operators who need owned audience capture, long-form updates, paid subscriptions, and a durable home outside social feeds.
+  best_for:
+    - owned audience
+    - newsletters and publication posts
+    - paid subscriptions
+  pricing_model: revenue_share
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - substack-terms-of-use
+    - substack-publisher-agreement
+    - substack-content-guidelines
+    - substack-publishing-help
+    - substack-custom-domain-help
+    - substack-import-mailing-list-help
+  last_checked: '2026-05-20'

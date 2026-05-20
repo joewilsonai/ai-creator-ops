@@ -599,3 +599,45 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Reddit developer blog stating Reddit Developer Platform apps can ship into subreddits, reach communities, and access monetization options including temporary Developer Funds programs.
+- id: substack-terms-of-use
+  url: https://substack.com/tos
+  title: Terms of Use
+  publisher: Substack
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack terms stating account holders can use Substack as creators/readers, creators own original content they create, Substack may remove content at its discretion, and users must not use Substack if under 16.
+- id: substack-publisher-agreement
+  url: https://substack.com/pa
+  title: Publisher Agreement
+  publisher: Substack
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack publisher agreement covering publication to the web and subscriber lists, free or paid subscription publishing, creator-set pricing, payment processing through Substack-designated methods, revenue share, taxes, and creator responsibilities.
+- id: substack-content-guidelines
+  url: https://substack.com/content
+  title: Content Guidelines
+  publisher: Substack
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack content policy source stating Substack is for independent writers, podcasters, and creators, bans spam/phishing, impersonation, plagiarism, non-consensual intimate images, and other prohibited content, and says Substack is intended for high quality editorial content rather than conventional email marketing.
+- id: substack-publishing-help
+  url: https://support.substack.com/hc/en-us/articles/360037831771-How-do-I-publish-a-new-post-on-Substack
+  title: How do I publish a new post on Substack?
+  publisher: Substack Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack publishing help article covering web post creation, draft saving, audience choices for posts, email/app inbox sending options, scheduling, tags, free previews for paid posts, and the limitation that once a post has been emailed it cannot be resent.
+- id: substack-custom-domain-help
+  url: https://support.substack.com/hc/en-us/articles/360051222571-How-do-I-set-up-my-custom-domain-on-Substack
+  title: How do I set up my custom domain on Substack?
+  publisher: Substack Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack custom-domain help article stating Substack charges a one-time $50 USD custom-domain fee, requires publication owner or group administrator access, uses a CNAME setup on a subdomain such as www, and says newsletters continue sending from a Substack address.
+- id: substack-import-mailing-list-help
+  url: https://support.substack.com/hc/en-us/articles/360037829931-How-do-I-import-my-mailing-list-from-another-platform-such-as-Mailchimp-Ghost-or-Beehiiv
+  title: How do I import my mailing list from another platform, such as Mailchimp, Ghost, or Beehiiv?
+  publisher: Substack Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Substack mailing-list import help article describing CSV/XLSX/ODS subscriber imports, opt-in confirmation, duplicate/invalid email skips, paid-subscriber trial handling, and support-assisted deletion of imported lists.

@@ -30,7 +30,7 @@ export default function ToolsPage() {
           <div className="mt-5 grid gap-3 md:grid-cols-3">
             <p className="font-mono text-xs uppercase tracking-[.08em] text-[var(--dim)]">Tool records: {tools.length}</p>
             <p className="font-mono text-xs uppercase tracking-[.08em] text-[var(--dim)]">With source links: {sourceReviewed}</p>
-            <p className="font-mono text-xs uppercase tracking-[.08em] text-[var(--dim)]">Last review batch: 2026-05-18</p>
+            <p className="font-mono text-xs uppercase tracking-[.08em] text-[var(--dim)]">Last review batch: 2026-05-20</p>
           </div>
         </Card>
       </section>
