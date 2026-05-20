@@ -1,10 +1,19 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 import { glossaryTerms } from '@/lib/glossary';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Glossary: AI Influencer, AI Girlfriend, Virtual Influencer Terms',
   description:
-    'Entity definitions for AI creator businesses, AI influencers, AI girlfriend brands, virtual influencers, synthetic influencers, creator funnels, fan platforms, and disclosure workflows.'
+    'Entity definitions for AI creator businesses, AI influencers, AI girlfriend brands, virtual influencers, synthetic influencers, creator funnels, fan platforms, and disclosure workflows.',
+  alternates: { canonical: `${baseUrl}/glossary` },
+  openGraph: {
+    title: 'AI Creator Glossary',
+    description: 'Crawlable entity definitions for AI influencer, AI girlfriend, AI model, virtual influencer, synthetic influencer, virtual creator, and AI companion terms.',
+    url: `${baseUrl}/glossary`,
+    type: 'website'
+  }
 };
 
 export default function GlossaryPage() {

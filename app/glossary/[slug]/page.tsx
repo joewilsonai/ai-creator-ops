@@ -4,6 +4,8 @@ import { Badge, Card } from '@/components/ui';
 import { getSource } from '@/lib/data';
 import { getGlossaryTerm, glossarySourceIds, glossaryTerms } from '@/lib/glossary';
 
+const baseUrl = 'https://aicreatorops.com';
+
 function sourceTypeLabel(sourceType: string) {
   return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
 }
@@ -19,11 +21,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${term.term}: Definition for AI Creator Operators`,
     description: `${term.definition} Includes related AI creator, AI influencer, platform, tool, and monetization links.`,
-    alternates: { canonical: `/glossary/${term.slug}` },
+    alternates: { canonical: `${baseUrl}/glossary/${term.slug}` },
     openGraph: {
       title: `${term.term}: Definition for AI Creator Operators`,
       description: term.definition,
-      url: `/glossary/${term.slug}`,
+      url: `${baseUrl}/glossary/${term.slug}`,
       type: 'article'
     }
   };

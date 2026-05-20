@@ -1,14 +1,16 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Ops Methodology: Tool, Platform, and Comparison Scoring',
   description:
     'Transparent methodology for AI Creator Ops rankings, platform index scores, tool records, comparisons, source hierarchy, and citation review.',
-  alternates: { canonical: '/methodology' },
+  alternates: { canonical: `${baseUrl}/methodology` },
   openGraph: {
     title: 'AI Creator Ops Methodology',
     description: 'How AI Creator Ops scores tools, platforms, comparisons, and source confidence for AI creator businesses.',
-    url: '/methodology',
+    url: `${baseUrl}/methodology`,
     type: 'article'
   }
 };
@@ -49,7 +51,8 @@ export default function MethodologyPage() {
             <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI model / AI creator</a>
-            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">AI companion ops</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
+            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">DM automation</a>
           </div>
         </Card>
       </section>

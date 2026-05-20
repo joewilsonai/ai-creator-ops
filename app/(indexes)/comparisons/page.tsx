@@ -1,9 +1,18 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 import { comparisonPages } from '@/lib/editorial';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Comparisons',
-  description: 'Decision pages for AI creator tools and platforms, including Fanvue vs OnlyFans and Instagram vs TikTok for AI creators.'
+  description: 'Decision pages for AI creator tools and platforms, including Fanvue vs OnlyFans and Instagram vs TikTok for AI creators.',
+  alternates: { canonical: `${baseUrl}/comparisons` },
+  openGraph: {
+    title: 'AI Creator Comparisons',
+    description: 'Criteria-led comparisons for AI creator tools, fan platforms, social platforms, automation stacks, and creator funnels.',
+    url: `${baseUrl}/comparisons`,
+    type: 'website'
+  }
 };
 
 export default function ComparisonsPage() {

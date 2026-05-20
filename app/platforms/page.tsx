@@ -1,10 +1,18 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 import { getAllPlatforms } from '@/lib/data';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Platform Index: AI Influencer, Fan Platform, and Commerce Rails',
   description: 'Source-backed platform notes for AI creator businesses, AI influencers, AI girlfriend brands, virtual influencers, fan platforms, social distribution, and commerce rails.',
-  alternates: { canonical: '/platforms' }
+  alternates: { canonical: `${baseUrl}/platforms` },
+  openGraph: {
+    title: 'AI Creator Platform Index',
+    description: 'Source-backed platform intelligence for AI creators, AI influencers, AI girlfriend businesses, fan platforms, social distribution, and commerce rails.',
+    url: `${baseUrl}/platforms`,
+    type: 'website'
+  }
 };
 
 export default function PlatformsPage() {

@@ -1,6 +1,8 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 import { guidePages } from '@/lib/editorial';
 
+const baseUrl = 'https://aicreatorops.com';
+
 const guides = [
   {
     title: 'What Is an AI Creator?',
@@ -18,7 +20,14 @@ const guides = [
 
 export const metadata = {
   title: 'AI Creator Guides',
-  description: 'Operator-first guides for AI influencers, AI girlfriend brands, AI models, virtual influencers, synthetic influencers, disclosure, monetization, and identity consistency.'
+  description: 'Operator-first guides for AI influencers, AI girlfriend brands, AI models, virtual influencers, synthetic influencers, disclosure, monetization, and identity consistency.',
+  alternates: { canonical: `${baseUrl}/guides` },
+  openGraph: {
+    title: 'AI Creator Guides',
+    description: 'Source-backed operating guides for AI creator brands, AI influencers, AI girlfriend businesses, virtual creators, and synthetic influencers.',
+    url: `${baseUrl}/guides`,
+    type: 'website'
+  }
 };
 
 export default function GuidesPage() {
@@ -37,7 +46,7 @@ export default function GuidesPage() {
             <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI model / AI creator</a>
             <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
-            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">AI companion operations</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
           </div>
         </Card>
       </section>

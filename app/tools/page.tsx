@@ -1,16 +1,18 @@
 import { PageHero, Card, Badge } from '@/components/ui';
 import { getAllTools } from '@/lib/data';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Tool Index: AI Influencer, AI Model, and Automation Stack Tools',
   description:
     'Source-backed tool records for AI creator businesses, AI influencers, AI girlfriend brands, virtual influencers, AI models, scheduling, funnels, and automation workflows.',
-  alternates: { canonical: '/tools' },
+  alternates: { canonical: `${baseUrl}/tools` },
   openGraph: {
     title: 'AI Creator Tool Index',
     description:
       'A structured tool index for AI creator operators: image/video generation, identity workflows, fan platforms, link-in-bio funnels, schedulers, and DM automation.',
-    url: '/tools',
+    url: `${baseUrl}/tools`,
     type: 'website'
   }
 };
@@ -43,7 +45,8 @@ export default function ToolsPage() {
             <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI model / AI creator</a>
-            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">AI companion / DM automation</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
+            <a className="text-[var(--cyan)]" href="/glossary/dm-automation">DM automation</a>
           </div>
         </Card>
       </section>

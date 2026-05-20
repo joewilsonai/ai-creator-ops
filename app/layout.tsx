@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | AI Creator Ops'
   },
   description: 'Tools, platform intelligence, workflows, and monetization playbooks for synthetic creators, virtual influencers, fan-platform brands, and agent-run creator operations.',
-  alternates: { canonical: '/' },
+  alternates: { canonical: 'https://aicreatorops.com/' },
   openGraph: {
     title: 'AI Creator Ops',
     description: 'Build the creator business, not just the character.',

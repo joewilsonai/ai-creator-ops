@@ -12,6 +12,7 @@ export const glossarySourceIds: Record<string, string[]> = {
   'ai-creator': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
   'ai-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
   'ai-girlfriend-business': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy'],
+  'ai-companion': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy', 'x-developer-guidelines'],
   'synthetic-influencer': ['meta-labeling-ai-content-impact', 'youtube-help-altered-synthetic-content'],
   'virtual-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
   'identity-consistency': ['openai-image-generation-guide', 'midjourney-terms', 'facefusion-docs'],
@@ -107,6 +108,26 @@ export const glossaryTerms: GlossaryTerm[] = [
       { label: 'Identity consistency', href: '/glossary/identity-consistency' },
       { label: 'FaceFusion', href: '/tools/facefusion' },
       { label: 'Runway', href: '/tools/runway' }
+    ]
+  },
+  {
+    slug: 'ai-companion',
+    term: 'AI Companion',
+    alsoKnownAs: ['AI companion creator', 'AI girlfriend', 'virtual companion', 'synthetic companion'],
+    definition:
+      'An AI companion is a synthetic or AI-assisted character experience designed around conversation, relationship-style engagement, recurring attention, and sometimes paid fan or subscription access.',
+    whyItMatters:
+      'AI companion demand overlaps with AI girlfriend businesses, fan-platform funnels, DM automation, and synthetic influencer brands, but it carries higher disclosure, expectation-setting, moderation, and platform-risk requirements than a simple social persona.',
+    operatorNotes: [
+      'State clearly whether the companion is fictional, AI-generated, AI-assisted, human-operated, automated, or a mix of workflows.',
+      'Separate intimacy, paid messaging, support, and sales flows so automation does not mislead users or violate platform rules.',
+      'Review fan-platform rules, age/likeness constraints, acceptable-use policies, payout terms, and DM automation limits before monetizing.'
+    ],
+    related: [
+      { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' },
+      { label: 'DM automation', href: '/glossary/dm-automation' },
+      { label: 'Fan platform', href: '/glossary/fan-platform' },
+      { label: 'AI influencer monetization guide', href: '/guides/ai-influencer-ai-girlfriend-monetization' }
     ]
   },
   {

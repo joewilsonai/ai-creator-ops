@@ -3,6 +3,8 @@ import { notFound } from 'next/navigation';
 import { Badge, Card } from '@/components/ui';
 import { getAllTools, getSource, getTool } from '@/lib/data';
 
+const baseUrl = 'https://aicreatorops.com';
+
 function sourceTypeLabel(sourceType: string) {
   return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
 }
@@ -66,11 +68,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${tool.name} for AI Creators: Use Cases, Risk, and Source Notes`,
     description: `${tool.summary} Includes AI creator use cases, pricing model, automation/API status, policy risk, and last-checked source status.`,
-    alternates: { canonical: `/tools/${tool.id}` },
+    alternates: { canonical: `${baseUrl}/tools/${tool.id}` },
     openGraph: {
       title: `${tool.name} for AI Creators`,
       description: tool.summary,
-      url: `/tools/${tool.id}`,
+      url: `${baseUrl}/tools/${tool.id}`,
       type: 'article'
     }
   };

@@ -1,14 +1,16 @@
 import Link from 'next/link';
 import { PageHero, Card, Badge } from '@/components/ui';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata = {
   title: 'AI Creator Ops Reports: Platform Index and Market Intelligence',
   description: 'Original indexes and source-backed market reports for AI creator businesses, AI influencers, virtual influencers, fan platforms, and AI companion operators.',
-  alternates: { canonical: '/reports' },
+  alternates: { canonical: `${baseUrl}/reports` },
   openGraph: {
     title: 'AI Creator Ops Reports',
     description: 'Citation-ready reports built from structured data, methodology, source links, and last-checked platform intelligence.',
-    url: '/reports',
+    url: `${baseUrl}/reports`,
     type: 'website'
   }
 };

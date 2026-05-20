@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { Badge, Card } from '@/components/ui';
 import { getAllPlatforms } from '@/lib/data';
 
+const baseUrl = 'https://aicreatorops.com';
+
 const criteria = [
   {
     name: 'Policy clarity',
@@ -41,11 +43,11 @@ const sourcePlan = [
 export const metadata = {
   title: 'AI Creator Platform Index 2026',
   description: 'A transparent scoring framework for comparing social platforms, fan platforms, and monetization rails for AI creator businesses.',
-  alternates: { canonical: '/reports/ai-creator-platform-index-2026' },
+  alternates: { canonical: `${baseUrl}/reports/ai-creator-platform-index-2026` },
   openGraph: {
     title: 'AI Creator Platform Index 2026',
     description: 'A transparent platform scoring framework for AI creator businesses.',
-    url: 'https://aicreatorops.com/reports/ai-creator-platform-index-2026',
+    url: `${baseUrl}/reports/ai-creator-platform-index-2026`,
     siteName: 'AI Creator Ops',
     type: 'article'
   }

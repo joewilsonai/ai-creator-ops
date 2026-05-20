@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
 import { Badge, Card, PageHero } from '@/components/ui';
 
+const baseUrl = 'https://aicreatorops.com';
+
 export const metadata: Metadata = {
   title: 'AI Creator Ops Newsletter',
   description: 'Updates on AI creator tools, platform policy, monetization, automation, and synthetic creator operations.',
-  alternates: { canonical: '/newsletter' },
+  alternates: { canonical: `${baseUrl}/newsletter` },
   openGraph: {
     title: 'AI Creator Ops Newsletter',
     description: 'Operator intelligence for AI creator businesses, synthetic influencers, and virtual creator teams.',
-    url: '/newsletter',
+    url: `${baseUrl}/newsletter`,
     type: 'website'
   }
 };
