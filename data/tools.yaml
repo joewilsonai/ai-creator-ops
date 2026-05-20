@@ -222,7 +222,7 @@
   name: Linktree
   category: link_in_bio
   url: https://linktr.ee/
-  summary: Link-in-bio and lightweight creator commerce platform for routing AI influencer audiences from social profiles to offers and owned channels.
+  summary: Link-in-bio and lightweight creator commerce platform for routing AI influencer audiences from social profiles to offers, shops, analytics, and owned-channel capture.
   best_for:
     - link in bio
     - creator funnel routing
@@ -234,12 +234,15 @@
   sources:
     - linktree-pricing
     - linktree-terms
-  last_checked: '2026-05-18'
+    - linktree-shop-affiliate-recommendations
+    - linktree-insights-analytics
+    - linktree-transaction-processing-fees
+  last_checked: '2026-05-20'
 - id: beacons
   name: Beacons
   category: link_in_bio
   url: https://beacons.ai/
-  summary: Creator business platform combining link-in-bio, storefront, media kit, email, analytics, and Instagram DM automation for creator funnels.
+  summary: Creator business platform combining link-in-bio, storefront, media kit, email, analytics, AI assistance, and Instagram DM automation for creator funnels.
   best_for:
     - link in bio
     - creator storefront
@@ -251,7 +254,9 @@
   sources:
     - beacons-pricing
     - beacons-help-pricing
-  last_checked: '2026-05-18'
+    - beacons-media-kit-builder
+    - beacons-store-landing-page
+  last_checked: '2026-05-20'
 - id: substack
   name: Substack
   category: owned_audience

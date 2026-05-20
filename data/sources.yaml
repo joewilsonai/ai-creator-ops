@@ -514,6 +514,41 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Beacons help-center pricing article summarizing plan tiers, transaction fees, email limits, memberships, courses, and creator-business tools.
+- id: linktree-shop-affiliate-recommendations
+  url: https://linktr.ee/help/en/articles/8910562-using-shop-to-sell-products-or-promote-affiliate-recommendations
+  title: Using Shop to promote affiliate recommendations
+  publisher: Linktree Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Linktree Help article describing Shop as a dedicated tab for commerce and affiliate products, direct /shop URLs, product collections, visibility controls, and the limitation that orders and transactions are managed through the external storefront or retailer.
+- id: linktree-insights-analytics
+  url: https://linktr.ee/help/en/articles/5434178-understanding-your-analytics
+  title: Understanding your Insights
+  publisher: Linktree Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Linktree Help article defining Insights metrics such as total views, total clicks, unique clicks, click rate, lifetime performance, and campaign performance surfaces for link-in-bio funnel measurement.
+- id: linktree-transaction-processing-fees
+  url: https://linktr.ee/help/en/articles/11410206-understanding-transaction-and-processing-fees-on-linktree
+  title: Understanding transaction and processing fees on Linktree
+  publisher: Linktree Help Center
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Linktree Help article explaining Linktree transaction fees, third-party processing fees such as Stripe, Earn feature fee handling, and Premium fee-removal notes while processing fees may still apply.
+- id: beacons-media-kit-builder
+  url: https://beacons.ai/i/app-pages/media-kit
+  title: Media Kit Builder for Creators (Free & Customizable)
+  publisher: Beacons
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Beacons product page describing an auto-updating creator media kit for brand deals, including audience/performance stats, past collaborations, rates, services, contact paths, and customization.
+- id: beacons-store-landing-page
+  url: https://home.beacons.ai/store-app-landing-page-2-0
+  title: The Best Online Store for Creators
+  publisher: Beacons
+  retrieved_at: '2026-05-20'
+  source_type: primary
+  notes: Official Beacons store page describing creator storefront features including digital products, memberships/subscriptions, mobile checkout, AI-assisted product creation, SEO support, multi-currency support, customization, and low-fee/0% transaction-fee positioning depending on plan.
 - id: lora-paper
   url: https://arxiv.org/abs/2106.09685
   title: 'LoRA: Low-Rank Adaptation of Large Language Models'
