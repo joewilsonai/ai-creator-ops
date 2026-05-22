@@ -34,6 +34,8 @@ export default function ComparisonsPage() {
           <h2 className="mt-4 text-3xl font-semibold tracking-[-.05em]">Current video links</h2>
           <p className="mt-3 max-w-3xl text-[var(--muted)]">Each live comparison page now includes current YouTube demos or comparison videos where useful. Treat them as visual workflow context and market signals; official source links on each page remain the authority for policy, pricing, and API claims.</p>
           <ul className="mt-5 grid gap-3 text-sm md:grid-cols-2">
+            <li><a className="text-[var(--cyan)]" href="/comparisons/fanvue-vs-onlyfans">Fanvue vs OnlyFans creator-platform videos</a></li>
+            <li><a className="text-[var(--cyan)]" href="/comparisons/instagram-vs-tiktok-for-ai-creators">Instagram vs TikTok AI influencer workflow videos</a></li>
             <li><a className="text-[var(--cyan)]" href="/comparisons/runway-vs-kling">Runway vs Kling video demos</a></li>
             <li><a className="text-[var(--cyan)]" href="/comparisons/gpt-image-vs-midjourney">GPT Image vs Midjourney visual comparison</a></li>
             <li><a className="text-[var(--cyan)]" href="/comparisons/buffer-vs-metricool">Buffer vs Metricool scheduler videos</a></li>

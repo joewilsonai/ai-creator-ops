@@ -338,7 +338,11 @@ export const comparisonPages: EditorialPage[] = [
       { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
       { href: '/methodology', label: 'AI Creator Ops comparison methodology' }
     ],
-    sourceIds: ['fanvue-ai-content-allowed', 'fanvue-ai-generated-content', 'fanvue-ai-generated-model-definition', 'fanvue-creator-earnings-payouts', 'onlyfans-terms', 'onlyfans-help-ai-content', 'onlyfans-acceptable-use-policy']
+    sourceIds: ['fanvue-ai-content-allowed', 'fanvue-ai-generated-content', 'fanvue-ai-generated-model-definition', 'fanvue-creator-earnings-payouts', 'onlyfans-terms', 'onlyfans-help-ai-content', 'onlyfans-acceptable-use-policy'],
+    videoLinks: [
+      { title: 'How to Use Fanvue in 2026 (Complete Guide)', url: 'https://www.youtube.com/watch?v=RbHPo93ZXQI', channel: 'TobyNow', published: '2026-02-03', note: 'Useful creator-platform walkthrough mentioning Fanvue setup, monetization mechanics, and Fanvue vs other creator platforms; treat as market-signal context, not policy or payout authority.' },
+      { title: 'Will fanvue be the better Onlyfans?', url: 'https://www.youtube.com/watch?v=-m8wCTPER4g', channel: 'YouTube creator comparison', published: '2026 search result', note: 'Current Fanvue-versus-OnlyFans discussion signal; verify every platform, AI-content, fee, and payout claim against the official source links below.' }
+    ]
   },
   {
     slug: 'instagram-vs-tiktok-for-ai-creators',
@@ -372,7 +376,11 @@ export const comparisonPages: EditorialPage[] = [
       { href: '/guides/ai-creator-disclosure', label: 'AI creator disclosure guide' },
       { href: '/methodology', label: 'AI Creator Ops comparison methodology' }
     ],
-    sourceIds: ['meta-instagram-content-publishing', 'meta-community-standards-misinformation-ai-disclosure', 'tiktok-content-posting-api-get-started', 'tiktok-content-posting-api-product', 'tiktok-aigc-support']
+    sourceIds: ['meta-instagram-content-publishing', 'meta-community-standards-misinformation-ai-disclosure', 'tiktok-content-posting-api-get-started', 'tiktok-content-posting-api-product', 'tiktok-aigc-support'],
+    videoLinks: [
+      { title: 'AI OFM: The Instagram Growth Strategy That Works in 2026', url: 'https://www.youtube.com/watch?v=ru4lSPkRzkM', channel: 'YouTube creator strategy video', published: '2026 search result', note: 'Useful signal for how operators currently discuss Instagram growth around AI model and AI influencer funnels; not a source for Meta policy or API claims.' },
+      { title: 'How to Make AI Influencer for Instagram! (Tutorial 2026)', url: 'https://www.youtube.com/watch?v=MbsV0O7prI4', channel: 'YouTube creator tutorial', published: '2026 search result', note: 'Workflow context for Instagram-focused AI influencer creation and positioning; official Meta and TikTok documents remain authoritative for labeling and automation requirements.' }
+    ]
 
   },
   {
