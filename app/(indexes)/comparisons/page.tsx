@@ -1,4 +1,5 @@
 import { PageHero, Card, Badge } from '@/components/ui';
+import { getSource } from '@/lib/data';
 import { comparisonPages } from '@/lib/editorial';
 
 const baseUrl = 'https://aicreatorops.com';
@@ -25,6 +26,22 @@ export default function ComparisonsPage() {
             <Badge tone="green">LIVE</Badge>
             <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]"><a href={page.canonicalPath}>{page.shortTitle}</a></h2>
             <p className="mt-3 text-[var(--muted)]">{page.description}</p>
+            <div className="mt-5 border-t border-[var(--border-soft)] pt-4">
+              <p className="font-mono text-[11px] uppercase tracking-[.08em] text-[var(--dim)]">Methodology and source preview</p>
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                <li><a className="text-[var(--cyan)]" href="/methodology">AI Creator Ops comparison methodology</a></li>
+                {page.sourceIds.slice(0, 2).map((sourceId) => {
+                  const source = getSource(sourceId);
+                  if (!source) return null;
+                  return (
+                    <li key={source.id}>
+                      <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                      <span className="text-xs uppercase tracking-[.14em] text-[var(--dim)]">{source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </Card>
         ))}
       </section>

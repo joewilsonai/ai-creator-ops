@@ -1,5 +1,5 @@
 import { PageHero, Card, Badge } from '@/components/ui';
-import { getAllTools } from '@/lib/data';
+import { getAllTools, getSource } from '@/lib/data';
 
 const baseUrl = 'https://aicreatorops.com';
 
@@ -57,6 +57,21 @@ export default function ToolsPage() {
             <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]"><a href={`/tools/${tool.id}`}>{tool.name}</a></h2>
             <p className="mt-3 min-h-24 leading-7 text-[var(--muted)]">{tool.summary}</p>
             <div className="mt-5 flex flex-wrap gap-2">{tool.best_for.slice(0, 3).map((item) => <span key={item} className="rounded-full border border-[var(--border)] px-2 py-1 text-xs text-[var(--muted)]">{item}</span>)}</div>
+            <div className="mt-5 border-t border-[var(--border-soft)] pt-4">
+              <p className="font-mono text-[11px] uppercase tracking-[.08em] text-[var(--dim)]">Visible source links</p>
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                {tool.sources.slice(0, 2).map((sourceId) => {
+                  const source = getSource(sourceId);
+                  if (!source) return null;
+                  return (
+                    <li key={source.id}>
+                      <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                      <span className="text-xs uppercase tracking-[.14em] text-[var(--dim)]">{source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
             <p className="mt-5 font-mono text-xs text-[var(--dim)]">Last checked: {tool.last_checked ?? 'pending source review'} · Sources: {tool.sources.length}</p>
           </Card>
         ))}

@@ -1,5 +1,5 @@
 import { PageHero, Card, Badge } from '@/components/ui';
-import { getAllPlatforms } from '@/lib/data';
+import { getAllPlatforms, getSource } from '@/lib/data';
 
 const baseUrl = 'https://aicreatorops.com';
 
@@ -34,6 +34,21 @@ export default function PlatformsPage() {
             <Badge tone="cyan">{platform.type.replaceAll('_', ' ')}</Badge>
             <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]"><a href={`/platforms/${platform.id}`}>{platform.name}</a></h2>
             <p className="mt-3 leading-7 text-[var(--muted)]">{platform.notes[0]}</p>
+            <div className="mt-5 border-t border-[var(--border-soft)] pt-4">
+              <p className="font-mono text-[11px] uppercase tracking-[.08em] text-[var(--dim)]">Visible source links</p>
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                {platform.sources.slice(0, 2).map((sourceId) => {
+                  const source = getSource(sourceId);
+                  if (!source) return null;
+                  return (
+                    <li key={source.id}>
+                      <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                      <span className="text-xs uppercase tracking-[.14em] text-[var(--dim)]">{source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
             <p className="mt-5 font-mono text-xs text-[var(--dim)]">Policy risk: {platform.policy_risk}</p>
             <p className="mt-2 font-mono text-xs text-[var(--dim)]">Last checked: {platform.last_checked ?? 'pending source review'} · Sources: {platform.sources.length}</p>
           </Card>

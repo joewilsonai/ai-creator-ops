@@ -1,5 +1,6 @@
 import { PageHero, Card, Badge } from '@/components/ui';
-import { glossaryTerms } from '@/lib/glossary';
+import { getSource } from '@/lib/data';
+import { glossarySourceIds, glossaryTerms } from '@/lib/glossary';
 
 const baseUrl = 'https://aicreatorops.com';
 
@@ -41,6 +42,21 @@ export default function GlossaryPage() {
             <p className="mt-4 font-mono text-[11px] uppercase tracking-[.06em] text-[var(--dim)]">
               Also searched as: {term.alsoKnownAs.join(', ')}
             </p>
+            <div className="mt-4 border-t border-[var(--border-soft)] pt-4">
+              <p className="font-mono text-[11px] uppercase tracking-[.08em] text-[var(--dim)]">Source preview</p>
+              <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                {(glossarySourceIds[term.slug] ?? []).slice(0, 2).map((sourceId) => {
+                  const source = getSource(sourceId);
+                  if (!source) return null;
+                  return (
+                    <li key={source.id}>
+                      <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                      <span className="text-xs uppercase tracking-[.14em] text-[var(--dim)]">{source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </Card>
         ))}
       </section>
