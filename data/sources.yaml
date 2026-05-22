@@ -52,6 +52,14 @@
   source_type: primary
   notes: Official Fanvue help article defining AI-generated models as virtual characters or avatars and distinguishing them from deepfakes or face-swaps involving
     a real person's body, which require verification.
+- id: fanvue-ai-creator-labels
+  url: https://help.fanvue.com/en/articles/14290142-how-do-i-know-if-a-creator-is-ai
+  title: How do I know if a creator is AI?
+  publisher: Fanvue Help Centre
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official Fanvue fan-facing help article stating that AI creator accounts are a recognized and verified category, AI creators have an AI tag in their profile
+    bio, and visible AI labels affect refund expectations because disclosure was available before subscription.
 - id: fanvue-creator-earnings-payouts
   url: https://legal.fanvue.com/creator-earnings-payouts
   title: Creator Earnings & Payouts
@@ -68,6 +76,14 @@
   source_type: primary
   notes: Official Fanvue help article describing the creator payout workflow, minimum available balance requirements, five-upload requirement, co-creator verification,
     regional threshold variation, and estimated payout timing.
+- id: fanvue-series-a-businesswire-2026
+  url: https://www.businesswire.com/news/home/20260112458975/en/AI-Powered-Creator-Monetisation-Platform-Fanvue-Hits-$100m-Run-Rate-and-Raises-$22m-Series-A-Investment---as-Leading-Global-Creators-Rush-to-Join-the-Platform
+  title: AI-Powered Creator Monetisation Platform, Fanvue, Hits $100m Run Rate and Raises $22m Series A Investment
+  publisher: Business Wire
+  retrieved_at: '2026-05-22'
+  source_type: secondary
+  notes: Company press-release distribution reporting Fanvue's claimed $22M Series A, $100M-plus annualized run rate, 17M monthly active users, 250,000 creators,
+    93% creator use of proprietary AI tools, and Creator AI Economy positioning; treat as company-supplied market signal unless independently verified.
 - id: tiktok-content-posting-api-get-started
   url: https://developers.tiktok.com/doc/content-posting-api-get-started
   title: Content Posting API - Get Started

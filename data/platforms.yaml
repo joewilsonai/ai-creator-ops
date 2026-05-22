@@ -73,15 +73,19 @@
     - Fanvue's Help Centre says it welcomes AI creators and allows fully AI-generated content, while requiring clear disclosure that AI-generated media is not real and was generated using AI.
     - Fanvue says deepfaked or face-swapped content is allowed only when the real model behind the AI is verified, and its AI-generated model help article says a model using a real person's body is classed as a real model requiring KYC.
     - Fanvue's AI-content rules prohibit harmful or misleading AI media, content resembling or intending to resemble someone under 18, copyright infringement, and AI media of a real person other than the account owner.
+    - Fanvue's fan-facing help says AI creators are a recognized and verified category, AI creator accounts carry an AI tag in the profile bio, and fans are expected to check that label before subscribing.
     - Fanvue's creator earnings policy lists a standard creator earning rate of 80% of gross revenue from paid-for services, with Fanvue retaining 20% as platform fees unless otherwise agreed.
     - Fanvue's creator help documents a first-time payout workflow requiring available balance threshold, at least five uploaded content pieces, and verification of co-creators featured in content; regional withdrawal thresholds may vary.
+    - A January 2026 Business Wire company-release distribution says Fanvue reported a $22M Series A, a $100M-plus annualized run rate, 17M monthly active users, 250,000 creators, and more than 93% creator use of proprietary AI tools; treat these as company-supplied market-positioning figures, not independent audit data.
   sources:
     - fanvue-ai-content-allowed
     - fanvue-ai-generated-content
     - fanvue-ai-generated-model-definition
+    - fanvue-ai-creator-labels
     - fanvue-creator-earnings-payouts
     - fanvue-receive-payout-help
-  last_checked: '2026-05-18'
+    - fanvue-series-a-businesswire-2026
+  last_checked: '2026-05-22'
 - id: onlyfans
   name: OnlyFans
   type: fan_platform
