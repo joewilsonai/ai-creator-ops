@@ -755,3 +755,31 @@
   retrieved_at: '2026-05-20'
   source_type: primary
   notes: Official ElevenLabs safety page describing safety principles, C2PA and classifier transparency efforts, AI Speech Classifier, enforcement, monitoring, red-teaming, blocking of celebrity/high-risk voice cloning, and Professional Voice Cloning verification.
+- id: discord-community-guidelines
+  url: https://discord.com/guidelines
+  title: Discord Community Guidelines
+  publisher: Discord
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official Discord Community Guidelines, effective September 29, 2025, stating that rules apply to content, behavior, servers, apps, and bots; enforcement can include warnings, content removal, account/server suspension or removal, and reporting to law enforcement; child-safety rules explicitly cover manipulated, synthetic, AI-generated, fictional, animated, drawn, text, and prompt-based child sexual abuse content.
+- id: discord-developer-policy
+  url: https://discord.com/developers/docs/policies-and-agreements/developer-policy
+  title: Discord Developer Policy
+  publisher: Discord Developer Platform
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official Discord Developer Policy governing API and application use, including requirements to follow Community Guidelines, protect API data, avoid contacting users outside Discord without explicit permission, provide user reporting paths, and accept Discord-imposed API limits.
+- id: discord-monetization-policy
+  url: https://support.discord.com/hc/en-us/articles/10575066024983-Monetization-Policy
+  title: Monetization Policy
+  publisher: Discord Support
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official Discord Monetization Policy for user monetization features including Server Subscriptions, App Subscriptions, and Server Shop; it requires creators, developers, content, servers, and apps to comply with Discord rules and prohibits monetizing categories including sexually explicit content, online dating facilitation, IP-infringing content, and impersonation unless clearly labeled as parody or satire.
+- id: discord-monetization-terms
+  url: https://support.discord.com/hc/en-us/articles/5330075836311-Monetization-Terms
+  title: Monetization Terms
+  publisher: Discord Support
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official Discord Monetization Terms, effective June 6, 2024, governing things sold through Discord such as Server Subscriptions and Premium Apps; sellers control the offering and price but must accurately describe benefits, limitations, age restrictions, and legal compliance obligations.

@@ -214,3 +214,24 @@
     - reddit-devvit-docs
     - reddit-developer-platform-blog
   last_checked: '2026-05-18'
+- id: discord
+  name: Discord
+  type: community_platform
+  ai_creator_friendliness_score: null
+  monetization_score: null
+  automation_score: null
+  discovery_score: null
+  policy_risk: medium
+  notes:
+    - Owned-community and fan-retention surface for AI creator, AI influencer, virtual creator, and AI companion brands; it is stronger as a community layer than as a public discovery engine.
+    - Discord Community Guidelines apply to user content, behavior, servers, apps, and bots, with enforcement actions ranging from warnings and content removal to account or server removal.
+    - Discord's Community Guidelines explicitly prohibit child sexual abuse content, including manipulated, synthetic, AI-generated, fictional, animated, drawn, text, and prompt-based material involving minors, making age-appearance QA mandatory for AI model or companion communities.
+    - Discord's Developer Policy requires API applications to follow Community Guidelines, protect API data, provide user reporting paths, avoid contacting users outside Discord without explicit permission, and accept Discord-imposed API limits.
+    - Discord monetization applies to user monetization features such as Server Subscriptions, App Subscriptions, and Server Shop, but monetizing users must comply with Monetization Terms, Monetization Policy, Terms of Service, Community Guidelines, and applicable laws.
+    - Discord's Monetization Policy prohibits monetizing sexually explicit content, online dating facilitation, impersonation unless clearly labeled parody or satire, IP-infringing content, and several restricted categories; AI girlfriend operators should treat in-Discord monetization as high-risk unless the offer is non-explicit, accurately described, and policy reviewed.
+  sources:
+    - discord-community-guidelines
+    - discord-developer-policy
+    - discord-monetization-policy
+    - discord-monetization-terms
+  last_checked: '2026-05-22'
