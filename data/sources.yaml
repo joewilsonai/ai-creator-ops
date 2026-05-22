@@ -755,6 +755,55 @@
   retrieved_at: '2026-05-20'
   source_type: primary
   notes: Official ElevenLabs safety page describing safety principles, C2PA and classifier transparency efforts, AI Speech Classifier, enforcement, monitoring, red-teaming, blocking of celebrity/high-risk voice cloning, and Professional Voice Cloning verification.
+- id: heygen-api-quick-start
+  url: https://developers.heygen.com/docs/quick-start
+  title: Quick Start
+  publisher: HeyGen Documentation
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen API quick-start guide covering API key authentication, v3 Video Agent video generation, polling, webhook callbacks, and the recommendation to migrate new and existing integrations to v3 while legacy v1/v2 endpoints remain supported until October 31, 2026.
+- id: heygen-choosing-video-api
+  url: https://developers.heygen.com/docs/choosing-the-right-video-api
+  title: Choosing the Right Video API
+  publisher: HeyGen Documentation
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen API guide comparing prompt-driven Video Agent with structured Direct Video workflows, including endpoint choices, avatar/voice/script control, webhook support, and fit for automated pipelines.
+- id: heygen-api-pricing
+  url: https://developers.heygen.com/docs/pricing
+  title: Self-Serve Pricing
+  publisher: HeyGen Documentation
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen self-serve API pricing documentation describing API-key billing against a prepaid USD wallet, OAuth billing against web plans, per-second output pricing for avatar video, Video Agent, translation, lipsync, text-to-speech, and per-call avatar creation.
+- id: heygen-prompt-to-video
+  url: https://developers.heygen.com/docs/video-agent
+  title: Prompt to Video
+  publisher: HeyGen Documentation
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen Video Agent documentation for one-shot prompt-to-video sessions, including automatic script/avatar/voice/style selection, asynchronous generation, optional avatar_id and voice_id overrides, file attachments, portrait or landscape orientation, and callback URLs.
+- id: heygen-create-avatar
+  url: https://developers.heygen.com/docs/create-avatar
+  title: Create Avatar
+  publisher: HeyGen Documentation
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen avatar-creation documentation describing Digital Twin, Photo Avatar, and Prompt-to-Avatar creation through POST /v3/avatars; includes consent requirements for digital twins and fully synthetic prompt-to-avatar generation where no real person is depicted.
+- id: heygen-moderation-policy
+  url: https://www.heygen.com/moderation-policy
+  title: Content Moderation Policy Guidelines & Standards
+  publisher: HeyGen
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen moderation policy stating avatars and generated videos must respect rights and consent, custom avatars require explicit consent from the represented actor, violations can lead to content removal or suspension, and users are responsible for lawful rights-cleared avatar use.
+- id: heygen-terms
+  url: https://www.heygen.com/terms
+  title: Terms and Conditions & Privacy Policy
+  publisher: HeyGen
+  retrieved_at: '2026-05-22'
+  source_type: primary
+  notes: Official HeyGen terms, last updated May 15, 2026, covering service scope, age requirement, user input/output ownership, commercial-use constraints including Free Plan output restrictions, and broad user responsibility for lawful service use.
 - id: discord-community-guidelines
   url: https://discord.com/guidelines
   title: Discord Community Guidelines

@@ -301,3 +301,26 @@
     - elevenlabs-prohibited-use-policy
     - elevenlabs-safety
   last_checked: '2026-05-20'
+- id: heygen
+  name: HeyGen
+  category: avatar_video_generation
+  url: https://www.heygen.com/
+  summary: AI avatar video platform for prompt-to-video, direct avatar-video generation, digital twins, photo avatars, synthetic prompt-to-avatar workflows, translation, lipsync, and API-driven creator video pipelines.
+  best_for:
+    - AI avatar videos
+    - synthetic presenter content
+    - prompt-to-video workflows
+    - avatar video API automation
+  pricing_model: subscription_and_usage_based
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - heygen-api-quick-start
+    - heygen-choosing-video-api
+    - heygen-api-pricing
+    - heygen-prompt-to-video
+    - heygen-create-avatar
+    - heygen-moderation-policy
+    - heygen-terms
+  last_checked: '2026-05-22'

@@ -34,6 +34,9 @@
 Source-backed tool expansion candidates after the 2026-05-20 voice workflow desk review:
 - ElevenLabs for AI Creator Voice, Dialogue, and Voice Cloning Workflows
 
+Source-backed tool expansion candidates after the 2026-05-22 avatar video workflow desk review:
+- HeyGen for AI Avatar Video, Prompt-to-Video, and Synthetic Presenter Workflows
+
 ### Platform pages
 26. Instagram for AI Creators
 27. TikTok for AI Creators
