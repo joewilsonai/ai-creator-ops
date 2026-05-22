@@ -135,6 +135,7 @@
     - Official YouTube Data API upload support exists through videos.insert, with OAuth scopes, a 100-unit quota cost per upload call, and writable metadata including status.containsSyntheticMedia.
     - YouTube Data API projects receive a default daily quota allocation, while additional quota requires a compliance audit; high-volume AI creator upload workflows should plan for quota and policy review.
     - Shorts monetization is available to monetizing partners that accept the Shorts Monetization Module, but eligible views and payout depend on broader YouTube monetization and advertiser-friendly policies.
+    - YouTube's Partner earnings overview distinguishes module-level revenue shares for Watch Page ads, Shorts Feed ads, and fan-funding products; creator-ops pages should cite the module/source rather than quote stale payout assumptions.
     - Monetization risk is elevated for templated, repetitive, mass-produced, or reused AI videos that lack original/authentic substance, even if use of AI itself is not automatically disqualifying.
   sources:
     - youtube-help-altered-synthetic-content
@@ -142,7 +143,9 @@
     - youtube-api-quota-compliance-audits
     - youtube-shorts-monetization-policies
     - youtube-channel-monetization-policies
-  last_checked: '2026-05-18'
+    - youtube-partner-earnings-overview
+    - youtube-data-api-revision-history
+  last_checked: '2026-05-21'
 - id: x-twitter
   name: X / Twitter
   type: social_platform

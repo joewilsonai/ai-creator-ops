@@ -130,6 +130,20 @@
   source_type: primary
   notes: Official YouTube monetization policy source for original/authentic content requirements, inauthentic mass-produced or repetitive content risk, reused-content
     rules, payment holds, and channel-level monetization enforcement.
+- id: youtube-partner-earnings-overview
+  url: https://support.google.com/youtube/answer/72902?hl=en
+  title: YouTube partner earnings overview
+  publisher: YouTube Help
+  retrieved_at: '2026-05-21'
+  source_type: primary
+  notes: Official YouTube Help source for Partner Program earnings, including module-based revenue share references for fan funding, Watch Page ads, and Shorts Feed ads.
+- id: youtube-data-api-revision-history
+  url: https://developers.google.com/youtube/v3/revision_history
+  title: Revision History | YouTube Data API
+  publisher: Google for Developers
+  retrieved_at: '2026-05-21'
+  source_type: primary
+  notes: Official YouTube Data API changelog documenting status.containsSyntheticMedia support, Shorts view-counting changes, deprecations, and upload quota-cost updates.
 - id: onlyfans-terms
   url: https://onlyfans.com/terms
   title: OnlyFans Terms of Service
