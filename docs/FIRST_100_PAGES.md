@@ -37,6 +37,9 @@ Source-backed tool expansion candidates after the 2026-05-20 voice workflow desk
 Source-backed tool expansion candidates after the 2026-05-22 avatar video workflow desk review:
 - HeyGen for AI Avatar Video, Prompt-to-Video, and Synthetic Presenter Workflows
 
+Source-backed tool expansion candidates after the 2026-05-23 Captions/Mirage API desk review:
+- Captions for AI Creator Videos, AI Twins, and API-Driven Synthetic Presenter Clips
+
 ### Platform pages
 26. Instagram for AI Creators
 27. TikTok for AI Creators

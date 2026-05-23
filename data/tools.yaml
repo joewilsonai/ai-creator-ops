@@ -326,3 +326,24 @@
     - heygen-moderation-policy
     - heygen-terms
   last_checked: '2026-05-22'
+- id: captions
+  name: Captions
+  category: avatar_video_generation
+  url: https://captions.ai/
+  summary: AI video creation platform and Mirage API provider for AI creator videos, AI Twins, synthetic presenter clips, captions, translation, and programmatic talking-head video workflows.
+  best_for:
+    - AI creator videos
+    - AI Twin and synthetic presenter clips
+    - captioned short-form video
+    - API-driven avatar video generation
+  pricing_model: subscription_and_usage_based
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - captions-ai-creator-api
+    - captions-api-pricing
+    - captions-pricing-plans
+    - captions-terms
+    - captions-api-terms
+  last_checked: '2026-05-23'

@@ -846,3 +846,38 @@
   retrieved_at: '2026-05-22'
   source_type: primary
   notes: Official Discord Monetization Terms, effective June 6, 2024, governing things sold through Discord such as Server Subscriptions and Premium Apps; sellers control the offering and price but must accurately describe benefits, limitations, age restrictions, and legal compliance obligations.
+- id: captions-ai-creator-api
+  url: https://captions.ai/help/api-reference/ai-creator
+  title: Captions - AI Creator API Documentation and Guide
+  publisher: Captions Help Center
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Captions API guide for programmatic AI creator videos up to one minute in 30+ languages using community avatars or an AI Twin, with list, submit, poll, and download workflow notes plus one-credit-per-second usage guidance.
+- id: captions-api-pricing
+  url: https://captions.ai/help/docs/api/pricing
+  title: API pricing
+  publisher: Captions Help Center
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Captions/Mirage API pricing page listing duration-based billing for API captioning and video generation, including styled captions billed per input minute and Mirage Video 1 billed per generated second in six-second increments.
+- id: captions-pricing-plans
+  url: https://captions.ai/pricing
+  title: Captions AI Pricing and Subscriptions Plans
+  publisher: Captions
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Captions pricing page covering Free, Pro, Max, Scale, and Enterprise plans, AI usage credits, AI Creator, AI Twin, AI video, AI voiceover, AI lipdub, export, and credit-rollover positioning.
+- id: captions-terms
+  url: https://captions.ai/terms
+  title: Terms And Conditions | Captions by Mirage
+  publisher: Mirage / Captions
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Captions terms covering service use, user ownership of input and output as between the parties, Mirage license to use input/output to provide and improve services, eligibility, acceptable-use-policy enforcement, and payment/refund terms.
+- id: captions-api-terms
+  url: https://www.captions.ai/terms/api
+  title: API Legal Terms | Mirage
+  publisher: Mirage
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Mirage API terms covering API license scope, end-user responsibility, API limits, output disclaimers, and restrictions on using the API or output to create, train, fine-tune, evaluate, or improve competing AI or machine-learning systems.
