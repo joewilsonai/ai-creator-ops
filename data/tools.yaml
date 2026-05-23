@@ -76,7 +76,7 @@
   name: Kling
   category: video_generation
   url: https://klingai.com/
-  summary: AI video generation platform to track for virtual influencer motion, image-to-video workflows, and social clip production.
+  summary: AI video generation platform to track for virtual influencer motion, image-to-video workflows, social clip production, and reference-driven identity-to-video experiments with explicit rights and labeling review.
   best_for:
     - AI video
     - image-to-video
@@ -89,8 +89,10 @@
     - kling-homepage-ai-tools-api
     - kling-pricing
     - kling-terms
+    - kling-user-policy-ai-labeling-rights
+    - kling-paid-service-commercial-use
     - kuaishou-kling-multi-image-reference
-  last_checked: '2026-05-18'
+  last_checked: '2026-05-23'
 - id: gpt-image
   name: GPT Image
   category: image_generation

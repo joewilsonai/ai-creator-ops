@@ -355,6 +355,20 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Kling homepage showing Creative Studio and API Platform navigation, Video Generation, Image Generation, Sound Generation, effects, mobile apps, developer pricing, documentation, quick start, and Kling 3.0 positioning around multimodal instruction parsing and consistency.
+- id: kling-user-policy-ai-labeling-rights
+  url: https://klingai.com/docs/user-policy
+  title: Kling AI User Service Agreement
+  publisher: Kling AI / Kuaishou Technology
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Kling user agreement covering AI-generated content services, user responsibility for lawful inputs and outputs, prohibitions on infringing privacy, likeness, intellectual-property, and other rights, and watermark or prominent AI-generation notice expectations for relevant generated-content use.
+- id: kling-paid-service-commercial-use
+  url: https://klingai.com/docs/payment-policy
+  title: Kling AI Paid Service Agreement
+  publisher: Kling AI / Kuaishou Technology
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Kling paid-service agreement covering memberships, Inspiration Credits, paid-feature rules, non-refundability language, member benefits such as watermark removal and 1080p generation, and member commercial-use language that remains subject to lawful use and anti-competing-product restrictions.
 - id: kuaishou-kling-multi-image-reference
   url: https://ir.kuaishou.com/news-releases/news-release-details/kuaishou-kling-ai-unveils-multi-image-reference-feature-further/
   title: Kuaishou Kling AI Launches Multi-Image Reference for More Consistent AI Video Generation

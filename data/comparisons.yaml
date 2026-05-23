@@ -65,9 +65,10 @@
   criteria:
     - video workflow fit
     - image-to-video usefulness
+    - identity consistency and reference-control evidence
     - API/automation readiness
     - pricing clarity
-    - policy and commercial-use review
+    - rights, labeling, and commercial-use review
     - repeatability for creator operations
   winner_by_use_case:
     - use_case: API-backed production and automation planning
@@ -79,10 +80,14 @@
   source_ids:
     - runway-api-docs
     - runway-pricing-plans
+    - runway-api-content-moderation
     - kling-pricing
     - kling-terms
+    - kling-user-policy-ai-labeling-rights
+    - kling-paid-service-commercial-use
+    - kuaishou-kling-multi-image-reference
   methodology_path: /methodology
-  last_checked: '2026-05-18'
+  last_checked: '2026-05-23'
 - id: gpt-image-vs-midjourney
   title: GPT Image vs Midjourney for AI Creator Assets
   entities:
