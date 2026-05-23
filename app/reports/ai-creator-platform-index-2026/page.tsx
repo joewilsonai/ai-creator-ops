@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Badge, Card } from '@/components/ui';
-import { getAllPlatforms } from '@/lib/data';
+import { getAllPlatforms, getSource } from '@/lib/data';
 
 const baseUrl = 'https://aicreatorops.com';
 
@@ -58,8 +58,10 @@ export default function PlatformIndexReportPage() {
   const reviewedCount = platforms.filter((platform) => platform.last_checked && platform.sources.length > 0).length;
   const rows = platforms.map((platform) => ({
     ...platform,
-    status: platform.last_checked ? 'Source reviewed' : 'Source review pending'
+    status: platform.last_checked ? 'Source reviewed' : 'Source review pending',
+    sourceLinks: platform.sources.map((sourceId) => getSource(sourceId)).filter((source) => source !== undefined)
   }));
+  const visibleSources = rows.flatMap((platform) => platform.sourceLinks.map((source) => ({ ...source, platformName: platform.name })));
 
   return (
     <main>
@@ -74,7 +76,7 @@ export default function PlatformIndexReportPage() {
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[var(--muted)]">
           A transparent scoring framework for comparing social platforms, fan platforms, and monetization rails for AI creator businesses. This version defines the methodology and tracks a source-reviewed seed dataset while final numeric scores remain pending.
         </p>
-        <div className="mt-8 grid gap-3 md:grid-cols-3">
+        <div className="mt-8 grid gap-3 md:grid-cols-4">
           <Card>
             <p className="font-mono text-xs text-[var(--dim)]">Current version</p>
             <p className="mt-2 text-2xl font-semibold tracking-[-.04em]">0.1 draft</p>
@@ -86,6 +88,10 @@ export default function PlatformIndexReportPage() {
           <Card>
             <p className="font-mono text-xs text-[var(--dim)]">Source status</p>
             <p className="mt-2 text-2xl font-semibold tracking-[-.04em]">{reviewedCount}/{platforms.length} reviewed</p>
+          </Card>
+          <Card>
+            <p className="font-mono text-xs text-[var(--dim)]">Last report update</p>
+            <p className="mt-2 text-2xl font-semibold tracking-[-.04em]">2026-05-23</p>
           </Card>
         </div>
       </section>
@@ -109,7 +115,7 @@ export default function PlatformIndexReportPage() {
           <Link className="hidden text-sm text-[var(--cyan)] md:block" href="/platforms">View platform pages →</Link>
         </div>
         <div className="overflow-hidden rounded-[18px] border border-[var(--border)] bg-[var(--surface)]">
-          <table className="w-full min-w-[760px] border-collapse text-left text-sm">
+          <table className="w-full min-w-[980px] border-collapse text-left text-sm">
             <thead className="border-b border-[var(--border)] text-[var(--dim)]">
               <tr>
                 <th className="p-4 font-mono text-xs">Platform</th>
@@ -117,6 +123,7 @@ export default function PlatformIndexReportPage() {
                 <th className="p-4 font-mono text-xs">Policy risk</th>
                 <th className="p-4 font-mono text-xs">Seed note</th>
                 <th className="p-4 font-mono text-xs">Status</th>
+                <th className="p-4 font-mono text-xs">Visible source links</th>
               </tr>
             </thead>
             <tbody>
@@ -126,7 +133,20 @@ export default function PlatformIndexReportPage() {
                   <td className="p-4 text-[var(--muted)]">{platform.type.replaceAll('_', ' ')}</td>
                   <td className="p-4"><Badge tone={platform.policy_risk === 'high' ? 'amber' : 'cyan'}>{platform.policy_risk}</Badge></td>
                   <td className="max-w-md p-4 leading-6 text-[var(--muted)]">{platform.notes[0]}</td>
-                  <td className="p-4 text-[var(--dim)]">{platform.status}</td>
+                  <td className="p-4 text-[var(--dim)]">{platform.status}<br /><span className="font-mono text-[11px]">Last checked: {platform.last_checked ?? 'pending'}</span></td>
+                  <td className="max-w-xs p-4">
+                    {platform.sourceLinks.length > 0 ? (
+                      <ul className="space-y-2">
+                        {platform.sourceLinks.slice(0, 3).map((source) => (
+                          <li key={source.id}>
+                            <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <span className="text-[var(--dim)]">Source review pending</span>
+                    )}
+                  </td>
                 </tr>
               ))}
             </tbody>
@@ -170,6 +190,25 @@ export default function PlatformIndexReportPage() {
             </ul>
           </Card>
         </div>
+      </section>
+
+      <section className="wrap py-10">
+        <Card className="p-7">
+          <Badge tone="green">SOURCES</Badge>
+          <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]">Reviewed source links used by this draft index</h2>
+          <p className="mt-4 max-w-4xl leading-7 text-[var(--muted)]">
+            This report does not publish final numeric rankings yet. The links below show the primary-source spine currently attached to the platform dataset. Official platform documentation controls policy, payout, API, eligibility, and terms claims; YouTube or X links, when added later, should remain labeled as market-signal context.
+          </p>
+          <ul className="mt-5 grid gap-4 text-sm leading-6 text-[var(--muted)] md:grid-cols-2">
+            {visibleSources.map((source) => (
+              <li key={`${source.platformName}-${source.id}`} className="rounded-2xl border border-[var(--border)] p-4">
+                <p className="font-mono text-[11px] uppercase tracking-[.14em] text-[var(--dim)]">{source.platformName} · {source.source_type === 'market_signal' ? 'market signal' : `${source.source_type} source`}</p>
+                <a className="mt-2 inline-block text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>
+                <p className="mt-2">{source.publisher}, retrieved {source.retrieved_at}.</p>
+              </li>
+            ))}
+          </ul>
+        </Card>
       </section>
 
       <section className="wrap py-10 pb-20">
