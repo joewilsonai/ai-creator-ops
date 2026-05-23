@@ -11,10 +11,12 @@ export type GlossaryTerm = {
 export const glossarySourceIds: Record<string, string[]> = {
   'ai-creator': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
   'ai-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
+  'ai-model': ['meta-labeling-ai-content-impact', 'fanvue-ai-generated-model-definition', 'fanvue-ai-content-allowed'],
   'ai-girlfriend-business': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy'],
   'ai-companion': ['fanvue-ai-content-allowed', 'onlyfans-terms', 'onlyfans-acceptable-use-policy', 'x-developer-guidelines'],
   'synthetic-influencer': ['meta-labeling-ai-content-impact', 'youtube-help-altered-synthetic-content'],
   'virtual-influencer': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support'],
+  'virtual-creator': ['meta-labeling-ai-content-impact', 'tiktok-aigc-support', 'youtube-help-altered-synthetic-content'],
   'identity-consistency': ['openai-image-generation-guide', 'midjourney-terms', 'facefusion-docs'],
   'fan-platform': ['fanvue-creator-earnings-payouts', 'onlyfans-creator-center', 'onlyfans-terms'],
   'creator-funnel': ['linktree-pricing', 'beacons-pricing'],
@@ -68,6 +70,26 @@ export const glossaryTerms: GlossaryTerm[] = [
       { label: 'Instagram for AI creators', href: '/platforms/instagram' },
       { label: 'TikTok for AI creators', href: '/platforms/tiktok' },
       { label: 'YouTube Shorts for AI creators', href: '/platforms/youtube-shorts' }
+    ]
+  },
+  {
+    slug: 'ai-model',
+    term: 'AI Model',
+    alsoKnownAs: ['AI influencer model', 'synthetic model', 'virtual model', 'AI-generated model'],
+    definition:
+      'An AI model is a synthetic or AI-assisted creator persona presented like a fashion, lifestyle, glamour, or fan-platform model, with repeatable visual identity and monetization context.',
+    whyItMatters:
+      'AI model is a high-intent public search term, but the operator question is whether the brand can maintain identity consistency, disclose synthetic media, route traffic safely, and comply with platform rules around likeness, age presentation, and monetization.',
+    operatorNotes: [
+      'Treat the AI model as a creator-brand asset with a character bible, visual references, and platform-specific publishing rules.',
+      'Review synthetic-media, likeness, consent, age-appearance, and fan-platform requirements before monetizing locked content or paid messages.',
+      'Use source-backed platform and tool pages for current policy, payout, API, and commercial-rights claims.'
+    ],
+    related: [
+      { label: 'AI creator definition', href: '/glossary/ai-creator' },
+      { label: 'Identity consistency', href: '/glossary/identity-consistency' },
+      { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' },
+      { label: 'AI influencer monetization guide', href: '/guides/ai-influencer-ai-girlfriend-monetization' }
     ]
   },
   {
@@ -148,6 +170,26 @@ export const glossaryTerms: GlossaryTerm[] = [
       { label: 'AI influencer', href: '/glossary/ai-influencer' },
       { label: 'Platform index', href: '/platforms' },
       { label: 'Tool index', href: '/tools' }
+    ]
+  },
+  {
+    slug: 'virtual-creator',
+    term: 'Virtual Creator',
+    alsoKnownAs: ['virtual influencer', 'synthetic creator', 'AI creator', 'digital creator persona'],
+    definition:
+      'A virtual creator is a fictional, synthetic, or digitally produced creator persona that publishes recurring content and can support audience, commerce, sponsorship, or fan-platform workflows.',
+    whyItMatters:
+      'Virtual creator is broader than AI influencer: the persona may be stylized, 3D, AI-generated, human-assisted, or hybrid. AI Creator Ops treats it as an operating system problem: identity, rights, disclosure, distribution, monetization, and measurement.',
+    operatorNotes: [
+      'Clarify whether the creator is fictional, AI-generated, human-assisted, or a hybrid production before building audience trust.',
+      'Connect the virtual identity to a creator funnel, not only a feed of images or short videos.',
+      'Use platform pages to check synthetic-media labeling, automation permissions, and monetization constraints.'
+    ],
+    related: [
+      { label: 'Virtual influencer', href: '/glossary/virtual-influencer' },
+      { label: 'Synthetic influencer', href: '/glossary/synthetic-influencer' },
+      { label: 'AI creator', href: '/glossary/ai-creator' },
+      { label: 'Platform index', href: '/platforms' }
     ]
   },
   {

@@ -20,6 +20,24 @@ export default function ComparisonsPage() {
   return (
     <main>
       <PageHero eyebrow="COMPARISONS" title="Decision pages for creator operators" description="High-intent comparisons with explicit criteria, source-backed claims, and winner-by-use-case recommendations." />
+      <section className="wrap pb-8">
+        <Card>
+          <Badge tone="green">DIRECT ANSWER</Badge>
+          <p className="mt-4 max-w-4xl leading-7 text-[var(--muted)]">
+            Use AI Creator Ops comparisons when choosing between fan platforms, social platforms, schedulers, image/video tools, and funnel tools for AI influencer, AI girlfriend, AI model, virtual influencer, synthetic influencer, virtual creator, or AI companion operations. Each live page includes criteria, visible sources, methodology links, and current video context labeled as market signal where applicable.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm">
+            <a className="text-[var(--cyan)]" href="/methodology">Comparison methodology</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-influencer">AI influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-girlfriend-business">AI girlfriend business</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-model">AI model</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-creator">Virtual creator</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
+          </div>
+        </Card>
+      </section>
       <section className="wrap grid gap-4 md:grid-cols-2">
         {comparisonPages.map((page) => (
           <Card key={page.slug}>

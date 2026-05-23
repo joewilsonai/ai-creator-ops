@@ -43,9 +43,11 @@ export default function GuidesPage() {
           <div className="mt-5 flex flex-wrap gap-3 text-sm">
             <a className="text-[var(--cyan)]" href="/glossary/ai-influencer">AI influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/ai-girlfriend-business">AI girlfriend business</a>
-            <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI model / AI creator</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-model">AI model</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-creator">AI creator</a>
             <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
             <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-creator">Virtual creator</a>
             <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
           </div>
         </Card>

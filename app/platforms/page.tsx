@@ -24,8 +24,17 @@ export default function PlatformsPage() {
         <Card>
           <Badge tone="green">DIRECT ANSWER</Badge>
           <p className="mt-4 max-w-4xl leading-7 text-[var(--muted)]">
-            AI Creator Ops tracks where AI influencers, virtual influencers, synthetic influencers, AI model brands, and AI companion operators can publish, automate, and monetize. Each platform page lists current source-reviewed notes, last-checked status, internal links, and visible citations.
+            AI Creator Ops tracks where AI influencers, virtual influencers, synthetic influencers, AI model brands, virtual creator studios, and AI companion operators can publish, automate, and monetize. Each platform page lists current source-reviewed notes, last-checked status, internal links, and visible citations.
           </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm">
+            <a className="text-[var(--cyan)]" href="/glossary/ai-influencer">AI influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-girlfriend-business">AI girlfriend business</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-model">AI model</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-influencer">Virtual influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/synthetic-influencer">Synthetic influencer</a>
+            <a className="text-[var(--cyan)]" href="/glossary/virtual-creator">Virtual creator</a>
+            <a className="text-[var(--cyan)]" href="/glossary/ai-companion">AI companion</a>
+          </div>
         </Card>
       </section>
       <section className="wrap grid gap-4 md:grid-cols-2 lg:grid-cols-3">
