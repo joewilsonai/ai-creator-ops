@@ -636,6 +636,13 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Patreon fee guide stating creators publishing after August 4, 2025 are on the standard 10% platform plan, with additional payment processing, currency conversion, taxes, payout, and possible iOS in-app purchase fees.
+- id: patreon-one-time-purchases
+  url: https://support.patreon.com/hc/en-us/articles/16303719836813-Selling-one-time-purchases-on-Patreon
+  title: Selling one-time purchases on Patreon
+  publisher: Patreon Help Center
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Patreon Shop help article describing one-time digital purchases for products, posts, and collections; buyer access without membership; pricing ranges; Shop analytics; refund windows; payout availability differences; and Adult/18+ Commerce access rollout constraints.
 - id: patreon-adult-creator-features
   url: https://support.patreon.com/hc/en-us/articles/31714988741645-Access-to-Patreon-s-features-and-products-for-Adult-18-creators
   title: Access to Patreon's features and products for Adult/18+ creators
@@ -671,6 +678,13 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Reddit impersonation policy prohibiting misleading or deceptive impersonation of individuals or entities, with profile and community signals considered in enforcement.
+- id: reddit-rules
+  url: https://redditinc.com/policies/reddit-rules
+  title: Reddit Rules
+  publisher: Reddit, Inc.
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official platform-wide Reddit Rules covering community-rule compliance, authentic participation, spam and content manipulation, privacy, non-consensual intimate media, minor safety, impersonation, labeling sensitive content and communities, legality, site integrity, and enforcement actions.
 - id: reddit-responsible-builder-policy
   url: https://support.reddithelp.com/hc/en-us/articles/42728983564564-Responsible-Builder-Policy
   title: Responsible Builder Policy
