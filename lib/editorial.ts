@@ -98,6 +98,59 @@ export const guidePages: EditorialPage[] = [
     sourceIds: ['fanvue-creator-earnings-payouts', 'fanvue-receive-payout-help', 'youtube-shorts-monetization-policies']
   },
   {
+    slug: 'best-ai-creator-tools',
+    title: 'Best AI Creator Tools: Operator Stack for AI Influencers, AI Models, and Virtual Creators',
+    shortTitle: 'Best AI Creator Tools',
+    description: 'A source-backed operator guide to the AI creator tool stack: image, video, voice, avatar video, scheduling, DM automation, link-in-bio, fan platforms, and owned-audience tools.',
+    badge: 'GUIDE',
+    canonicalPath: '/guides/best-ai-creator-tools',
+    lastUpdated: '2026-05-24',
+    directAnswer: 'The best AI creator tools are not one magic generator. A serious AI influencer, AI model, virtual influencer, or AI girlfriend business needs a stack: image generation for concepts, video/avatar tools for motion, voice tools for dialogue, schedulers for publishing discipline, DM/link tools for funnel routing, fan or membership platforms for monetization, and source-reviewed policies around disclosure, likeness, commercial use, APIs, and payouts.',
+    keyFacts: [
+      'Pick tools by operating role — identity, media production, publishing, conversion, retention, or monetization — not by viral demo quality alone.',
+      'Official documentation is the authority for API, pricing, commercial-use, payout, and moderation claims; YouTube demos are useful workflow signals but not policy sources.',
+      'For AI girlfriend, AI companion, and AI model workflows, the highest-risk tools are those touching likeness, voice cloning, adult/locked content, DMs, and automated publishing.'
+    ],
+    sections: [
+      {
+        heading: 'Start with the stack map',
+        body: 'AI creator operators should organize tools by job: character design, identity consistency, image generation, image-to-video, avatar video, voice/dialogue, social scheduling, DM automation, link routing, owned audience, and fan monetization. This prevents the common mistake of judging every tool as if it should replace the whole business.',
+        bullets: ['Identity layer: reference assets, character bible, provenance notes, and QA.', 'Production layer: images, video, voice, avatar clips, captions, and editing.', 'Distribution layer: scheduler, platform APIs, link-in-bio, analytics, and owned audience.', 'Monetization layer: fan platforms, memberships, paid messages, digital products, affiliates, or sponsorship workflows.']
+      },
+      {
+        heading: 'Best tools by operating role',
+        body: 'For image assets, compare GPT Image and Midjourney against identity and workflow needs. For motion, compare Runway, Kling, Higgsfield, HeyGen, and Captions depending on whether the job is image-to-video, consistent AI influencer clips, avatar presenters, or API-driven synthetic videos. For voice, ElevenLabs is a priority source-reviewed record because voice cloning and dialogue workflows need consent and safety checks. For distribution, Buffer, Metricool, Zernio, ManyChat, Linktree, Beacons, and Substack cover scheduling, automation, funnel, and owned-audience jobs.'
+      },
+      {
+        heading: 'Use risk as a buying criterion',
+        body: 'The tool that makes the prettiest asset can still be the wrong operational choice if it lacks clear pricing, API documentation, commercial-rights language, moderation rules, or reliable source material. Face-swap, cloned voice, hyperrealistic AI model, paid chat, and fan-platform workflows should be reviewed with stricter consent, age-appearance, disclosure, and policy controls.'
+      },
+      {
+        heading: 'Do not confuse workflow demos with authority',
+        body: 'Current YouTube tutorials are valuable for understanding interface patterns, creator vocabulary, and market demand around AI influencers and virtual creators. They should not be cited as the authority for pricing, API availability, payout terms, platform eligibility, or policy claims. Those claims should come from official docs, terms, pricing pages, help centers, and developer documentation.'
+      }
+    ],
+    framework: [
+      { label: 'Identity and QA', detail: 'Character bible, reference pack, provenance log, identity consistency checks, and face/voice/likeness controls.' },
+      { label: 'Media production', detail: 'Image generation, image-to-video, avatar video, voiceover/dialogue, captioning, editing, and output review.' },
+      { label: 'Publishing and funnel', detail: 'Schedulers, official APIs, link-in-bio hubs, analytics, DM automation, and owned-audience capture.' },
+      { label: 'Monetization and governance', detail: 'Fan platforms, memberships, paid messages, disclosure, payout review, moderation logs, and fallback channels.' }
+    ],
+    internalLinks: [
+      { href: '/tools', label: 'AI Creator Tool Index' },
+      { href: '/comparisons/gpt-image-vs-midjourney', label: 'GPT Image vs Midjourney' },
+      { href: '/comparisons/runway-vs-kling', label: 'Runway vs Kling' },
+      { href: '/comparisons/buffer-vs-metricool', label: 'Buffer vs Metricool' },
+      { href: '/guides/ai-creator-identity-consistency', label: 'AI creator identity consistency guide' },
+      { href: '/glossary/creator-automation', label: 'Creator automation glossary' }
+    ],
+    sourceIds: ['openai-image-generation-guide', 'openai-api-pricing', 'midjourney-plans', 'midjourney-terms', 'runway-api-docs', 'runway-pricing-plans', 'kling-pricing', 'kling-user-policy-ai-labeling-rights', 'higgsfield-ai-influencer-generator', 'heygen-api-quick-start', 'captions-ai-creator-api', 'elevenlabs-text-to-speech-docs', 'elevenlabs-voice-cloning-concepts', 'buffer-api-docs', 'metricool-api-overview', 'manychat-developer-docs', 'linktree-pricing', 'beacons-pricing', 'substack-publisher-agreement'],
+    videoLinks: [
+      { title: 'Higgsfield AI Infuencer Studio Full Tutorial & Showcase', url: 'https://www.youtube.com/watch?v=2Hc7y_4sDsg', channel: 'Dom the AI Tutor | Tech Tutor Zones', published: '2026 source review', note: 'Useful workflow signal for current AI influencer studio interfaces, consistent-character scenes, and social-video outputs; not a source for pricing, API, or policy claims.' },
+      { title: 'How to Make Realistic AI Influencers and Get PAID', url: 'https://www.youtube.com/watch?v=efQ_Voq3-zQ', channel: 'AI Guy', published: '2026 source review', note: 'Useful market signal for creator vocabulary around realistic AI influencers and monetization setup; earnings and policy claims should be verified against primary sources.' }
+    ]
+  },
+  {
     slug: 'ai-influencer-ai-girlfriend-monetization',
     title: 'How to Monetize an AI Influencer or AI Girlfriend Brand',
     shortTitle: 'AI Influencer / AI Girlfriend Monetization',
