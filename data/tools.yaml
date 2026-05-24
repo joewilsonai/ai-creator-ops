@@ -347,3 +347,24 @@
     - captions-terms
     - captions-api-terms
   last_checked: '2026-05-23'
+- id: higgsfield
+  name: Higgsfield
+  category: video_generation
+  url: https://higgsfield.ai/
+  summary: AI image and video generation platform with a dedicated AI Influencer Studio for consistent virtual characters, motion-transfer-style social clips, and creator campaign workflows.
+  best_for:
+    - AI influencer character workflows
+    - image-to-video and motion transfer
+    - social-ready virtual creator clips
+    - creator campaign submissions
+  pricing_model: subscription_and_usage_based
+  api_available: true
+  creator_ops_score: null
+  policy_risk: medium
+  sources:
+    - higgsfield-ai-influencer-generator
+    - higgsfield-pricing
+    - higgsfield-trust-safety
+    - higgsfield-terms-of-use
+    - higgsfield-earn-terms
+  last_checked: '2026-05-23'

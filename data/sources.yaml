@@ -881,3 +881,59 @@
   retrieved_at: '2026-05-23'
   source_type: primary
   notes: Official Mirage API terms covering API license scope, end-user responsibility, API limits, output disclaimers, and restrictions on using the API or output to create, train, fine-tune, evaluate, or improve competing AI or machine-learning systems.
+- id: higgsfield-ai-influencer-generator
+  url: https://higgsfield.ai/ai-influencer
+  title: AI Influencer Generator — Virtual Characters
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Higgsfield product page positioning AI Influencer Studio around consistent digital influencers, video generation, motion transfer from reference videos, ready-to-post clips for TikTok/Reels/Shorts, and brand-collab product or prop insertion.
+- id: higgsfield-pricing
+  url: https://higgsfield.ai/pricing
+  title: Pricing plans — Higgsfield AI Video & Image Generator
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Higgsfield pricing page describing subscription tiers, monthly credits, concurrent generation limits, selected/all-model access, Supercomputer-related plan features, and credit or unlimited-generation mechanics that change by plan and promotion.
+- id: higgsfield-trust-safety
+  url: https://higgsfield.ai/trust
+  title: Higgsfield AI — Trust, Safety & Platform Policies
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Higgsfield trust page covering support, Stripe payment processing, model-level content moderation, reporting, user responsibility for uploaded content and likeness rights, Higgsfield Earn program positioning, KYC-verified payouts, and company-supplied usage and creator-program metrics.
+- id: higgsfield-terms-of-use
+  url: https://higgsfield.ai/terms-of-use-agreement
+  title: Terms of Use Agreement
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Higgsfield terms covering service and API access, account rules, API limits, user input/output treatment, commercial-use language, training/use of inputs and outputs to improve services, subscription renewal terms, and dispute provisions.
+- id: higgsfield-privacy-policy
+  url: https://higgsfield.ai/privacy-policy
+  title: Privacy Policy
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official Higgsfield privacy policy stating users should not provide confidential, sensitive, unlicensed proprietary, or biometric information through the service; it also describes prompt/media data processing, public visibility of some user-shared data, training/improvement uses, payment processor handling, and age limits.
+- id: higgsfield-earn-terms
+  url: https://creators.higgsfield.ai/terms
+  title: Higgsfield Earn — Supplementary Terms & Conditions
+  publisher: Higgsfield AI
+  retrieved_at: '2026-05-23'
+  source_type: primary
+  notes: Official supplementary terms for Higgsfield Earn covering regional and account eligibility, platform/account verification, automated submission review, campaign requirement compliance, fraud and engagement-manipulation restrictions, appeals, discretionary payouts, KYC/payment controls, and the absence of guaranteed campaign availability or payout amounts.
+- id: youtube-higgsfield-ai-influencer-studio-tutorial-2026
+  url: https://www.youtube.com/watch?v=2Hc7y_4sDsg
+  title: Higgsfield AI Infuencer Studio Full Tutorial & Showcase
+  publisher: YouTube / Dom the AI Tutor | Tech Tutor Zones
+  retrieved_at: '2026-05-23'
+  source_type: market_signal
+  notes: Tutorial transcript retrieved on 2026-05-23; it demonstrates public workflow demand around zero-prompt AI influencer creation, consistent character scenes, motion libraries, Kling motion references, and social-video outputs. Treat as market-signal context, not policy or pricing authority.
+- id: youtube-higgsfield-realistic-ai-influencers-paid-2026
+  url: https://www.youtube.com/watch?v=efQ_Voq3-zQ
+  title: How to Make Realistic AI Influencers and Get PAID
+  publisher: YouTube / AI Guy
+  retrieved_at: '2026-05-23'
+  source_type: market_signal
+  notes: Tutorial transcript retrieved on 2026-05-23; it frames AI influencers as fictional characters attracting audiences and brand deals, then demonstrates Higgsfield-style character, motion-control, Instagram/TikTok-oriented, and monetization setup workflows. Treat earnings and monetization claims as unverified market chatter.

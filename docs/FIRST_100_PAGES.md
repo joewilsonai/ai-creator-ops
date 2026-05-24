@@ -40,6 +40,9 @@ Source-backed tool expansion candidates after the 2026-05-22 avatar video workfl
 Source-backed tool expansion candidates after the 2026-05-23 Captions/Mirage API desk review:
 - Captions for AI Creator Videos, AI Twins, and API-Driven Synthetic Presenter Clips
 
+Source-backed tool expansion candidates after the 2026-05-23 Higgsfield AI influencer workflow desk review:
+- Higgsfield for AI Influencer Studio, Motion Transfer, and Virtual Creator Campaign Workflows
+
 ### Platform pages
 26. Instagram for AI Creators
 27. TikTok for AI Creators
