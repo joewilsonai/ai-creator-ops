@@ -12,16 +12,20 @@
     - Meta requires AI disclosure for organic content with photorealistic video or realistic-sounding audio that was digitally created or altered, and may apply penalties when creators fail to disclose required AI-generated or altered media.
     - Meta's AI content labeling uses a mix of user self-disclosure and industry-shared technical signals; AI-generated content still remains subject to Community Standards and other policies.
     - Instagram branded content must be reviewed separately because Meta's Content Publishing API limitations state that branded content tags are not supported through that publishing flow.
+    - The Instagram API with Facebook Login is for Instagram Professional accounts, including Businesses and Creators, and can support media management, comment moderation, mentions, hashtag discovery, and metadata/metrics workflows; it cannot access consumer accounts.
     - Instagram Messaging API workflows can support creator/business account DM funnels, but sending messages requires Meta permissions and account setup; official send-message docs include Standard Access constraints, text length limits, valid-link requirements, and media attachment size limits.
   sources:
     - meta-instagram-content-publishing
+    - meta-instagram-api-facebook-login
     - meta-community-standards-misinformation-ai-disclosure
     - meta-labeling-ai-content-impact
     - meta-labeling-ai-generated-content-manipulated-media
+    - instagram-branded-content-policies
+    - instagram-generative-ai-editing-disclosures
     - meta-instagram-messaging-api
     - meta-instagram-private-replies
     - meta-instagram-send-message
-  last_checked: '2026-05-20'
+  last_checked: '2026-05-24'
 - id: tiktok
   name: TikTok
   type: social_platform

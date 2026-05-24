@@ -6,6 +6,31 @@
   source_type: primary
   notes: Official Instagram Platform Content Publishing documentation covering supported media types, permissions, public media hosting, API endpoints, limitations,
     and publishing rate limits.
+- id: meta-instagram-api-facebook-login
+  url: https://developers.facebook.com/docs/instagram-platform/instagram-api-with-facebook-login
+  title: Instagram API with Facebook Login
+  publisher: Meta for Developers
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Instagram Platform documentation stating that the API lets Instagram Professional accounts, including Businesses and Creators, manage presence,
+    publish and manage media, moderate comments, inspect mentions and hashtagged media, and read basic metadata and metrics; it cannot access consumer accounts.
+- id: instagram-branded-content-policies
+  url: https://help.instagram.com/1695974997209192
+  title: Branded Content Policies
+  publisher: Instagram Help Center
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Instagram Help Center branded-content policy surface. Search-result snippets state Meta defines branded content as creator or publisher content
+    influenced by a business partner for value and points creators to paid partnership and branded content requirements; recheck manually before quoting detailed
+    eligibility or enforcement language.
+- id: instagram-generative-ai-editing-disclosures
+  url: https://help.instagram.com/724269355950958
+  title: Generative AI Editing Disclosures
+  publisher: Instagram Help Center
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Instagram Help Center disclosure surface for generative AI editing features. Useful as an Instagram-specific source alongside Meta Transparency
+    Center AI labeling guidance; recheck manually before quoting exact UI wording.
 - id: meta-community-standards-misinformation-ai-disclosure
   url: https://transparency.meta.com/policies/community-standards/misinformation
   title: Meta Community Standards - Misinformation
