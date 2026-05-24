@@ -1,5 +1,42 @@
+import type { Metadata } from 'next';
 import { Badge, Card } from '@/components/ui';
-import { getAllTools, getAllPlatforms } from '@/lib/data';
+import { getAllPlatforms, getAllTools, getSource } from '@/lib/data';
+
+const baseUrl = 'https://aicreatorops.com';
+
+export const metadata: Metadata = {
+  title: 'AI Creator Ops: AI Influencer, Virtual Creator, and AI Girlfriend Business Intelligence',
+  description:
+    'Source-backed operating intelligence for AI creator businesses, AI influencers, AI girlfriend brands, AI models, virtual influencers, synthetic influencers, automation, and monetization.',
+  alternates: { canonical: `${baseUrl}/` },
+  openGraph: {
+    title: 'AI Creator Ops',
+    description: 'Build the creator business, not just the character.',
+    url: `${baseUrl}/`,
+    type: 'website'
+  }
+};
+
+function sourceTypeLabel(sourceType: string) {
+  return sourceType === 'market_signal' ? 'market signal' : `${sourceType} source`;
+}
+
+const entityLinks = [
+  { label: 'AI influencer', href: '/glossary/ai-influencer' },
+  { label: 'AI girlfriend business', href: '/glossary/ai-girlfriend-business' },
+  { label: 'AI model', href: '/glossary/ai-model' },
+  { label: 'Virtual influencer', href: '/glossary/virtual-influencer' },
+  { label: 'Synthetic influencer', href: '/glossary/synthetic-influencer' },
+  { label: 'Virtual creator', href: '/glossary/virtual-creator' },
+  { label: 'AI companion', href: '/glossary/ai-companion' }
+];
+
+const homepageSourceIds = [
+  'fanvue-ai-content-allowed',
+  'tiktok-aigc-support',
+  'youtube-help-altered-synthetic-content',
+  'meta-labeling-ai-content-impact'
+];
 
 const pillars = [
   ['Build', 'Persona, brand, identity, world, and site foundations.'],
@@ -12,8 +49,13 @@ const pillars = [
 ];
 
 export default function HomePage() {
-  const tools = getAllTools().slice(0, 4);
-  const platforms = getAllPlatforms().slice(0, 4);
+  const allTools = getAllTools();
+  const allPlatforms = getAllPlatforms();
+  const tools = allTools.slice(0, 4);
+  const platforms = allPlatforms.slice(0, 4);
+  const sources = homepageSourceIds
+    .map((sourceId) => getSource(sourceId))
+    .filter((source): source is NonNullable<ReturnType<typeof getSource>> => Boolean(source));
 
   return (
     <main>
@@ -45,7 +87,26 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="wrap grid gap-3 md:grid-cols-7">
+      <section className="wrap grid gap-4 md:grid-cols-[1fr_.85fr]">
+        <Card className="bg-gradient-to-br from-[rgba(34,211,238,.12)] to-[rgba(255,255,255,.035)]">
+          <Badge tone="green">DIRECT ANSWER</Badge>
+          <h2 className="mt-4 text-3xl font-semibold tracking-[-.05em]">What AI Creator Ops tracks</h2>
+          <p className="mt-4 leading-7 text-[var(--muted)]">
+            AI Creator Ops tracks the operating layer behind AI influencers, AI girlfriend businesses, AI models, virtual influencers, synthetic influencers, virtual creators, and AI companion brands: identity consistency, platform policy, tool choice, publishing automation, monetization, disclosure, and measurement.
+          </p>
+        </Card>
+        <Card>
+          <Badge tone="cyan">ENTITY LAYER</Badge>
+          <h2 className="mt-4 text-2xl font-semibold tracking-[-.04em]">Popular search terms mapped to operator pages</h2>
+          <div className="mt-4 flex flex-wrap gap-3 text-sm">
+            {entityLinks.map((link) => (
+              <a key={link.href} className="text-[var(--cyan)]" href={link.href}>{link.label}</a>
+            ))}
+          </div>
+        </Card>
+      </section>
+
+      <section className="wrap mt-4 grid gap-3 md:grid-cols-7">
         {pillars.map(([title, text]) => <Card key={title} className="min-h-32"><b className="block text-[15px]">{title}</b><p className="mt-2 text-xs leading-6 text-[var(--muted)]">{text}</p></Card>)}
       </section>
 
@@ -56,10 +117,51 @@ export default function HomePage() {
         </div>
         <div className="grid gap-4 md:grid-cols-[1.2fr_.9fr_.9fr]">
           <Card className="min-h-60 bg-gradient-to-br from-[rgba(139,92,246,.18)] to-[rgba(255,255,255,.035)]">
-            <Badge>FLAGSHIP REPORT</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]">AI Creator Platform Index 2026</h3><p className="mt-3 leading-7 text-[var(--muted)]">A scored map of fan platforms, social networks, and monetization rails for AI creator businesses.</p>
+            <Badge>FLAGSHIP REPORT</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]"><a href="/reports/ai-creator-platform-index-2026">AI Creator Platform Index 2026</a></h3><p className="mt-3 leading-7 text-[var(--muted)]">A scored map of fan platforms, social networks, and monetization rails for AI creator businesses.</p>
+            <a className="mt-5 inline-block text-sm font-semibold text-[var(--cyan)]" href="/reports/ai-creator-platform-index-2026">Open the flagship report →</a>
           </Card>
-          <Card><Badge tone="cyan">DATABASE</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]">Tool Index</h3><p className="mt-3 leading-7 text-[var(--muted)]">{tools.length} seed tools scored by creator usefulness, workflow fit, rights clarity, and automation support.</p></Card>
-          <Card><Badge tone="amber">POLICY TRACKER</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]">Platform Risk Watch</h3><p className="mt-3 leading-7 text-[var(--muted)]">{platforms.length} seed platforms with policy, automation, monetization, and risk notes.</p></Card>
+          <Card><Badge tone="cyan">DATABASE</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]"><a href="/tools">Tool Index</a></h3><p className="mt-3 leading-7 text-[var(--muted)]">{allTools.length} seed tools scored by creator usefulness, workflow fit, rights clarity, and automation support.</p><a className="mt-5 inline-block text-sm font-semibold text-[var(--cyan)]" href="/tools">Browse source-backed tools →</a></Card>
+          <Card><Badge tone="amber">POLICY TRACKER</Badge><h3 className="mt-5 text-2xl font-semibold tracking-[-.04em]"><a href="/platforms">Platform Risk Watch</a></h3><p className="mt-3 leading-7 text-[var(--muted)]">{allPlatforms.length} seed platforms with policy, automation, monetization, and risk notes.</p><a className="mt-5 inline-block text-sm font-semibold text-[var(--cyan)]" href="/platforms">Browse platform records →</a></Card>
+        </div>
+      </section>
+
+      <section className="wrap pb-16">
+        <div className="grid gap-4 md:grid-cols-[1fr_.9fr]">
+          <Card>
+            <Badge tone="green">FEATURED RECORDS</Badge>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-.05em]">Crawlable tool and platform records</h2>
+            <div className="mt-5 grid gap-4 md:grid-cols-2">
+              <div>
+                <h3 className="font-semibold">Tools</h3>
+                <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                  {tools.map((tool) => (
+                    <li key={tool.id}><a className="text-[var(--cyan)]" href={`/tools/${tool.id}`}>{tool.name}</a> — {tool.category.replaceAll('_', ' ')}</li>
+                  ))}
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold">Platforms</h3>
+                <ul className="mt-3 space-y-2 text-sm text-[var(--muted)]">
+                  {platforms.map((platform) => (
+                    <li key={platform.id}><a className="text-[var(--cyan)]" href={`/platforms/${platform.id}`}>{platform.name}</a> — {platform.policy_risk} policy risk</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </Card>
+          <Card>
+            <Badge tone="amber">SOURCE POSTURE</Badge>
+            <h2 className="mt-4 text-3xl font-semibold tracking-[-.05em]">Visible source links</h2>
+            <p className="mt-3 text-sm leading-6 text-[var(--muted)]">Official docs and help-center pages are the authority for policy, pricing, payout, API, and disclosure claims. YouTube or X links, when present, are labeled as market-signal context.</p>
+            <ul className="mt-5 space-y-3 text-sm text-[var(--muted)]">
+              {sources.map((source) => (
+                <li key={source.id}>
+                  <a className="text-[var(--cyan)]" href={source.url} rel="noopener noreferrer">{source.title}</a>{' '}
+                  <span className="text-xs uppercase tracking-[.14em] text-[var(--dim)]">{sourceTypeLabel(source.source_type)}</span> — {source.publisher}, retrieved {source.retrieved_at}.
+                </li>
+              ))}
+            </ul>
+          </Card>
         </div>
       </section>
     </main>
