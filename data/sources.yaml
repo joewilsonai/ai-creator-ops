@@ -643,6 +643,20 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Patreon help article surfaced in search results stating Adult/18+ creators must be ID-verified and age-verified; full page fetch failed and needs manual recheck before detailed public claims.
+- id: patreon-policy-updates-ai-adult-2024
+  url: https://news.patreon.com/articles/mid-year-2024-policy-updates-shaped-by-your-feedback?ref=404media.co
+  title: Mid-year 2024 policy updates, shaped by your feedback
+  publisher: Patreon News
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Patreon policy update explaining AI-generated Adult/18+ rules, including permission for animated or illustrated AI Adult/18+ works that otherwise comply and documented explicit-consent requirements for hyperrealistic depictions of people.
+- id: patreon-community-guidelines
+  url: https://www.patreon.com/policy/guidelines
+  title: Community Guidelines
+  publisher: Patreon
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Patreon Community Guidelines source covering platform-wide safety, harassment, non-consensual intimate imagery, sexually gratifying works, and other policy requirements for creators and fans.
 - id: reddit-manipulated-content-policy
   url: https://support.reddithelp.com/hc/en-us/articles/41180423371156-Manipulated-Content-and-Misleading-Behavior
   title: Manipulated Content and Misleading Behavior
@@ -678,6 +692,20 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Reddit developer blog stating Reddit Developer Platform apps can ship into subreddits, reach communities, and access monetization options including temporary Developer Funds programs.
+- id: reddit-data-api-terms
+  url: https://redditinc.com/policies/data-api-terms
+  title: Data API Terms
+  publisher: Reddit, Inc.
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Reddit Data API Terms stating User Content is owned by users, API use is limited to the permitted license, AI/ML training on User Content requires express permission from rightsholders, and termination requires deletion of cached or derived User Content and Materials.
+- id: reddit-user-agreement
+  url: https://redditinc.com/policies/user-agreement
+  title: Reddit User Agreement
+  publisher: Reddit, Inc.
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Reddit User Agreement covering service access, user content licenses, prohibited commercial exploitation of Reddit Services or Content without written agreement, and restrictions relevant to creator automation and data reuse.
 - id: substack-terms-of-use
   url: https://substack.com/tos
   title: Terms of Use

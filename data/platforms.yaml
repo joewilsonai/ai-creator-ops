@@ -185,12 +185,15 @@
   notes:
     - Membership and digital-product monetization surface for AI creator operators, but Adult/18+ AI workflows need separate page-category, verification, and feature-access review before public recommendations.
     - Patreon search results surface an official AI policy for Adult/18+ creators stating that Patreon allows AI-generated works with different rules based on Safe for All Audiences versus Adult/18+ page categorization; the source needs manual recheck because automated extraction failed.
+    - Patreon's 2024 policy update says AI-generated Adult/18+ works that are animated or illustrated may be permitted if otherwise compliant, while hyperrealistic depictions of people require documented explicit consent from real humans; this makes Patreon weaker than Fanvue for hyperrealistic AI model or AI girlfriend monetization.
     - Patreon's fee guide states creators publishing after August 4, 2025 are on the standard 10% platform plan, with additional payment processing, currency conversion, tax, payout, and possible iOS purchase fees.
     - Patreon search results surface an official Adult/18+ feature-access article stating all Adult/18+ creators must be ID-verified and age-verified; the source needs manual recheck before detailed eligibility claims.
   sources:
     - patreon-adult-ai-policy
     - patreon-creator-fees-overview
     - patreon-adult-creator-features
+    - patreon-policy-updates-ai-adult-2024
+    - patreon-community-guidelines
   last_checked: '2026-05-18'
 - id: reddit
   name: Reddit
@@ -207,12 +210,15 @@
     - Reddit's impersonation policy prohibits misleading or deceptive impersonation of individuals or entities, which makes fictional-character clarity and profile disclosure important for synthetic creator accounts.
     - Reddit's Responsible Builder Policy says Reddit data/API access requires approval and transparency, commercial use requires explicit written approval, and bots, AI agents, or non-human accounts must not circumvent Reddit labeling.
     - Reddit's Devvit developer platform is a separate build path for community apps, games, and mod tools; it is not a generic license for unaudited posting automation.
+    - Reddit's Data API Terms say User Content is owned by users and no right is granted to use User Content for AI/ML training without express permission from rightsholders; Reddit should be treated as a community/distribution surface, not a free scraping or training-data source.
   sources:
     - reddit-manipulated-content-policy
     - reddit-impersonation-policy
     - reddit-responsible-builder-policy
     - reddit-devvit-docs
     - reddit-developer-platform-blog
+    - reddit-data-api-terms
+    - reddit-user-agreement
   last_checked: '2026-05-18'
 - id: discord
   name: Discord
