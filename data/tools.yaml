@@ -235,11 +235,14 @@
     - manychat-pricing
     - manychat-instagram-product
     - manychat-developer-docs
+    - manychat-auto-dm-links-from-comments
+    - manychat-share-to-dm-trigger
+    - manychat-instagram-automation-troubleshooting
     - meta-instagram-messaging-api
     - meta-instagram-private-replies
     - meta-instagram-human-agent-escalation
     - meta-instagram-send-message
-  last_checked: '2026-05-20'
+  last_checked: '2026-05-25'
 - id: linktree
   name: Linktree
   category: link_in_bio

@@ -527,6 +527,27 @@
   retrieved_at: '2026-05-18'
   source_type: primary
   notes: Official Manychat developer documentation for API and integration review.
+- id: manychat-auto-dm-links-from-comments
+  url: https://help.manychat.com/hc/en-us/articles/16654065283100-Quick-Automation-Auto-DM-links-from-comments
+  title: 'Quick Automation: Auto-DM links from comments'
+  publisher: Manychat Help
+  retrieved_at: '2026-05-25'
+  source_type: primary
+  notes: Official Manychat Help article describing Instagram comment-to-DM quick automations, including post/reel triggers, keyword conditions, optional public replies, opening DMs, email capture, follow prompts, link delivery, and follow-up messages.
+- id: manychat-share-to-dm-trigger
+  url: https://help.manychat.com/hc/en-us/articles/23431135317916-Share-to-DM-trigger
+  title: Share to DM trigger
+  publisher: Manychat Help
+  retrieved_at: '2026-05-25'
+  source_type: primary
+  notes: Official Manychat Help article describing the Instagram Share to DM trigger for post/reel shares to Stories, enhanced Instagram connection requirements, private-reply setup, one-trigger-per-user limitation, and the 24-hour messaging-window behavior after user interaction.
+- id: manychat-instagram-automation-troubleshooting
+  url: https://help.manychat.com/hc/en-us/articles/14281308423452-Instagram-automation-troubleshooting
+  title: Instagram automation troubleshooting
+  publisher: Manychat Help
+  retrieved_at: '2026-05-25'
+  source_type: primary
+  notes: Official Manychat troubleshooting article for Instagram automations, including the June 14, 2024 new Instagram API connection flow, professional account requirements, message-access toggles, permission refresh steps, and known setup limitations.
 - id: meta-instagram-messaging-api
   url: https://developers.facebook.com/docs/instagram-messaging/
   title: Instagram Messaging API
