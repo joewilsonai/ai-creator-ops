@@ -181,6 +181,26 @@
     - metricool-pricing
     - metricool-api-overview
   last_checked: '2026-05-18'
+- id: later
+  name: Later
+  category: social_scheduler
+  url: https://later.com/
+  summary: Social media management and scheduling platform for AI creator content calendars, multi-platform publishing, Instagram/TikTok planning, link-in-bio routing, and lightweight AI-assisted caption or idea generation.
+  best_for:
+    - social scheduling
+    - content calendars
+    - Instagram and TikTok planning
+    - link-in-bio routing
+  pricing_model: subscription
+  api_available: unknown
+  creator_ops_score: null
+  policy_risk: low
+  sources:
+    - later-pricing
+    - later-instagram-auto-post
+    - later-troubleshooting-failed-posts
+    - later-terms
+  last_checked: '2026-05-24'
 - id: zernio
   name: Zernio
   category: social_scheduler

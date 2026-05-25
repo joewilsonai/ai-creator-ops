@@ -1004,3 +1004,38 @@
   retrieved_at: '2026-05-23'
   source_type: market_signal
   notes: Tutorial transcript retrieved on 2026-05-23; it frames AI influencers as fictional characters attracting audiences and brand deals, then demonstrates Higgsfield-style character, motion-control, Instagram/TikTok-oriented, and monetization setup workflows. Treat earnings and monetization claims as unverified market chatter.
+- id: later-pricing
+  url: https://later.com/pricing
+  title: Later Pricing Plans for Brands, Agencies & Social Media Managers
+  publisher: Later
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Later pricing page covering Starter, Growth, and Scale plans; supported social profiles; monthly scheduled-post limits; Social Sets; AI credits for Ideas and Caption Writer; Auto Publish support across Instagram, Facebook, TikTok, LinkedIn, Pinterest, YouTube, Threads, and Snapchat; and notification publishing for workflows requiring manual posting.
+- id: later-instagram-auto-post
+  url: https://later.com/instagram-scheduler/auto-post/
+  title: Instagram Auto Post | Save Time with Auto Scheduling & Publishing
+  publisher: Later
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Later Instagram Auto Publish page stating that Later can automatically publish Instagram single-image posts, carousel posts, and Reels through the Instagram Graph API, while Stories require planning/reminder workflows rather than current auto-publishing.
+- id: later-troubleshooting-failed-posts
+  url: https://help.later.com/hc/en-us/articles/360060833574-Troubleshooting-Failed-Posts
+  title: Troubleshooting Failed Posts
+  publisher: Later Help Center
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Later Help Center article documenting failed-post causes relevant to AI creator scheduling operations, including expired social-profile connections, Instagram personal profiles requiring notification publishing, a 50 Auto Publish posts per 24-hour rolling-period limit cited by Later for Instagram, and TikTok spam-risk rejections.
+- id: later-terms
+  url: https://later.com/terms/
+  title: Later Terms of Service & Influencer Terms of Use
+  publisher: Later
+  retrieved_at: '2026-05-24'
+  source_type: primary
+  notes: Official Later terms covering the Social Media Management Solution, subscription billing and renewals, user-content responsibility and rights representations, acceptable-use constraints, and the distinction from Later's Influencer Marketing Solution by Mavrck.
+- id: youtube-later-social-management-tutorial-2026
+  url: https://www.youtube.com/watch?v=xXw8GFrm2f0
+  title: How To Use Later For Social Media Management 2026
+  publisher: YouTube / channel not reliably extracted
+  retrieved_at: '2026-05-24'
+  source_type: market_signal
+  notes: Transcript retrieved on 2026-05-24; tutorial demonstrates market demand for Later as a practical planning, media library, inbox, analytics, link-in-bio, and scheduling workflow for multi-platform social management. Use as workflow/context evidence only, not as policy, pricing, or API authority.

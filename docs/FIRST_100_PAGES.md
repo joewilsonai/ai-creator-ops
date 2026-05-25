@@ -43,6 +43,9 @@ Source-backed tool expansion candidates after the 2026-05-23 Captions/Mirage API
 Source-backed tool expansion candidates after the 2026-05-23 Higgsfield AI influencer workflow desk review:
 - Higgsfield for AI Influencer Studio, Motion Transfer, and Virtual Creator Campaign Workflows
 
+Source-backed tool expansion candidates after the 2026-05-24 social scheduler desk review:
+- Later for AI Creator Content Calendars, Instagram/TikTok Planning, and Link-in-Bio Workflows
+
 ### Platform pages
 26. Instagram for AI Creators
 27. TikTok for AI Creators
